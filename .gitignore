@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+# Full-text PDFs may be copyrighted; keep them in Mendeley, not git
+biblio/fulltext/
+# Generated outputs (rebuild with make)
+results/*
+!results/.gitkeep
+paper/build/

@@ -1,0 +1,39 @@
+# Single source of truth for human decisions.
+# Every value marked TODO(human) must be filled in by the group before the
+# corresponding pipeline step is meaningful. `make todo` lists them all.
+
+project:
+  title: "TODO(human): working paper title"
+  topic: "TODO(human): pick topic (see PLAN.md Phase 1)"
+  # Which OR model family the case study uses. Drives experiments/run_toy.py.
+  # One of: transportation | assignment | cpm_pert | vrp
+  model_family: transportation  # TODO(human): confirm once topic is chosen
+  research_questions:
+    - "TODO(human): RQ1 (literature: trends, dominant methods, gaps)"
+    - "TODO(human): RQ2 (model: what the optimisation answers)"
+
+search:
+  # "Operations AND research" is mandatory per the guidelines (Step 4).
+  mandatory: '"operations" AND "research"'
+  topic_terms: "TODO(human): e.g. (\"vehicle routing\" OR \"last-mile\")"
+  method_terms: "TODO(human): e.g. (\"mixed integer\" OR \"linear programming\")"
+  year_start: null  # TODO(human)
+  year_end: null    # TODO(human)
+  language: English
+  document_type: Academic Journals
+  databases: [EBSCO]  # add Scopus / Web of Science / ScienceDirect if used
+  run_date: null      # TODO(human): date the final search was executed
+
+bibliometrix:
+  # Input file exported from Mendeley (Step 12).
+  bib_file: biblio/exports/final_library.bib
+  # convert2df dbsource. Mendeley/EBSCO BibTeX is not a native format;
+  # try "scopus" first, fall back to "generic" if import fails (PLAN.md Phase 3).
+  dbsource: scopus
+  core_papers_n: 20
+
+solver:
+  name: HiGHS        # HiGHS | PULP_CBC_CMD
+  time_limit_s: 120
+
+seed: 42
