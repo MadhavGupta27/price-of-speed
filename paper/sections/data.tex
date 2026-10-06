@@ -1,0 +1,51 @@
+\section{Case and data}\label{sec:data}
+
+\subsection{Study area}
+
+The study area is the Bruhat Bengaluru Mahanagara Palike (BBMP) as delimited into 243 wards in 2022 \citep{opencity2022wards}; the ward polygons cover \AreaKm~km\textsuperscript{2}, consistent with the official 712.5~km\textsuperscript{2}. Bengaluru hosts roughly \CurrentStores{} dark stores of the three largest platforms \citep{qcmap2026}, making it the most contested q-commerce market in India.
+
+\subsection{Data sources and audit}
+
+Table~\ref{tab:sources} lists the inputs. Demand is spatialised with the WorldPop 2025 constrained population grid at 100~m \citep{worldpop2025}, aggregated to \NDemandCells{} cells of about 0.46~km. WorldPop sums to \PopWorldPop~million inside BBMP---below the 2011 Census count of 8.44 million \citep{census2011}---because it caps density in the dense core; we therefore keep its spatial pattern and scale it to the census total. Candidate store sites are the \NOsmSites{} supermarkets, grocery and convenience shops and warehouses mapped in OpenStreetMap within BBMP \citep{osm2026}, merged into \NCandidates{} candidate locations. Road distances are straight-line distances multiplied by a detour factor of \Detour{} (interquartile range \DetourLo--\DetourHi), the median road/straight-line ratio over a random sample of OSRM routes.
+
+\begin{table}[ht]
+\centering\small
+\caption{Data sources.}\label{tab:sources}
+\begin{tabular}{p{3.6cm}p{6.4cm}p{4.6cm}}
+\toprule
+Input & Source & Use \\
+\midrule
+Population & WorldPop R2025A, India 2025, 100~m constrained & Spatial demand weights \\
+Boundary & BBMP ward map 2022 (OpenCity) & Study area \\
+Candidate sites & OpenStreetMap, Geofabrik extract 2026-10-05 & Possible dark stores \\
+Road detour & OSRM, OSM road network & Distance correction \\
+Orders, stores, costs & Eternal and Swiggy shareholder letters Q1~FY27; press & Calibration (Table~\ref{tab:params}) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two popular Kaggle datasets on Indian food and grocery delivery were evaluated and rejected. In the food-delivery dataset, \KaggleOffsetPct\% of delivery points equal the restaurant coordinates plus an identical latitude--longitude offset drawn from 13 values, and road-traffic level is fully determined by the hour of day; the delivery geometry and timing are synthetic. The Blinkit sales dataset uses placeholder e-mail domains for all customers. Neither can support distance-based modelling, a caution for the many studies that use them.
+
+\subsection{Parameters}
+
+Table~\ref{tab:params} summarises the calibration. Bengaluru demand is estimated as stores per platform times orders per store per day: Blinkit \citep[derived from net order value per store per day and average order value]{eternal2026q1}, Swiggy Instamart \citep[1,089 orders per store per day]{swiggy2026q1} and Zepto (mean of the two), giving about 600,000 orders per day. Rider cost uses the average of INR~102 per logged-in hour reported by Eternal for 2025 \citep{goyal2026earnings}. Speeds and pick-pack times follow statements by platform founders \citep{palicha2022,dhindsa2021}. As a validation, the implied rider cost per order in the base case falls within the reported per-order pay of INR~25--35.
+
+\begin{table}[ht]
+\centering\small
+\caption{Model parameters (base value and sensitivity range).}\label{tab:params}
+\begin{tabular}{p{4.6cm}p{3.6cm}p{6.6cm}}
+\toprule
+Parameter & Base (range) & Basis \\
+\midrule
+Delivery promise $T$ & 10, 15, 20, 30 min & Policy scenarios \\
+Safe rider speed $v$ & 15 (12--20) km/h & \citet{palicha2022} \\
+Pick + pack (PERT $a,m,b$) & 1.3, 2, 4 min & \citet{dhindsa2021}; Zepto 76~s \\
+Rider assignment; handover & (0, 0.5, 2); (0.5, 1, 2) min & Assumption \\
+Daily orders, Bengaluru & 600k (450k--750k) & \citet{eternal2026q1,swiggy2026q1,qcmap2026} \\
+Peak-hour share of daily orders & 0.10 (0.08--0.12) & Assumption (evening peak) \\
+Store fixed cost & INR 8 (6--11) lakh/month & Opex + capex/60 months \\
+Rider cost & INR 125 (102--154)/h & \citet{goyal2026earnings} \\
+Rider utilisation & 0.6 (0.5--0.7) & Assumption \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,8 @@
+{
+  "pairs": 172,
+  "detour_median": 1.569344225131748,
+  "detour_p25": 1.4085080374900996,
+  "detour_p75": 1.8101494853236286,
+  "osrm_car_speed_kmh_median": 38.77682863080591,
+  "note": "OSRM demo (car profile, free-flow). Only the detour ratio is used."
+}

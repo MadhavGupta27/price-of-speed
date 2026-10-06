@@ -1,0 +1,21 @@
+\section{Discussion}\label{sec:discussion}
+
+\subsection{What makes a speed target ``unrealistic''?}
+
+The results separate two quantities that the public debate conflates. The \emph{promise} $T$ is a network-design decision: it determines how many stores are needed and which neighbourhoods can be served. The \emph{speed} riders must sustain is a cost decision: at a given network, faster riding is cheaper for the platform because rider time is paid per hour. A promise becomes unrealistic when the network cannot deliver it at a safe speed. Our results suggest a practical test for regulators: a promise is realistic for an address if the address lies within the safe ride radius of an open store after realistic pick-and-pack time---exactly the reachability set $A$ in M1. By that test, 15 minutes is realistic for \ServedFifteenPct\% of Bengaluru residents with the cost-optimal network, while 10 minutes is realistic for \ServedTenPct\% even with \StoresTTen{} stores. Promising 10 minutes beyond that footprint, or asking a 15-minute network to deliver in 10, can be met only by faster riding (Section~\ref{sec:results}).
+
+\subsection{Managerial implications}
+
+For platforms, the cost per order is nearly flat between 10 and 30 minutes once the network is designed for the promise; the expensive lever is rider speed. Platforms can therefore offer differentiated promises---10 minutes in dense cores, where mapped retail space allows it, and 15 elsewhere---at modest cost (a uniform 10-minute promise for everyone costs about \GridCostPremiumPct\% more per order), and should resist meeting tight promises at peaks through speed. Dispatch quality matters most at stressed stores and lean staffing, where optimal assignment reduces lateness relative to FIFO.
+
+\subsection{Policy implications}
+
+A speed norm is more enforceable than a promise ban. A cap of 15~km/h raises cost per order by about \SpeedCapPremiumPct\% relative to 20~km/h in our base case---a quantifiable price of rider safety that can be weighed against accident risk. Platform disclosures of delivery radius and store density would allow regulators to check reachability directly.
+
+\subsection{Limitations}
+
+Demand is spatialised from residential population and calibrated from platform-level disclosures rather than order data; store counts come from a third-party tracker; candidate sites depend on OpenStreetMap completeness; road distances use a single detour factor and free-flow routing; rider cost is a per-hour average; and the model represents one network rather than three competing platforms. PERT assumes independent activities and a normal approximation. \todo{Add limitations from the bibliometric part.}
+
+\subsection{Future research agenda}
+
+\todo{Tie each item to a gap from Section~\ref{sec:lit}.} Promising directions include competitive location models for multiple platforms, time-dependent travel times and congestion, capacity and inventory at dark stores, explicit accident-risk functions in the objective, and dynamic dispatch with fairness constraints for riders.

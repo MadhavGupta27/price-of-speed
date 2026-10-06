@@ -1,0 +1,30 @@
+\section{Model formulation}\label{sec:model}
+
+\paragraph{Notation.} $I$ is the set of demand cells with daily orders $q_i$ and peak-hour orders $\lambda_i = s\,q_i$ (peak share $s$); $J$ is the set of candidate sites; $d_{ij}$ is road distance. Fulfilment comprises pick-and-pack, rider assignment and handover with PERT means $t^{pp}, t^{as}, t^{ho}$, so the ride radius available under promise $T$ (min) and safe speed $v$ (km/h) is
+\begin{equation}
+r(T,v) = \frac{v}{60}\left(T - t^{pp} - t^{as} - t^{ho}\right).
+\end{equation}
+The reachable arcs are $A = \{(i,j): d_{ij} \le r(T,v)\}$.
+
+\paragraph{M1: coverage-constrained network design.} With binary $y_j$ (open site $j$), continuous $x_{ij}$ (share of cell $i$ served by $j$) and $u_i$ (unreachable demand),
+\begin{align}
+\min\quad & F \sum_{j\in J} y_j + \sum_{(i,j)\in A} c_{ij}\,x_{ij} + M\sum_{i\in I} u_i \label{eq:obj}\\
+\text{s.t.}\quad & \sum_{j:(i,j)\in A} x_{ij} + u_i = 1 && \forall i\in I \label{eq:serve}\\
+& x_{ij} \le y_j && \forall (i,j)\in A \label{eq:link}\\
+& x_{ij}\ge 0,\; u_i \ge 0,\; y_j\in\{0,1\}, \notag
+\end{align}
+where $F$ is the monthly fixed cost of a store and
+\begin{equation}
+c_{ij} = 30\, q_i \left(\frac{2 d_{ij}}{v} + \frac{t^{ho}}{60}\right)\frac{w}{\rho}
+\end{equation}
+is the monthly rider cost of serving cell $i$ from $j$: a round trip at the safe speed plus handover, paid at $w$ per logged-in hour with utilisation $\rho$. The promise enters as a hard restriction on $A$. Cells with no reachable candidate are served by $u_i$ at a large penalty $M$ and reported as unreachable rather than making the model infeasible. Without capacity limits $x_{ij}$ is integral at the optimum, so M1 is an uncapacitated facility-location problem on the reachable arcs; for $T=10$ it reduces to a set-covering structure \citep{toregas1971}, while for loose promises the cost trade-off dominates.
+
+\paragraph{M2: rider sizing.} Each cell is served by its assigned store; peak riders at store $j$ follow from cycle times (Little's law),
+$R_j = \big\lceil \sum_{i:\,j(i)=j} \lambda_i \,(2 d_{ij}/v + t^{ho}/60) \big\rceil$.
+
+\paragraph{M3: replenishment (transportation problem).} Open stores are restocked daily from three mother hubs located at OpenStreetMap warehouse sites nearest the demand-weighted centroids of the store network. With hub supplies $a_h$, store requirements $b_j$ and distances $d_{hj}$,
+$\min \sum_{h,j} d_{hj} z_{hj}$ subject to $\sum_j z_{hj} = a_h$, $\sum_h z_{hj} = b_j$, $z\ge 0$. We compare the optimum with Vogel's approximation and the north-west corner rule.
+
+\paragraph{M4: peak dispatch (assignment problem).} At a representative store we simulate a 10-minute peak batch of orders with arrival times $\alpha_o$, ready times $\alpha_o + t^{pp} + t^{as}$ and ride times $\tau_o$, and rider \emph{slots} $k$ (a rider's successive trips) that become free at $\phi_k$. The lateness of serving order $o$ with slot $k$ is $\ell_{ko} = \max\{0,\ \max(\phi_k, \alpha_o + t^{pp} + t^{as}) + \tau_o + t^{ho} - (\alpha_o + T)\}$. The assignment model $\min \sum_{k,o} \ell_{ko} x_{ko}$ with $\sum_k x_{ko}=1$, $\sum_o x_{ko}\le 1$, $x\in\{0,1\}$ is compared with first-in-first-out dispatch.
+
+\paragraph{M5: fulfilment reliability (PERT).} An order passes four sequential activities: pick-and-pack, rider assignment, ride and handover. The first, second and fourth use the three-point estimates in Table~\ref{tab:params}; the ride uses the 5th, 50th and 95th percentiles of demand-weighted ride times in the designed network. With PERT means $\mu_k = (a_k + 4m_k + b_k)/6$ and variances $\sigma^2_k = ((b_k-a_k)/6)^2$, the probability of fulfilment within $T$ is $\Phi\big((T-\sum_k\mu_k)/\sqrt{\sum_k \sigma_k^2}\big)$ \citep{malcolm1959}. We also report the rider speed needed to reach 95\% on-time delivery for a given network.

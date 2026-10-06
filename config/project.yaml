@@ -3,22 +3,25 @@
 # corresponding pipeline step is meaningful. `make todo` lists them all.
 
 project:
-  title: "TODO(human): working paper title"
-  topic: "TODO(human): pick topic (see PLAN.md Phase 1)"
-  # Which OR model family the case study uses. Drives experiments/run_toy.py.
+  title: "The Price of Speed: Optimising Dark-Store Networks and Rider Assignment under Relaxed Delivery Promises in Indian Quick Commerce"
+  topic: "Quick-commerce dark-store location, replenishment, rider assignment and fulfilment-time risk under delivery-promise policy (Bengaluru case)"
+  # Which OR model family the toy/sensitivity runners default to.
   # One of: transportation | assignment | cpm_pert | vrp
-  model_family: transportation  # TODO(human): confirm once topic is chosen
+  model_family: transportation
   research_questions:
-    - "TODO(human): RQ1 (literature: trends, dominant methods, gaps)"
-    - "TODO(human): RQ2 (model: what the optimisation answers)"
+    - "RQ1: How has OR research on on-demand / last-mile delivery evolved, which methods dominate (location, assignment, routing), and where are the gaps for quick commerce and courier welfare?"
+    - "RQ2: For Bengaluru, how do dark-store count, rider fleet and cost change as the delivery promise relaxes from 10 to 15, 20 and 30 minutes under a safety-capped rider speed?"
+    - "RQ3: Which promise level and network design balance coverage, cost and rider safety, and what does this imply for defining a 'realistic' speed target?"
 
 search:
   # "Operations AND research" is mandatory per the guidelines (Step 4).
   mandatory: '"operations" AND "research"'
-  topic_terms: "TODO(human): e.g. (\"vehicle routing\" OR \"last-mile\")"
-  method_terms: "TODO(human): e.g. (\"mixed integer\" OR \"linear programming\")"
-  year_start: null  # TODO(human)
-  year_end: null    # TODO(human)
+  topic_terms: '("last-mile" OR "last mile" OR "on-demand delivery" OR "instant delivery" OR "quick commerce" OR "q-commerce" OR "meal delivery" OR "dark store" OR "micro-fulfil*" OR "crowdshipping")'
+  method_terms: '("facility location" OR "covering" OR "assignment" OR "vehicle routing" OR "integer programming" OR "linear programming")'
+  # Adjust after the pilot search (PLAN.md Phase 1): >~1500 hits -> drop "crowdshipping"
+  # and "last mile"; <~150 hits -> drop the method clause.
+  year_start: 2015
+  year_end: 2026
   language: English
   document_type: Academic Journals
   databases: [EBSCO]  # add Scopus / Web of Science / ScienceDirect if used
@@ -31,6 +34,41 @@ bibliometrix:
   # try "scopus" first, fall back to "generic" if import fails (PLAN.md Phase 3).
   dbsource: scopus
   core_papers_n: 20
+
+case:
+  city: Bengaluru (BBMP, 243 wards, 2022 delimitation)
+  grid_block: 5            # 100 m WorldPop cells aggregated 5x5 -> ~0.46 km demand cells
+  # WorldPop R2025A sums to ~6.0M inside BBMP (caps ~140 people/ha in dense cores), below
+  # Census 2011 (8,443,675). Use WorldPop for the spatial pattern, scaled to this control total.
+  population_control_total: 8443675   # Census of India 2011, BBMP (712.54 km2)
+  # Sweep values for RQ2. Sources in data/README.md ("Model parameters").
+  promise_min: [10, 15, 20, 30]
+  # Safe speed: Zepto CEO (Apr 2022): 1.8 km avg distance -> "<15 kmph" for 10 min;
+  # Forbes (2024): Zepto median 11 min, 1.5 km. 20 km/h = upper bound.
+  rider_speed_kmh: [12, 15, 20]
+  # PERT (min). Zepto: packed "within 76 seconds" (Business Today); Blinkit/Grofers CEO
+  # (Aug 2021): "pack most orders under 2.5 minutes".
+  pick_pack_min: {a: 1.3, m: 2, b: 4}
+  rider_assign_min: {a: 0, m: 0.5, b: 2}     # assumption; sensitivity
+  handover_min: {a: 0.5, m: 1, b: 2}         # assumption; sensitivity
+
+  # Demand. Bengaluru daily orders derived in data/README.md §5:
+  #   stores (quickcommercemap, Jul 2026: Blinkit 165, Zepto 159, Instamart 116)
+  #   x orders/store/day (Blinkit ~1,597 = Eternal Q1FY27 NOV/store/day 8.27L / AOV 518;
+  #   Instamart 1,089 = Swiggy Q1FY27 letter; Zepto ~1,340 = mean of the two, assumption)
+  #   ~= 603,000/day. All assigned to BBMP (upper bound: some stores serve beyond it).
+  bengaluru_daily_orders: [450000, 600000, 750000]
+  peak_hour_share: [0.08, 0.10, 0.12]   # share of daily orders in busiest hour; evening peak 5-11 pm
+                                        # (Blinkit ops); 0.107 in Kaggle profile (illustrative only)
+  current_dark_stores_bengaluru: 440    # P for MCLP benchmark (quickcommercemap.com, 2026-07-10)
+
+  # Costs (INR). Store: opex (rent ~4,200 sq ft x 60-100/sq ft + staff 1.5-2.4L + utilities 0.4L)
+  # + capex amortised over 5 years (Eternal steady-state capex/store Rs 1-2.5 cr). See data/README.md.
+  dark_store_fixed_cost_inr_month: [600000, 800000, 1100000]
+  # Rider: Eternal CEO factsheet (Jan 2026): avg earnings Rs 102 per logged-in hour (2025);
+  # upper value ~Rs 154/h = Rs 40k/month over 260 h (press reports for active Blinkit partners).
+  rider_cost_inr_hour: [102, 125, 154]
+  rider_utilisation: [0.5, 0.6, 0.7]    # busy share of logged-in time; assumption, sensitivity
 
 solver:
   name: HiGHS        # HiGHS | PULP_CBC_CMD

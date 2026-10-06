@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+% First draft. Replace preamble/layout with the instructor's template when received.
+\usepackage[margin=2.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[round,authoryear]{natbib}
+\usepackage{xurl}
+\usepackage[colorlinks=true,citecolor=blue!50!black,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\graphicspath{{figures/}}
+
+% Placeholder marker for content that needs human input or pending pipeline output.
+\newcommand{\todo}[1]{\textcolor{red}{[\textbf{TODO:} #1]}}
+\newcommand{\INR}{\ensuremath{\text{\rupee}}}
+\renewcommand{\INR}{INR~}
+
+% Every number in the text comes from the pipeline (scripts/export_numbers.py).
+\input{generated/numbers.tex}
+
+\title{The Price of Speed: Optimising Dark-Store Networks and Rider Assignment under Relaxed Delivery Promises in Indian Quick Commerce}
+\author{\todo{group member names, affiliations}}
+\date{\todo{date} --- First draft}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/literature}
+\input{sections/methodology}
+\input{sections/data}
+\input{sections/model}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

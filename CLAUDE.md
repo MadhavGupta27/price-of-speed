@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-An Operations Research group project: a **bibliometric literature review** plus an **applied OR model** (transportation, assignment, LP/MILP, CPM/PERT), written up as a paper of at most 12 pages. The brief is `OR Project Guidelines.pdf`. `PLAN.md` is the phase-by-phase work plan; `README.md` maps each phase to its human step and `make` target.
+An Operations Research group project. **Topic chosen:** *The Price of Speed*, covering quick-commerce dark-store location, rider sizing, replenishment and fulfilment-time risk under delivery-promise policy, with a Bengaluru case. Rationale is in `docs/topic-proposal.md` and the section, model and experiment plan in `docs/paper-plan.md`. The project combines a **bibliometric literature review** plus an **applied OR model** (transportation, assignment, LP/MILP, CPM/PERT), written up as a paper of at most 12 pages. The brief is `OR Project Guidelines.pdf`. `PLAN.md` is the phase-by-phase work plan; `README.md` maps each phase to its human step and `make` target.
 
 The scaffold is complete, but most content is still a human decision. Every placeholder is marked `TODO(human)`, and `make todo` lists them. Don't invent research content (topic, search terms, citations, results interpretation) — fill these only from the group's actual inputs.
 
@@ -14,6 +14,11 @@ The scaffold is complete, but most content is still a human decision. Every plac
 make setup                         # uv sync + R packages into R_LIBS_USER
 make test                          # uv run pytest -q
 uv run pytest tests/test_vrp.py::test_routes_feasible_and_beat_heuristic   # single test
+make data                          # fetch raw inputs (+MANIFEST), audit Kaggle, build Bengaluru instance
+make case                          # first-pass set-covering sweep (superseded by make experiments)
+make experiments                   # paper experiments: M1-cost design grid, grid robustness, PERT, assignment, transport, tornado
+uv run python experiments/run_design.py --only assign --reuse   # rerun one experiment on saved E1 designs
+make paper                         # export numbers/tables -> compile paper/main.tex with tectonic -> paper/build/main.pdf
 make toy FAMILY=vrp                # toy instance + baseline -> results/toy_<family>.json
 make sensitivity FAMILY=cpm_pert   # one-way sensitivity -> results/sensitivity_<family>.{csv,png}
 make biblio-import                 # Mendeley .bib -> bibliometrix -> biblio/exports/biblioshiny_export.xlsx
@@ -37,6 +42,19 @@ There are two independent pipelines, matching the two datasets the paper needs:
    - `experiments/` wires models to `data/synthetic.py` instances; replace these with real loaders from `data/processed/` once data exists.
    - `sensitivity.one_way` records exceptions (e.g. an infeasible crash deadline) as rows instead of aborting.
 
+3. **Case pipeline** (Bengaluru):
+   - `scripts/fetch_data.py` (provenance → `data/raw/MANIFEST.json`) → `scripts/audit_kaggle.py` → `scripts/build_instance.py` (uses `src/orpaper/data/geo.py`).
+   - Outputs: `data/processed/blr_demand_cells.csv` (WorldPop cells, scaled to the Census 2011 total) and `blr_candidates.csv` (de-duplicated OSM sites).
+   - `experiments/run_case.py` runs `models/covering.py` (set/maximal covering) plus cycle-time rider sizing.
+   - The procedure log and all assumptions are in `data/README.md`.
+
+4. **Paper** (`paper/`, LaTeX):
+   - `main.tex` inputs `sections/*.tex`.
+   - Every result number is a macro from `paper/generated/numbers.tex`, and the tables are `generated/tab_*.tex`, both written by `scripts/export_numbers.py` from `results/`. Never hard-code result numbers in the `.tex` files; add a macro instead.
+   - Figures go to `paper/figures/` (written by `experiments/run_design.py`).
+   - `\todo{}` marks pending human or pipeline input.
+   - The main model is `models/design.py` (coverage-constrained facility location, M1-cost); `models/covering.py` is the first-pass set covering.
+
 `config/project.yaml` is the single source of truth. It holds the search terms and years, the `model_family` that `make toy`/`make sensitivity` default to, the solver, and the seed. `make search-string` composes the Boolean string and always keeps the mandatory `"operations" AND "research"`.
 
 ## Gotchas (verified)
@@ -49,6 +67,12 @@ There are two independent pipelines, matching the two datasets the paper needs:
   - Mendeley `keywords` land in `ID`, not `DE`; the import script copies them across.
   - bibliometrix fills missing `CR` with `"none"` and `TC` with `0`, so `results/field_completeness.csv` treats those as missing.
   - Expect no cited references, so co-citation analysis is unavailable unless records are re-pulled from Scopus/WoS.
+- **The Kaggle delivery datasets are synthetic.** Food-delivery geometry is the restaurant point plus a fixed diagonal offset, and traffic level is fixed by hour; the Blinkit data uses Faker customers. Never use them for geography or speeds (see `results/data_audit_kaggle.json`).
+- **The WorldPop server rejects HTTP range requests**, so `/vsicurl` fails. The fetch script downloads the 780 MB national file, clips it to the bounding box, and deletes it. WorldPop undercounts BBMP (~6.0 M), so the build scales it to the Census 2011 total.
+- **Public Overpass instances were down** (504/timeouts). OSM sites come from a dated Geofabrik extract filtered with pyosmium instead.
+- **Cost per order in E1 is per *served* order.** At T = 10, the unreachable 15% of residents is excluded, so compare coverage alongside cost. The promise mainly changes coverage; rider speed changes cost.
+- **The M1-cost solve grows with the reachable arcs.** It takes 82 s at T = 30. With every demand cell as a candidate (3,426 sites), it ran past 11 minutes at T = 10, so the grid robustness run uses a ~0.9 km candidate lattice.
+- **Don't snap candidate sites to the demand grid.** Lattice distances made different radii produce identical covering results.
 - `tests/fixtures/sample_mendeley.bib` contains **fake** records for pipeline testing. Never cite them, and never copy them into `paper/references.bib`.
 
 ## Deliverable constraints (from the PDF)

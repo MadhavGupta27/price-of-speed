@@ -1,0 +1,27 @@
+\section{Research methodology}\label{sec:method}
+
+\subsection{Bibliometric data collection}
+
+Following the course protocol, we searched EBSCOhost academic journals in English published between 2015 and 2026 with the Boolean string
+\begin{quote}\footnotesize\ttfamily\raggedright
+"operations" AND "research" AND ("last-mile" OR "last mile" OR "on-demand delivery" OR "instant delivery" OR "quick commerce" OR "q-commerce" OR "meal delivery" OR "dark store" OR "micro-fulfil*" OR "crowdshipping") AND ("facility location" OR "covering" OR "assignment" OR "vehicle routing" OR "integer programming" OR "linear programming")
+\end{quote}
+\todo{date executed; records identified; screening counts; PRISMA figure from scripts/prisma.py; exclusion reasons.} Records were exported in RIS format, de-duplicated and verified in Mendeley, and analysed with the Bibliometrix R package \citep{aria2017bibliometrix}; citation counts were taken from Google Scholar \todo{retrieval date}.
+
+\subsection{Modelling framework}
+
+The case study links four classical OR models at three planning levels (Figure~\ref{fig:chain}). Strategically, a coverage-constrained facility-location model (M1) opens dark stores and allocates demand so that every served household is reachable within the promise $T$ at a safe rider speed $v$, at minimum store and rider cost; rider requirements follow from cycle times (M2). Tactically, a transportation model (M3) plans daily replenishment from mother hubs to the chosen stores. Operationally, an assignment model (M4) dispatches riders to orders in a peak batch, and a PERT model (M5) converts the variability of picking, dispatch and riding into the probability that an order meets $T$. The promise $T$ and speed $v$ are swept as policy parameters; everything else is calibrated from public sources (Section~\ref{sec:data}).
+
+\begin{figure}[ht]
+\centering\small
+\fbox{\parbox{0.92\linewidth}{\centering
+\textbf{Policy inputs:} promise $T$, safe speed $v$ \quad$\Rightarrow$\quad
+\textbf{M1} store location + allocation (MILP) \quad$\Rightarrow$\quad \textbf{M2} rider sizing\\[3pt]
+$\Downarrow$ open stores \hspace{4cm} $\Downarrow$ store loads, ride distances\\[3pt]
+\textbf{M3} replenishment (transportation LP) \qquad \textbf{M4} peak dispatch (assignment IP) \qquad \textbf{M5} on-time probability (PERT)
+}}
+\caption{Model chain. \todo{Replace with a proper diagram.}}
+\label{fig:chain}
+\end{figure}
+
+All models are implemented in Python with PuLP and solved with HiGHS; code, data provenance and a test suite verifying each model against hand-solvable or brute-force instances are available in the project repository \todo{repo link}.

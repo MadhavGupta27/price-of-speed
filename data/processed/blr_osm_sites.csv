@@ -1,0 +1,1481 @@
+osm_id,lat,lon,kind,name
+node/266472673,12.9174059,77.64853,convenience,Priti Departmental Store
+node/307411444,12.9328185,77.5830433,supermarket,Foodworld
+node/312504711,12.9588137,77.6382484,supermarket,Family Mall
+node/312504777,12.9591813,77.6382984,supermarket,Spencers Express
+node/312504798,12.9595527,77.638381,supermarket,More
+node/312506295,12.9621752,77.6373877,supermarket,
+node/344370976,13.0316253,77.6357141,supermarket,Reliance Fresh
+node/357719533,13.0306094,77.6349359,supermarket,Shoba
+node/357719545,13.0298925,77.6347682,supermarket,Smart
+node/374217348,13.0476857,77.5742994,supermarket,Big Bazaar
+node/435688321,12.8986874,77.5577817,convenience,
+node/435688323,12.8982954,77.5582578,convenience,Shop and save
+node/454082775,13.0263233,77.6319846,supermarket,Fresh Supermarket
+node/454091808,13.0245569,77.6369992,supermarket,Foodworld Supermarket
+node/454141779,13.0197391,77.6368364,greengrocer,Sabari Vegetables and Fruits
+node/454160725,13.0227216,77.633722,grocery,Sip n Bite
+node/518616443,12.9601296,77.7160629,convenience,Reliance Fresh
+node/519550433,12.9974545,77.5403023,convenience,Fresh@Heritage
+node/520091528,13.0361795,77.5317658,convenience,Fair and Fair
+node/521144440,13.0492252,77.5474051,supermarket,Nilgiris
+node/524078312,12.9172203,77.5923138,supermarket,Smart Bazaar
+node/530720679,12.9972514,77.541656,convenience,
+node/571124364,13.0042882,77.5710889,supermarket,Reliance Fresh
+node/574254132,13.00559,77.570496,convenience,HOPCOMS
+node/574499845,13.0061977,77.5693737,supermarket,Reliance smart
+node/589848191,13.0397585,77.5555028,supermarket,City Supermarket
+node/589848959,13.0400303,77.5555993,supermarket,Spencers Daily
+node/590753375,12.9250029,77.664274,supermarket,
+node/595305917,13.0224257,77.6508337,supermarket,More
+node/599205803,13.0068052,77.5645334,supermarket,Reliance Fresh
+node/622720272,13.0342258,77.5691996,supermarket,Reliance Fresh
+node/634815194,13.0290015,77.5615609,supermarket,Reliance Fresh
+node/639450444,13.0243423,77.5671642,convenience,
+node/650398934,12.9186665,77.6708407,supermarket,Families Hypermarket
+node/665871296,12.9967968,77.6045046,supermarket,Family Super Market
+node/665871310,12.9998077,77.5996733,supermarket,More
+node/665871311,12.9969644,77.6041292,supermarket,Arafa Stores
+node/667751121,13.0009809,77.6138953,supermarket,"Namdhari Fresh, Frazer Town"
+node/673860158,13.014268,77.5737154,supermarket,Sri Balaji Stores
+node/731741251,12.8762947,77.6164979,convenience,Mamata
+node/746559493,12.8986161,77.6179121,convenience,Sweet City Bakery
+node/857105893,13.0068553,77.6241647,supermarket,Mini Bazaar
+node/945903493,12.9107877,77.6100543,greengrocer,HOPCOMS
+node/951438815,12.9409932,77.544655,supermarket,More
+node/951468562,12.9410374,77.542039,convenience,Nilgiris Store
+node/953663233,12.9265852,77.5509047,supermarket,Big Bazaar
+node/953663303,12.925511,77.5501686,supermarket,Food World
+node/954308720,12.9856478,77.7183726,convenience,
+node/986744078,12.972735,77.678774,convenience,Heritage Fresh
+node/1001586416,12.9643853,77.7135826,supermarket,Ragam Supermarket
+node/1058729963,12.9655927,77.7018319,supermarket,Smart Point
+node/1076567658,12.9851864,77.6736268,supermarket,New City Super Market
+node/1078209943,12.985926,77.6688553,supermarket,Reliance Fresh
+node/1078209946,12.9859601,77.6689329,supermarket,Nilgiri's
+node/1078235338,12.9851708,77.6716822,convenience,Cosmos
+node/1085578886,12.9643051,77.7147136,supermarket,More
+node/1107998748,12.9673129,77.5417077,convenience,Mamatha Departmental Store
+node/1108046797,12.9671974,77.5428831,convenience,Vodafone
+node/1108055614,12.9673076,77.5425508,convenience,Seetha General Store
+node/1150839607,12.956906,77.698972,convenience,Happy Mart
+node/1166275817,12.9897305,77.7023418,convenience,
+node/1279116236,13.022202,77.6507704,supermarket,City Pearl
+node/1280318946,13.0228757,77.6509402,supermarket,7 Days
+node/1281143331,12.9118085,77.6512869,supermarket,MK Retail Super Market
+node/1290107600,13.0077909,77.564002,convenience,
+node/1290107610,13.0078203,77.5639866,convenience,
+node/1290125200,13.0069619,77.5644724,convenience,
+node/1290125220,13.0043093,77.5653307,supermarket,Homely Organic
+node/1290125226,13.0038729,77.5653254,convenience,
+node/1290152830,12.9986733,77.5692346,convenience,
+node/1317197138,12.9745701,77.6548127,greengrocer,HOPCOMS
+node/1328610606,12.9747197,77.6550567,convenience,
+node/1328610618,12.9787623,77.6446428,supermarket,MK Retail
+node/1328610703,12.9790062,77.6428583,greengrocer,HOPCOMS
+node/1328610729,12.9781116,77.6409869,greengrocer,HOPCOMS
+node/1331946768,12.9107281,77.5792052,supermarket,Reliance Fresh
+node/1336687503,12.8830441,77.565967,supermarket,Reliance Smart Point
+node/1339408176,12.9700604,77.6506324,greengrocer,HOPCOMS
+node/1339413315,12.9733041,77.6511018,supermarket,Reliance Fresh
+node/1348265190,12.9827809,77.5592036,supermarket,Total Superstore
+node/1370777379,13.0303875,77.6079607,supermarket,Reliance Fresh
+node/1371859171,12.9647649,77.7173064,supermarket,N Stores
+node/1388103622,12.9106552,77.6063086,supermarket,Homeneeds
+node/1396823306,12.9114652,77.6041516,greengrocer,HOPCOMS
+node/1397260169,12.9052591,77.5951539,supermarket,MK Ahmed Bazar
+node/1415907177,13.0236679,77.592064,supermarket,Nilgiri's
+node/1422401765,13.0231839,77.6004176,supermarket,Super Market
+node/1422402902,13.0252349,77.6054904,supermarket,More
+node/1434221653,12.9719429,77.7487073,greengrocer,HOPCOMS
+node/1462235148,13.0694057,77.5451149,supermarket,Akshya Complex
+node/1462443864,13.0900453,77.54119,supermarket,Brothers Supermarket
+node/1462540475,13.0049266,77.5787343,supermarket,Maha Bazaar
+node/1462947571,12.9260569,77.6753253,supermarket,Smart Bazaar
+node/1462977137,12.9341298,77.6109889,supermarket,More
+node/1463453722,13.0816565,77.5480509,supermarket,City Lights Supermarket
+node/1463547878,12.9358801,77.5176749,supermarket,Star Bazaar
+node/1463571018,12.9209843,77.5202713,supermarket,Food World
+node/1463624305,13.0803293,77.5591419,supermarket,Reliance Fresh
+node/1463641277,13.0790883,77.5588656,supermarket,Food World
+node/1463643963,13.0769096,77.558535,convenience,Mythri Bazaar
+node/1464156665,12.9423147,77.6150065,supermarket,More Supermarket
+node/1464772068,13.0354798,77.5671533,convenience,More
+node/1464786131,12.9567592,77.708841,supermarket,Village Hypermart
+node/1464791102,12.935716,77.6218199,convenience,Nilgiris
+node/1465009282,12.9444504,77.5722351,supermarket,Food world
+node/1465190491,12.935012,77.6233499,supermarket,Sowbhagya Traders
+node/1465590356,12.8737198,77.6448305,convenience,Store
+node/1465777960,12.9418577,77.6159961,convenience,Forum bakery
+node/1466577278,12.9228555,77.5600873,supermarket,
+node/1466726396,12.9309732,77.5901342,convenience,Nandini Milk Diary
+node/1466728973,12.9307824,77.5905204,convenience,Hopcoms
+node/1467362696,13.0285232,77.5716015,convenience,Kwality BIg Bazaar
+node/1467374658,13.0280149,77.5739162,greengrocer,HOPCOMS
+node/1467501637,13.0121864,77.5448893,greengrocer,HOPCOMS
+node/1467778590,12.9333966,77.5660039,convenience,Sri Lakshmi Venkateshwara Provision Stores
+node/1467779103,13.0027573,77.5465737,greengrocer,Hopcoms
+node/1468014995,12.9364151,77.6144033,supermarket,Safal Supermarket
+node/1468190779,12.9353286,77.6128207,convenience,Baby's day out
+node/1468235026,12.9364451,77.6170968,convenience,Nandini Shoppe
+node/1468247384,12.912091,77.6486797,convenience,MK Supermart
+node/1468540675,12.9382962,77.626001,supermarket,Namdhari's fresh
+node/1468540684,12.9364455,77.6255862,convenience,OM Stationery and xerox
+node/1468540736,12.937363,77.626659,supermarket,Brown Tree Super
+node/1468908328,12.9044398,77.649016,supermarket,
+node/1469190383,12.9970256,77.611258,supermarket,Reliance Fresh
+node/1469643919,12.9362945,77.6149366,convenience,Babys Planet
+node/1469644042,12.913486,77.6374501,supermarket,Safa
+node/1470523370,12.9364168,77.6164628,convenience,Reliance Footprint
+node/1470523388,12.9365946,77.6176725,convenience,Hopcoms
+node/1470533215,12.9232149,77.612864,supermarket,Food City Super Market
+node/1470546964,12.9154345,77.6321713,supermarket,Fooddays
+node/1470628756,12.9370062,77.6120888,convenience,Hot Chips
+node/1470634295,12.9362348,77.6210315,convenience,Hot Chips
+node/1470844858,12.8737637,77.6453401,convenience,Family Food Choice
+node/1470845581,12.8759127,77.6397852,convenience,Day To Day
+node/1471712018,12.9184754,77.6321554,supermarket,New Sapna Store
+node/1471721413,12.9180673,77.6306713,convenience,Suma Provision Store
+node/1471739089,13.0085603,77.5433815,supermarket,Reliance Fresh
+node/1471920977,12.9070482,77.5457118,supermarket,Reliance Fresh
+node/1471928751,12.9196818,77.559736,supermarket,Shop Rite
+node/1472131638,13.0553806,77.6026206,supermarket,Reliance Fresh
+node/1472143499,13.0585815,77.5988078,convenience,Daily Needs
+node/1472212558,12.8780028,77.638532,convenience,Fathima food choice
+node/1473057041,13.0375472,77.5223422,convenience,Ezzy Hardware Stores
+node/1473298166,12.8740614,77.6462636,convenience,"store,mess"
+node/1473299378,12.9318149,77.5889456,convenience,
+node/1474220552,12.978261,77.6431384,supermarket,Nature's Basket
+node/1474263757,12.932994,77.5852313,supermarket,Reliance Fresh
+node/1474274262,12.9232135,77.5850336,supermarket,Namdhari's Fresh
+node/1474280054,12.91702,77.5782971,supermarket,More
+node/1474324419,12.9372827,77.6245142,convenience,Sumith Provision & Condiments
+node/1474324424,12.9356619,77.619186,convenience,DHL couriers
+node/1474324438,12.9374604,77.6242714,convenience,Crystal Stationeries
+node/1474351217,12.9361926,77.6147442,convenience,Sports Planet
+node/1474819116,13.0270037,77.5858396,convenience,Gilma Store
+node/1474819328,13.023831,77.5929101,convenience,UniverCell Store
+node/1474819329,13.0238887,77.5926095,convenience,Titan Show room
+node/1474819351,12.9151822,77.6059587,supermarket,Ashirwad Super Market
+node/1474819894,12.9963776,77.5514093,supermarket,Health and Glow
+node/1474820886,12.923626,77.5538171,convenience,Salon
+node/1474821040,12.9240469,77.5535212,convenience,Spectacles store
+node/1474821317,12.9235841,77.5539351,convenience,Titan Eye+
+node/1474821379,12.9241697,77.552991,convenience,Chroma Mega Store
+node/1474821613,12.9243475,77.5652656,convenience,SnapFitness
+node/1474821615,12.9243318,77.5653613,convenience,Natural Salon
+node/1474821646,12.9245828,77.5649697,convenience,Bangalore One For Senior Citizens
+node/1474821648,12.9247045,77.5648373,supermarket,Hopcoms
+node/1474822473,12.9243632,77.5641391,convenience,
+node/1474823902,12.9257017,77.5644655,convenience,Mobile store
+node/1474827947,12.9241122,77.5664449,convenience,Stationary
+node/1474827948,12.9239606,77.567255,convenience,HOPCOMS
+node/1474831726,12.9246981,77.5508112,supermarket,Reebok Store
+node/1477494236,12.9936382,77.6640329,supermarket,Lulu Hypermarket
+node/1530452299,12.8948991,77.6093817,supermarket,Smart Supermarket
+node/1568753846,12.9678784,77.5438967,greengrocer,HOPCOMS
+node/1568845291,12.8946896,77.6092646,supermarket,Daily fresh supermarket
+node/1581348944,12.9607559,77.5070056,supermarket,MK Ahmed Super Market
+node/1581434245,12.9606694,77.5122249,supermarket,Shoprite
+node/1595801457,12.9055748,77.6057437,supermarket,More
+node/1614268199,12.9867564,77.5795592,convenience,Shivananda Stores
+node/1615735026,12.9266971,77.6236359,supermarket,Nilgiri's
+node/1661793645,12.9398383,77.5451133,convenience,Belliah Milk Booth
+node/1669908084,12.9218121,77.6761569,convenience,Sinan Provision Store
+node/1675527565,12.9762388,77.6738244,convenience,Super Market
+node/1675529723,12.974059,77.673001,convenience,More Store
+node/1685659803,12.9395349,77.5853734,supermarket,Simpli Namdhari's
+node/1691795019,12.9254591,77.6698872,supermarket,Fresco
+node/1691795914,12.9269631,77.6698515,supermarket,Reliance Fresh
+node/1691975653,12.9273683,77.6710665,convenience,Happy Land Supermarket
+node/1693117431,12.922285,77.6774154,convenience,Exide Battery Inverter shop
+node/1717904864,12.9914612,77.6909164,convenience,Happy Land Store
+node/1719526890,12.9926782,77.6910662,convenience,Hindiwala Provision Store
+node/1719526893,12.9926025,77.6913531,convenience,Anjeneya Provision Store
+node/1719527370,12.9939459,77.6932252,convenience,Reni Provision Store
+node/1719548828,12.9916899,77.6893706,greengrocer,Small Vegetable Shop
+node/1719549419,12.9918415,77.6888153,convenience,Ayyappan Provision Store
+node/1724460266,13.0121881,77.6673811,supermarket,Koutons Cloth Shop
+node/1725094663,13.0249273,77.6592607,supermarket,Nilgiri's
+node/1725094667,13.0123108,77.6672269,supermarket,DMart
+node/1725279699,13.0214412,77.6780929,supermarket,
+node/1742647037,13.0183846,77.647491,convenience,Home Needs
+node/1743937872,13.0127328,77.6481357,supermarket,More
+node/1752651317,12.9560469,77.6979205,greengrocer,
+node/1758230692,12.9679728,77.6517588,supermarket,Top in Town
+node/1760015498,12.9673986,77.6502082,greengrocer,Fresh and Green
+node/1760015500,12.9662704,77.6497422,supermarket,Z Shoppe
+node/1761862415,13.015385,77.666733,supermarket,Smart Supermart
+node/1761868084,13.0114049,77.6730608,supermarket,Heritage Fresh
+node/1776312874,12.9736082,77.6743886,supermarket,Burma Supernarket
+node/1778852317,12.9659432,77.5347345,supermarket,Reliance Mart
+node/1792715612,12.954621,77.5672723,supermarket,Reliance Digital Electronic Store
+node/1794124377,13.0121997,77.6659808,supermarket,Megamart
+node/1809622951,12.9185562,77.5553293,supermarket,Royal Mart
+node/1811327699,12.9729823,77.5294961,convenience,Amarland Departmental
+node/1811327746,12.9728027,77.5296137,greengrocer,Go Green Vegetables
+node/1835486164,12.9686251,77.5244618,convenience,"Vijaya Bank, Mudalapalya Branch"
+node/1843672251,12.9729139,77.5285404,convenience,Hopcoms Mangalore Store
+node/1843680399,12.9762502,77.5320438,supermarket,Shopper City
+node/1843724025,12.972595,77.5395133,supermarket,M K Ahmed Super Shoppy
+node/1851614806,12.960466,77.6017789,supermarket,Reliance Smartpoint
+node/1851614956,12.9596191,77.6026157,supermarket,Namdharis
+node/1851615411,12.9622638,77.6040957,supermarket,Richmond Supermarket
+node/1851701311,12.9596942,77.6018371,greengrocer,
+node/1851701331,12.9583088,77.6022126,convenience,Neelam Stores
+node/1851797681,13.0013558,77.6235851,supermarket,Basha Department Store
+node/1851799046,13.001197,77.6240601,greengrocer,HOPCOMS
+node/1857028750,12.9683679,77.6388822,greengrocer,HOPCOMS
+node/1863318898,12.999291,77.5671481,convenience,Manjunatha Provisions
+node/1863318899,12.9992858,77.5670032,convenience,Ganesha Provisions
+node/1863318900,12.9991395,77.5678347,supermarket,Safal
+node/1866331129,13.0039638,77.6155248,convenience,Mysore Mini Shopee
+node/1868211653,13.0823952,77.5880175,supermarket,Aashirvad Department Stores
+node/1868211667,13.0814599,77.5881516,supermarket,Smart
+node/1870996161,12.9721506,77.6799287,supermarket,Fair Choice Supermarket
+node/1877193413,12.8903823,77.5819754,supermarket,Everfine Super Market
+node/1877233424,12.8872149,77.5817813,supermarket,Smart Bazaar
+node/1894283517,12.8931908,77.6199692,convenience,PK Home Needs
+node/1923914071,12.8909409,77.5819291,greengrocer,Classic Corner
+node/1929739823,13.0364505,77.5745807,convenience,
+node/1941464651,12.9724588,77.6260331,supermarket,Nilgiri's
+node/1954714028,13.0392207,77.6000536,supermarket,More
+node/1954714029,13.0391647,77.5991817,supermarket,Mythri
+node/1989246820,12.8831879,77.6102566,supermarket,Pearl City Super Market
+node/1999582217,13.0370746,77.5656715,supermarket,Maha Bazar
+node/2019344033,12.926848,77.5763349,greengrocer,
+node/2032027189,12.8815935,77.5835331,supermarket,Green Mart
+node/2083025578,13.007947,77.5428561,supermarket,Nilgiris
+node/2104341409,13.0321646,77.5765785,supermarket,Reliance Fresh
+node/2108921936,13.0581249,77.5877178,supermarket,More
+node/2123625107,12.9130191,77.5463267,supermarket,A.R Minimart
+node/2123626147,12.9103056,77.5454924,convenience,
+node/2124814947,12.9178136,77.5561808,convenience,
+node/2124814949,12.9184882,77.557254,greengrocer,
+node/2125941074,12.8953157,77.5863222,supermarket,Ten Ten Nimma Supermarket
+node/2175279171,12.9274299,77.5782051,convenience,Sufiyan Dry Fruits
+node/2175279390,12.9271045,77.5763095,greengrocer,HOPCOMS
+node/2195873986,12.961125,77.7410111,supermarket,
+node/2198227768,12.9785966,77.6416464,convenience,Mobile Store
+node/2210804567,13.023275,77.6002829,convenience,"Blue Rose, Home Needs"
+node/2210806496,13.0232222,77.6003506,greengrocer,
+node/2254725057,12.8836585,77.5959959,supermarket,Benison
+node/2285469459,12.9355043,77.6314571,convenience,Supriya Stores
+node/2285469526,12.9333424,77.6298772,greengrocer,
+node/2285469554,12.9334024,77.6298023,convenience,Food Mall
+node/2297715692,13.0250446,77.5781055,supermarket,
+node/2322728640,12.876118,77.5953397,supermarket,HyperCITY
+node/2331429506,12.9381919,77.556125,supermarket,Relience Fresh
+node/2339552995,12.8759179,77.6167938,supermarket,Ample Mart
+node/2340693283,13.0636896,77.5721105,supermarket,More
+node/2340693284,13.0637683,77.572199,supermarket,The Big Market
+node/2344097516,13.0814716,77.559567,supermarket,Easy Day
+node/2384193093,12.900724,77.5869656,supermarket,Royal Supermarket
+node/2387044405,12.9063471,77.6445546,supermarket,Grand Supermarket
+node/2389647504,12.8980247,77.6178984,greengrocer,Udaya Fruits & Vegetables
+node/2446838329,12.8994582,77.6221231,convenience,
+node/2449068218,12.8932294,77.6199699,greengrocer,
+node/2449295683,12.8997405,77.6207679,convenience,Royal Home Needs
+node/2480884728,12.972547,77.529541,greengrocer,HOPCOMS Vegetables Store
+node/2483744059,12.97106,77.5366692,grocery,Sheema's Shop Right
+node/2486108498,12.9597604,77.5292414,greengrocer,
+node/2489009767,13.0101713,77.5549686,convenience,Landmark
+node/2489042438,13.0114494,77.555384,supermarket,Star Bazar
+node/2512834837,12.8894895,77.5820031,greengrocer,Evergreen Fruit and Vegetable Super Market
+node/2514705847,12.9682121,77.5303413,supermarket,Behtar Super Market
+node/2542686705,12.9308637,77.623075,supermarket,Food Triangle
+node/2577082175,12.9679532,77.5879077,greengrocer,
+node/2615930890,12.8744077,77.6404596,convenience,Family Food Choice
+node/2619001683,12.8917971,77.5777119,supermarket,E K Retail
+node/2623077569,12.9228223,77.6730622,supermarket,G-Mart now VILLAGE
+node/2624213813,13.0214757,77.6575717,supermarket,HomeBuzz
+node/2638240793,12.8902044,77.5819669,greengrocer,Everfine Vegetable and Fruit
+node/2638241596,12.8884857,77.5820539,greengrocer,Eden Fresh Fruits and Vegetables
+node/2664857108,12.9302745,77.5878322,supermarket,Big Bazar
+node/2677337434,12.9215679,77.5849814,greengrocer,HOPCOMS
+node/2696373225,12.9583725,77.66084,supermarket,Family Mall
+node/2721781523,12.9249951,77.5882111,supermarket,Ample Mart Supermarket
+node/2857747050,12.8832508,77.5830061,greengrocer,Bangalore Horticulture Fruits & Vegetable Center
+node/2875597594,12.9644187,77.6062299,supermarket,Karnataka Supermarket
+node/2914260123,12.961299,77.5265056,supermarket,Village Super Market
+node/2914344557,12.9606854,77.5286993,supermarket,Akshaya Super Market
+node/2929308646,12.8834858,77.5831375,grocery,Mukesh Food Corner
+node/2954412614,12.8909616,77.5816833,greengrocer,Fresh Greens & Grains
+node/2958334186,12.8829195,77.5831564,greengrocer,Farm House Fruits & Vegetables
+node/2964414617,12.8907955,77.5819391,convenience,S V Provision Store
+node/2984286485,12.9075154,77.5468074,supermarket,Royal Mart Supermarket
+node/2987147480,12.9964249,77.7649169,supermarket,P K Store
+node/2996236146,12.9244128,77.5190496,supermarket,Namdhari's Fresh
+node/3003000363,12.9282038,77.5894361,greengrocer,HOPCOMS
+node/3004219875,13.0276893,77.6616598,supermarket,Food Mart
+node/3004782369,12.9288646,77.5913626,supermarket,DMart
+node/3016052466,12.9386176,77.6288681,supermarket,Mark & Spencer
+node/3022113002,12.8971318,77.5858778,supermarket,The Big Market
+node/3161170468,12.9245905,77.5867571,convenience,Uttara Karnataka Speciality Food Stores
+node/3170021930,12.9734434,77.6216713,supermarket,Big Bazaar
+node/3199710591,12.9625594,77.6374981,greengrocer,HOPCOMS
+node/3202584686,12.9780265,77.6754957,supermarket,Fresh Reach
+node/3210778797,13.0189995,77.5203766,convenience,Vasavi Stores
+node/3221387166,12.9156159,77.5951971,supermarket,Kunchum Foods
+node/3238934761,13.063134,77.579815,supermarket,Krishna Dairy
+node/3291932461,13.062591,77.582191,greengrocer,HOPCOMS
+node/3298916257,12.9566493,77.656194,greengrocer,New Annadata Vegetables
+node/3298945667,12.9072506,77.5600169,supermarket,Shop & Save
+node/3300076797,12.9559406,77.6535335,supermarket,Easy Supermarket
+node/3300077807,12.958827,77.6543248,supermarket,More
+node/3305353530,12.9637926,77.6439017,greengrocer,Top in Town Vegetable Shop
+node/3323896908,12.9728628,77.6074393,supermarket,Nilgiri's
+node/3329121036,12.9302178,77.5890874,supermarket,provision store
+node/3340457189,12.9533697,77.6525624,supermarket,Top in Town
+node/3355277904,12.9625363,77.6432991,greengrocer,Bangalore Horticulture
+node/3369906181,12.9812255,77.6368206,convenience,Time Pass
+node/3393478952,12.910501,77.5818478,convenience,Hot N Cool
+node/3394751195,12.9403442,77.6024598,supermarket,Safal Fresh
+node/3401660089,12.9103929,77.6003537,warehouse,Samrat Laxminarayan Wood Industries
+node/3401952831,12.9404021,77.584112,greengrocer,HOPCOMS
+node/3401990804,13.0018587,77.5711353,convenience,Mohan Bhandar
+node/3412384583,12.9893684,77.5574688,greengrocer,HOPCOMS
+node/3412656370,12.9893394,77.5559942,convenience,Sri Raghavendra Condiments
+node/3412669259,12.9890644,77.5559708,convenience,Sri Charan stores
+node/3412675541,12.9890052,77.5559614,convenience,Sri Manjunath Stores
+node/3450233796,12.9436693,77.62521,convenience,
+node/3453556767,12.960497,77.636981,supermarket,Ceekay
+node/3453556773,12.9564333,77.6379839,supermarket,Top In Town
+node/3453556774,12.9603801,77.6367912,convenience,Sri Kanaka
+node/3473325936,12.9482932,77.6213652,supermarket,SLV Stores
+node/3490677458,12.9319665,77.6179178,supermarket,Food Basics
+node/3541202423,13.0358694,77.5253491,convenience,Sri Raghavendra Condiments and Chats
+node/3556214257,12.9800773,77.6385858,convenience,Sree Dhanalakshmi Stores
+node/3556214259,12.980055,77.6385017,convenience,Sree sai rice corner
+node/3591577007,13.0207547,77.5929974,supermarket,Namdhari Fresh
+node/3591611473,13.022371,77.5942251,greengrocer,
+node/3607412050,12.8865458,77.6063814,supermarket,Family Food House
+node/3621069814,12.9794887,77.6370052,convenience,
+node/3641354247,13.1011688,77.5769731,convenience,Royal Mart
+node/3660570661,12.9638052,77.6423007,greengrocer,HOPCOMS
+node/3690989936,13.093793,77.5712363,supermarket,Royal Mart
+node/3710229273,12.9480956,77.5999568,convenience,Shree Sai Baba Condiments
+node/3710229276,12.9482719,77.5999963,greengrocer,Wahid Pasha Vegetable stall
+node/3721889726,12.893592,77.586205,supermarket,Reliance Smart Point
+node/3722417685,12.9756859,77.6671061,supermarket,Kaveri Departmental Store
+node/3725861636,12.9816481,77.642258,convenience,SS Store
+node/3726162441,12.979119,77.6412042,greengrocer,
+node/3751673527,12.9366381,77.5752413,supermarket,Reliance Fresh
+node/3761461918,12.958969,77.6521143,supermarket,Nilgiri's
+node/3786988995,13.0038136,77.6295207,convenience,Rao's Corner
+node/3787440182,12.9962854,77.6577102,supermarket,Nandini Milk Parlor
+node/3803204973,12.9571137,77.701818,supermarket,Shoba
+node/3806453016,12.9591124,77.6611987,grocery,Aiswarya Store
+node/3836988242,12.9783791,77.6368035,greengrocer,
+node/3838428440,12.9726022,77.6346269,convenience,Sri Vasavi Super Market
+node/3838472766,12.9730537,77.6351916,convenience,Karnataka Bakery
+node/3838473034,12.9728923,77.6347705,convenience,Nagasree Bakery
+node/3861909814,12.9760478,77.5319661,supermarket,Star Bazar
+node/3868459174,13.0033773,77.6295176,convenience,
+node/3868459178,13.003513,77.6295457,convenience,
+node/3868529450,13.0716637,77.5112461,convenience,
+node/3868780765,13.0712763,77.5121441,convenience,
+node/3899674925,13.0015949,77.6301221,convenience,Saravana Store
+node/3899674930,13.0019536,77.6319019,supermarket,Nisha Supermart
+node/3899682269,13.0016726,77.6305078,convenience,Sri Murugan
+node/3915679379,13.0014363,77.630759,supermarket,Reliance Fresh
+node/3955672810,12.9337036,77.6229616,supermarket,Nature's Basket
+node/3961390829,12.9728596,77.6347745,convenience,Safa Super Bazar
+node/3993262524,12.9567763,77.6549886,greengrocer,Fruits
+node/3993262526,12.9568367,77.6549662,convenience,KP Stores
+node/3993262530,12.9566788,77.6549406,convenience,Rasna Stores
+node/3993262533,12.9572026,77.6550737,greengrocer,Sri Baghvanthi Fruits and Vegetables
+node/3993264680,12.9571695,77.6549563,greengrocer,
+node/3993264688,12.9572445,77.6549844,greengrocer,
+node/3994774227,13.0813597,77.5839205,supermarket,
+node/4018403694,12.9741014,77.6448996,convenience,Nilgiris 1905
+node/4027308246,13.0247172,77.5483657,supermarket,More
+node/4043095770,12.958648,77.6567863,supermarket,Total
+node/4044365775,13.0056797,77.5806627,supermarket,Nature's Basket
+node/4062971151,12.9462056,77.6289433,greengrocer,
+node/4062971154,12.946264,77.6289449,greengrocer,
+node/4063552238,12.9461467,77.6289446,convenience,
+node/4063559083,12.9455457,77.6289451,convenience,TMS Provision Stores
+node/4063568041,12.9449308,77.6289299,greengrocer,Karnataka Stores
+node/4063568043,12.9451555,77.6289394,convenience,Public Distribution Shop
+node/4101957725,12.9792765,77.6431666,supermarket,Nilgiri's
+node/4109505199,13.0016891,77.6297661,convenience,Sri Murugan
+node/4109508690,13.0013094,77.630483,greengrocer,
+node/4109508691,13.0022213,77.6295524,convenience,NFS
+node/4109508692,13.0030529,77.6294349,convenience,
+node/4140612077,12.87924,77.6383068,supermarket,Magizh Groceries
+node/4155280389,12.9624957,77.6432784,greengrocer,HOPCOMS
+node/4163019789,12.9930245,77.6805764,supermarket,Reliance Fresh
+node/4171774699,12.9750833,77.6517316,supermarket,Sree Manjunatha Stores
+node/4196988842,13.0579847,77.5919058,supermarket,More
+node/4197712276,12.9177769,77.5961824,convenience,Public Distribution Shop
+node/4197757516,12.9204873,77.5957,convenience,Public Distribution Shop
+node/4198043792,13.0623962,77.5930084,supermarket,The Big Market
+node/4208561016,12.9683842,77.6701118,supermarket,Thilags Market
+node/4210647488,12.9188235,77.5203753,supermarket,Hopcoms
+node/4225196591,12.9872979,77.6178332,greengrocer,Garden care
+node/4226932018,12.9868514,77.5327927,convenience,Mamta Provision store
+node/4227854808,12.9875472,77.6189672,supermarket,Lake View Supermarket
+node/4243891304,12.9357187,77.5345513,convenience,Campus Mart
+node/4254482289,12.9239069,77.5969076,supermarket,Parimala
+node/4263311302,13.0148535,77.6336331,supermarket,Maha Bazar
+node/4270238689,12.9553742,77.7124418,supermarket,Star Bazar
+node/4272784090,12.9784182,77.6354528,convenience,Titan
+node/4279239591,12.9034969,77.6037245,greengrocer,Eden Fruits and Vegetables
+node/4286285300,12.9770585,77.6318947,greengrocer,Annapurneshwari rice corner
+node/4286285468,12.9772038,77.6316324,greengrocer,Mithra vegetable and fruit stall
+node/4304451297,13.0025965,77.5981195,supermarket,Nilgiri Supermarket
+node/4307399141,12.9589507,77.6569142,supermarket,More
+node/4307571370,12.9721284,77.6469898,convenience,Green Mart
+node/4312162995,13.0151844,77.4868785,convenience,wholesale provisions store
+node/4314374490,12.9551807,77.6547201,convenience,Muthu Store
+node/4319165253,12.972284,77.6372136,convenience,Sree VIdya Stores
+node/4320933123,13.0633532,77.5906518,supermarket,Reliance Fresh
+node/4349317394,12.9450336,77.5715059,convenience,BN Sreekantiah And Sons
+node/4377707481,12.9083472,77.6446906,supermarket,Aishwarya Supermarket
+node/4382905014,12.9973946,77.5485023,supermarket,Reliance Fresh
+node/4382905021,13.0016723,77.5506179,supermarket,New Akshaya Mini Bazaar
+node/4383676406,12.9939186,77.5513274,supermarket,Simply Organics
+node/4386500111,13.0266169,77.6040449,convenience,GM Time Center Watch Repair
+node/4386500115,13.0270552,77.6041687,convenience,Deluxe Bedding and Sofa center
+node/4386500120,13.0276582,77.604326,convenience,Prem Fancy Store
+node/4386500121,13.0276805,77.6043445,convenience,Sri Vinayaka Hot Chips
+node/4386500198,13.0267584,77.6040579,convenience,Time House
+node/4386506491,13.024064,77.6031704,convenience,Cafe Coffee Day
+node/4386506502,13.0266962,77.6040529,convenience,Yakshini Condiments
+node/4386506510,13.0276316,77.604326,convenience,Shree Basaveswara Frame Works
+node/4386506600,13.0266933,77.6041031,convenience,Seek n Hide Tours and Travels
+node/4386506603,13.0277189,77.6044033,convenience,Chaitra Pan
+node/4386506695,13.0266014,77.6040359,convenience,Om Ganesh Juice Center
+node/4386506696,13.0274651,77.6042813,convenience,Durga Pan Bhandar
+node/4386506791,13.0269118,77.6041118,convenience,Bangalore Time Center
+node/4386506794,13.027668,77.6043446,convenience,Sleep Good Matress
+node/4386506892,13.0240447,77.6031596,convenience,Vinay Bangle Store
+node/4386506901,13.0273351,77.6042946,convenience,Pavithra Enterprises
+node/4386507389,13.0248156,77.6034597,greengrocer,Sri Manjunatha Vegetable Stores
+node/4388957776,13.0122683,77.5534545,supermarket,Reliance Smart Bazaar
+node/4392379191,12.9360738,77.6194476,greengrocer,Bangalore Horticulture Fruits and Vegetables
+node/4422272113,13.0214967,77.5924037,supermarket,Food World
+node/4422481690,13.0194845,77.6782953,supermarket,More
+node/4443700234,13.0454341,77.6267753,supermarket,Spar
+node/4445113182,12.9226179,77.695489,convenience,Grand City Supermarket
+node/4445642736,12.991691,77.5707302,supermarket,Spar
+node/4446085885,12.9489302,77.6883085,supermarket,Capital Hypermar
+node/4447086337,12.9443025,77.6525847,supermarket,Ideal Supermarket
+node/4447920588,12.9306322,77.5841581,supermarket,BN Sreekantaiah and Sons
+node/4456700791,12.8814024,77.568751,greengrocer,
+node/4456706991,12.883369,77.569783,greengrocer,
+node/4456744391,12.8839233,77.5699167,greengrocer,
+node/4457286920,12.9718065,77.6539372,convenience,Vinayaka stores
+node/4457288416,12.9693941,77.6548306,convenience,SK provisions
+node/4474721692,12.94739,77.6728561,convenience,
+node/4474724792,12.9473301,77.6805927,convenience,
+node/4474762492,12.9481186,77.6796811,supermarket,99 Grocer
+node/4474788290,12.9473561,77.6814596,convenience,Akshaj Provisions
+node/4474824190,12.9470263,77.6812077,convenience,Likith Provisions
+node/4487950404,12.9114996,77.6241693,supermarket,SLN Super Market
+node/4487963521,12.8974942,77.5998505,supermarket,Vishal Mega Mart
+node/4487971422,12.8758755,77.5958084,supermarket,Hypercity Retail India Pvt Ltd
+node/4487985719,12.9417055,77.5560577,supermarket,Yemkay Supermarket
+node/4488021019,12.984947,77.5540532,supermarket,Sweet Chariot
+node/4488025973,12.9948336,77.6107384,supermarket,Madeena Supermarket
+node/4488026117,13.0352764,77.5536076,supermarket,More For You
+node/4488027411,13.015208,77.6561956,supermarket,Samarth Rice Traders
+node/4488035144,13.0235383,77.6090101,supermarket,Ahmeds Retail
+node/4488039310,13.0435746,77.5532589,supermarket,New Kiran Super Bazar
+node/4488069597,12.9655735,77.7018297,supermarket,Reliance Fresh
+node/4488073917,13.0942914,77.5459382,supermarket,SLN Super Market
+node/4488075100,12.9523974,77.6979565,supermarket,Ma Green Fresh
+node/4488081401,12.9558361,77.6930802,supermarket,Food Mart Supermarket
+node/4488099156,13.0273271,77.5782409,supermarket,Shopping Day
+node/4488134543,12.9487318,77.7035738,supermarket,Athulya Home Needs
+node/4488136102,12.9149937,77.6352099,supermarket,Shoba supermarket
+node/4488145602,12.9729164,77.7011884,supermarket,Gateway Super Bazaar
+node/4488175593,13.004258,77.6135288,supermarket,Food Mart Super Market
+node/4488201880,12.9560845,77.7168358,supermarket,City Super Bazaar
+node/4488216248,13.0257621,77.6277381,supermarket,Fine Fare Departmental Store
+node/4488313681,12.9672408,77.6827922,supermarket,Value Bazaar
+node/4488353602,12.9492413,77.7023924,supermarket,Miami Supermarket
+node/4488364371,12.9670978,77.6809662,supermarket,Varity Bazar
+node/4488473950,12.9509399,77.7150958,supermarket,Relation Super Market
+node/4488481387,12.9660726,77.6374507,supermarket,Namdharis Fresh
+node/4488488457,12.9721261,77.6987222,supermarket,Plaza Supermarket
+node/4488596289,13.0160177,77.6844246,supermarket,Home Magic Mini Bazar
+node/4488600552,13.0118942,77.6985133,supermarket,Buy Right Super Store
+node/4488602509,13.039288,77.5537006,supermarket,I Mart
+node/4488617089,12.9677841,77.6634104,supermarket,Maataji Privision Store
+node/4489093093,12.9164708,77.6047081,supermarket,Reliance Fresh
+node/4489162010,12.8977213,77.6209903,supermarket,The Big Market
+node/4489678344,12.8925021,77.6116554,supermarket,Span Retail
+node/4489689941,12.9051928,77.6113706,supermarket,Heritage Fresh
+node/4489696067,12.8684675,77.5755685,supermarket,
+node/4489699996,13.0245541,77.6559134,supermarket,Seven Days Supermarket
+node/4489711532,12.9733443,77.6468191,supermarket,Spencers Supermarket
+node/4489714047,12.9193503,77.6158536,supermarket,Allday Supermarket
+node/4489723447,12.9228872,77.6174916,supermarket,Pick N Save The Wholesale Market
+node/4489724919,12.8964974,77.6109057,supermarket,Day To Day Super Market
+node/4489768760,12.9367017,77.6104595,supermarket,Star Bazaar
+node/4489804408,12.9883892,77.5367931,supermarket,Yemkay Supermarket
+node/4489848125,12.8985629,77.6267808,supermarket,Reliance Fresh
+node/4489868917,12.9084163,77.6764616,supermarket,Stop & Shop Supermarket
+node/4489889293,12.9138175,77.6491752,supermarket,Food Palace Supermarket
+node/4490206308,12.9995759,77.6230526,supermarket,Village Super Market
+node/4490312589,13.0945389,77.5858712,supermarket,Devi's Shop
+node/4490333116,12.9881358,77.4733815,supermarket,Ambika Provision Store
+node/4490340281,12.9841382,77.5289161,supermarket,R R Provision Store
+node/4490349010,13.0902404,77.6024288,supermarket,Multi Mart Super Market
+node/4490370542,13.0990214,77.5768362,supermarket,Dazzle Super Market
+node/4504293889,13.0400011,77.6256898,convenience,HKGN Stores
+node/4512081090,12.9641893,77.6474015,convenience,AR Stores
+node/4512178290,12.9734114,77.6538157,convenience,Manoj Stores
+node/4516854289,12.985304,77.4798633,supermarket,Royal Mart
+node/4516977590,12.9736279,77.5446202,supermarket,Reliance Fresh
+node/4533776989,12.965614,77.5432765,greengrocer,HOPCOMS
+node/4534106991,12.9727428,77.5391705,supermarket,M K Retail
+node/4535240989,12.9569897,77.5325677,convenience,Vijayalakshmi Provision Store
+node/4541328991,12.9701135,77.5437369,greengrocer,HOPCOMS
+node/4547815815,12.9070435,77.5458167,supermarket,Reliance Fresh
+node/4558250391,12.9716659,77.6556496,supermarket,More
+node/4565735791,12.9160728,77.6272019,convenience,Clay Station
+node/4582794589,12.9984473,77.6204212,greengrocer,
+node/4582801689,12.998375,77.6204488,greengrocer,Fresh vegetables
+node/4582870789,13.0013207,77.6235793,greengrocer,
+node/4595863990,12.9816192,77.6799498,convenience,Patanjali Store
+node/4599152989,12.9908908,77.6800164,convenience,Patanjali Store
+node/4615699489,12.8698557,77.597124,supermarket,Galaxy mart
+node/4615699491,12.8698577,77.5970827,supermarket,Galaxy mart
+node/4635146942,12.9487521,77.7092076,supermarket,Grand Mini Bazaar
+node/4635868597,12.9868385,77.6887546,supermarket,Annadata Farms Market
+node/4646644517,12.9678261,77.6700421,supermarket,Day to Day
+node/4681664946,12.9647338,77.5313573,convenience,Modicare DP Vijayanagar
+node/4702679691,12.8810319,77.5988542,supermarket,More
+node/4782934225,12.9626276,77.6564823,convenience,Sai Ram Provisions
+node/4782934226,12.9626812,77.6565351,greengrocer,Green Farm
+node/4782936621,12.9602976,77.655697,convenience,SM Stores
+node/4782937123,12.9624223,77.6563172,convenience,
+node/4782947721,12.96335,77.656863,convenience,Sri Lakshmi Provisions
+node/4782957522,12.9632582,77.6568168,greengrocer,Fresh n Fresh
+node/4794991961,12.8983322,77.6079663,supermarket,Poorna enterprises
+node/4822629790,13.0552084,77.6008534,supermarket,Nice mart
+node/4844863327,13.0085671,77.6420845,supermarket,Multiplex
+node/4844863340,13.0319862,77.660617,supermarket,Shop ink
+node/4844863378,13.0089466,77.6427801,supermarket,Happy shoppy
+node/4844865022,13.0020607,77.6324471,convenience,Raghavendra Poona Store
+node/4844865026,13.0076445,77.6407572,supermarket,China bazaar
+node/4844865034,13.0377467,77.6837046,greengrocer,Shri's Balaji
+node/4849618941,12.9409939,77.5928155,convenience,Dharshan Enterprises
+node/4851635499,13.0400233,77.6788525,greengrocer,Fresh vegetables and fruits center
+node/4851692291,13.0333056,77.6734249,greengrocer,SLV
+node/4851692292,13.0324535,77.6713146,greengrocer,Sai Kanda fruits and vegetables shop
+node/4877306122,12.9735918,77.5515142,convenience,Big Bazaar
+node/4886691121,12.9908387,77.6703063,supermarket,Mini bazaar
+node/4901462722,12.9796156,77.6413767,convenience,
+node/4901463121,12.9795969,77.6416948,convenience,
+node/4935037439,12.92519,77.5880201,grocery,Chowdeshwari
+node/4935037441,12.9245155,77.5882374,greengrocer,
+node/4937041616,12.9642102,77.7143268,supermarket,Patanjali Mega Store
+node/4973098305,13.0667879,77.6385465,supermarket,Garden City Supermarket
+node/4988213023,12.9191661,77.5511655,supermarket,RoyalMart
+node/5003213722,12.9549547,77.6511081,convenience,Sri Surya Provision
+node/5004546590,12.8996788,77.6753159,supermarket,Reliance Fresh
+node/5018092645,13.0661591,77.5971544,supermarket,Reliance Fresh
+node/5033066528,12.9355095,77.6187649,convenience,Sanoop Provision Stores
+node/5078495163,12.9037265,77.5917721,supermarket,Banagalore Fresh & Fresh
+node/5100468688,12.9791205,77.646913,supermarket,
+node/5112185095,12.9595912,77.7474103,supermarket,Loyal World Market
+node/5112186034,13.0086948,77.6555825,supermarket,Freshworld Super Market
+node/5125725658,12.9690444,77.7388659,supermarket,Top in Town
+node/5155524815,12.973711,77.6507503,convenience,Aishwarya Departmental Stores
+node/5168531367,12.9263972,77.502667,supermarket,Metro Cash and Carry
+node/5168668860,12.9646225,77.6139894,convenience,Coorg Products
+node/5168668875,12.9644942,77.6135414,supermarket,Kamath Stores
+node/5174903782,12.9922062,77.6044577,supermarket,Fathima Store
+node/5234720624,13.0033455,77.6315529,convenience,
+node/5234720625,13.0034433,77.6323983,convenience,
+node/5234733921,13.0029189,77.6301438,convenience,
+node/5234739446,12.9252748,77.58825,convenience,Patanjali Mega Store
+node/5234740935,13.0033059,77.6290181,convenience,Mano Provision Store
+node/5234765970,12.925098,77.5882684,supermarket,Ample Mart
+node/5234810899,12.9323172,77.5893906,greengrocer,Lakshmi Provisions Store
+node/5237312322,12.9628718,77.6364846,supermarket,
+node/5255533507,13.008896,77.6557901,supermarket,More
+node/5283145308,13.0054488,77.6252067,convenience,
+node/5295004553,13.0574022,77.6331335,greengrocer,Karnataka Vegetables and Fruits
+node/5295004577,13.0667343,77.6398517,supermarket,Foodmax
+node/5301687521,12.9568097,77.6604327,supermarket,Real Mart
+node/5301688321,12.9567588,77.6604135,greengrocer,Fresh Cut Fruits And Vegetables
+node/5301707426,12.9548871,77.6587436,supermarket,Thriveni Home needs
+node/5301733806,12.9554205,77.6570788,supermarket,A to Z Supermarket
+node/5303068058,12.9397235,77.5424829,convenience,Charan Stores
+node/5304601881,12.9376675,77.5492313,supermarket,KBS Family Mart
+node/5304601902,12.9393634,77.5501453,convenience,
+node/5304601974,12.9385824,77.5529046,convenience,Sri Sharada Enterprises
+node/5304601976,12.9386125,77.5528785,convenience,Pushpa Fancy and Bangle Stores
+node/5304601981,12.9385903,77.5530441,convenience,Meenatshi
+node/5304601982,12.938587,77.5530642,convenience,Sri Mahalakshmi Ghee Center
+node/5304601991,12.938804,77.5529925,supermarket,Dhanalakshmi Departmental Stores
+node/5304601994,12.9388491,77.5527685,supermarket,J.K. Traders
+node/5304602025,12.9361997,77.5510016,convenience,Ganesh Traders
+node/5306017407,12.9434982,77.5658798,greengrocer,HOPCOMS
+node/5306751734,12.9510776,77.5774924,convenience,Sapthagiri Industries
+node/5306751782,12.9527838,77.5773469,convenience,Laxmi Home Needs
+node/5338886124,12.9583645,77.6605889,convenience,Ambika Stores
+node/5351138597,13.0030661,77.5518492,greengrocer,HOPCOMS
+node/5370990299,12.8853147,77.6560561,supermarket,Safa Supermarket
+node/5383249124,13.0516461,77.6304983,convenience,Shell Select
+node/5402224046,12.9077496,77.6008578,supermarket,Spar
+node/5409624227,12.9251897,77.6743698,supermarket,
+node/5434550525,13.0492695,77.6038518,supermarket,Families Supermarket
+node/5503164668,12.9694372,77.6937276,supermarket,"Green Father, Vegitable Shop"
+node/5503164677,12.9691135,77.6936234,convenience,Utensils and Private Cylender Shop
+node/5503164678,12.9694399,77.6936418,convenience,Utensils and Private Cylender Shop
+node/5503164681,12.9687983,77.693571,supermarket,Max Shoppee
+node/5520252460,13.0554447,77.602758,convenience,Shree Lakshmi gifts and fancy store
+node/5521704925,12.9672957,77.6565745,supermarket,Safal Daily Fresh
+node/5530812454,12.9397956,77.5631777,supermarket,
+node/5537874429,12.976117,77.6388177,greengrocer,Organic Farm Shop
+node/5537882026,12.9759606,77.6386929,greengrocer,Raghavendra Fruits and Vegetables
+node/5537917021,12.9760777,77.6378649,greengrocer,Bramalingeshwara Vegetables
+node/5585615823,12.9745775,77.6392969,greengrocer,Bengaluru Fruits and Vegetables
+node/5602313542,13.0020532,77.5523063,greengrocer,
+node/5615139108,12.9090269,77.5530309,greengrocer,Swathy Farm Fresh
+node/5615139110,12.9092402,77.5527258,supermarket,Saraswati Supermarket
+node/5623550267,12.9877647,77.5558484,convenience,V. G. Provision Store
+node/5623550270,12.9873452,77.5558457,greengrocer,Naveenraj Fruits Stall
+node/5623550273,12.9872184,77.555841,convenience,Himalaya Provision Store
+node/5623550275,12.9870838,77.5558457,greengrocer,
+node/5623550277,12.9870178,77.5558417,greengrocer,
+node/5623550281,12.9866689,77.5558296,greengrocer,Bijapur Stores
+node/5624263021,12.9887846,77.555898,supermarket,
+node/5698359001,12.9377969,77.6993666,supermarket,Nuts Corner
+node/5730901024,12.8768627,77.639103,greengrocer,Hoticulture Fruits and Vegetables
+node/5731143337,12.8759246,77.6131681,supermarket,Ayush Fresh Patanjali
+node/5738207821,12.9744772,77.6390741,convenience,Sudha Provisions
+node/5745160620,12.9546696,77.7027783,greengrocer,Sri Venkat Satyanarayana Tedared
+node/5784276606,12.9056908,77.6510831,supermarket,
+node/5807148430,12.9187238,77.6701231,supermarket,Simpli Namdhari's
+node/5812487551,12.963231,77.713113,greengrocer,
+node/5821774755,12.9734184,77.6395809,greengrocer,Nature Fresh Fruits & Vegetables
+node/5821786556,12.9734188,77.6395345,convenience,Shabeena Provision Store
+node/5826603253,12.9748914,77.6374914,convenience,
+node/5841544304,12.9084093,77.6836074,convenience,Aiswarya Fresh
+node/5848373887,12.9651869,77.5617183,supermarket,Metro Cash and Carry
+node/5880314785,12.9740575,77.6384868,convenience,
+node/5936153690,13.1254176,77.6201477,supermarket,Stationary Store
+node/5964485847,13.0938786,77.594727,supermarket,Spar
+node/5964485859,13.1214753,77.5764289,supermarket,Nice Mart
+node/5964486006,13.0181628,77.6432669,supermarket,Nilgiri's
+node/5966255498,13.0665402,77.6405686,greengrocer,Sri PK
+node/5966255499,13.064936,77.6407188,convenience,Balaji Departmental Stores
+node/5984934294,12.9173946,77.6493143,supermarket,Maha Bazaar
+node/6062771684,12.8971075,77.5964133,convenience,Fresh n More
+node/6062776198,12.8970488,77.5967849,greengrocer,
+node/6062776372,12.8972278,77.5962173,greengrocer,Eber Fresh Greens
+node/6078097176,12.9761861,77.5517728,supermarket,Rice Corner
+node/6082778308,12.9001386,77.5859319,supermarket,Arogya Organic
+node/6137599746,12.9083823,77.6837777,greengrocer,Bangalore Horticulture
+node/6152899108,12.8909043,77.5978268,supermarket,Reliance Smart
+node/6175815458,13.0280598,77.6305509,convenience,Family Store
+node/6204917485,12.9118073,77.6514532,supermarket,Organic World
+node/6229075164,12.9844254,77.7085422,supermarket,Families Supermarket
+node/6255888429,13.0205711,77.6837448,supermarket,Ideal Supermarket
+node/6393830706,12.9781234,77.6371128,supermarket,M K Retail
+node/6419008285,12.9702871,77.5759404,convenience,Nandini Milk Parlour
+node/6433700556,12.9195777,77.6101519,greengrocer,HOPCOMS
+node/6499748593,13.0037844,77.6228196,supermarket,Mulberry Greens
+node/6503617088,13.0174363,77.7041678,supermarket,Royal Mart
+node/6546848157,12.9973525,77.5475825,supermarket,Eastern Super Market
+node/6599098043,12.936153,77.7210618,convenience,DusMinute Store
+node/6654524747,13.0289162,77.5435142,convenience,
+node/6658119314,12.8738439,77.6425641,convenience,Milk center
+node/6690503515,12.9496403,77.7158051,supermarket,More
+node/6690503526,12.9511526,77.7156178,supermarket,Shree Ramdev Medicals
+node/6698658815,12.8985449,77.6582915,supermarket,FreshCo
+node/6749299604,12.9281691,77.671773,supermarket,DS Supermarket
+node/6782613735,12.9223,77.5935751,greengrocer,Juice Junction
+node/6815321885,12.9672282,77.6482951,convenience,City Food Point
+node/6834046986,12.9687781,77.6491057,greengrocer,Posh Garden
+node/6857394467,13.0612023,77.642076,greengrocer,
+node/6857427207,13.0683038,77.6279515,greengrocer,M A P Farm Fresh
+node/6956595085,13.0204419,77.6367354,supermarket,7 Days
+node/6979847311,12.9884809,77.5931015,supermarket,Black Village Organic Food Store
+node/6987406044,12.9761427,77.6391205,supermarket,Superstore
+node/6991459885,13.0115623,77.6679382,supermarket,Nilgiri's
+node/7043568487,12.9635112,77.5848109,convenience,Ganapathy and Company
+node/7087593370,12.9916419,77.6143493,greengrocer,
+node/7114507520,12.9812222,77.646495,convenience,N C Condiments
+node/7144469411,12.9566826,77.7319037,supermarket,Nature's Basket
+node/7159760429,12.9986585,77.5508011,convenience,Coffee Day Essentials
+node/7159791860,12.9864945,77.5555319,convenience,Coffee Day Essentials
+node/7175191986,12.9647768,77.5305308,supermarket,More
+node/7178905234,12.9732347,77.6800995,greengrocer,Choice Fruits and Vegetables
+node/7178929291,12.9720636,77.6802471,greengrocer,Vegetable Shop
+node/7179141562,12.853936,77.5882726,supermarket,DMart
+node/7192995422,13.0063618,77.5823659,greengrocer,HOPCOMS
+node/7206419529,13.0579611,77.6440448,greengrocer,Aayi's Organics
+node/7208904034,13.0334461,77.6374519,supermarket,DMart
+node/7215440248,12.9987641,77.5509847,greengrocer,
+node/7215550065,13.0075364,77.5485219,supermarket,Athulya Departmental
+node/7216399004,13.0334957,77.6297419,convenience,Ajfan Dates and Nuts
+node/7220195485,12.990736,77.5870219,supermarket,Shopwel Mart
+node/7227412372,13.0522323,77.6462227,supermarket,The Brigade Hypermart
+node/7227496211,13.0576985,77.5465371,supermarket,shop@rite
+node/7228148551,13.0296204,77.5611135,supermarket,Vishal Mega Mart
+node/7230029089,13.1140618,77.5789194,supermarket,Royal Mart
+node/7236205660,12.9862606,77.5508527,supermarket,Ashirwad Market
+node/7255294960,12.9991492,77.5518914,convenience,
+node/7255870180,13.0602813,77.6422249,convenience,Sattvik Gourmet Food Bazar
+node/7255929448,13.000439,77.6156254,supermarket,Carry Fresh
+node/7256979679,13.0481365,77.6455307,supermarket,Star Market
+node/7256979680,13.0475251,77.6443988,supermarket,Reliance Fresh
+node/7257728222,13.0340915,77.5696886,greengrocer,Churn
+node/7293708178,12.9597434,77.6019703,supermarket,Family Mart
+node/7298370297,12.9080765,77.6635364,greengrocer,Hasiru
+node/7298370298,12.9081445,77.6633996,supermarket,Nilgiri's
+node/7298370345,12.9163079,77.6680022,supermarket,Pluspoint Hypermarket
+node/7389755626,12.8962312,77.5963832,greengrocer,
+node/7495014660,13.0378871,77.5743958,supermarket,EasyDay Supermarket Ltd.
+node/7507326242,13.0305173,77.6673115,supermarket,shop right
+node/7516247130,13.0404348,77.5174608,supermarket,Pai Bhavan
+node/7577248241,13.0555779,77.6050535,convenience,
+node/7658290170,13.019263,77.6427036,convenience,Freshmills
+node/7698870387,13.0033891,77.5712054,greengrocer,
+node/7843602199,12.9647571,77.6158916,greengrocer,HOPCOMS
+node/7881423570,12.9583131,77.7067099,supermarket,"Green Mantra, Online zero waste store"
+node/8078368260,12.9825755,77.6346958,convenience,
+node/8078368261,12.9827024,77.6346767,convenience,A S General Stores
+node/8094098558,13.0003323,77.6233169,greengrocer,
+node/8121020873,12.9914289,77.7175686,greengrocer,
+node/8143836838,12.9771467,77.6172628,supermarket,Tinge Custom Makeup Studio
+node/8151054162,13.0298633,77.5605424,greengrocer,Vellai malar vegetables and fruits
+node/8186304635,12.9997409,77.6214759,convenience,
+node/8240810689,12.9953917,77.6027682,supermarket,Prestige Supermarket
+node/8292584420,13.0618398,77.6668945,greengrocer,One Field Farmer's Market
+node/8364344267,13.0341676,77.5578722,greengrocer,Daily Fresh Fruits and vegetables
+node/8364351022,13.0338742,77.5539838,supermarket,More
+node/8364370641,13.0333661,77.5541308,supermarket,Food Supermarket
+node/8439422718,12.8985674,77.6574334,convenience,Aqsa Dry Fruits
+node/8442191515,13.0124577,77.5536841,convenience,Shell Select
+node/8442476343,12.9993269,77.5251746,convenience,Family Provision Store
+node/8544083789,13.0308986,77.5542479,supermarket,Nexgen supermarket
+node/8544093297,13.0297527,77.5552304,greengrocer,Afreshstore
+node/8627305175,13.0188904,77.636681,supermarket,Kwality
+node/8695987226,13.0459291,77.5006967,supermarket,Dus Minute
+node/8890701649,12.9988716,77.6240463,convenience,Paradise Store
+node/8917134593,13.001791,77.6254329,convenience,Sri Rama Provision Store
+node/8984816719,12.9084569,77.5119601,supermarket,Reliance Smart Point
+node/8999979617,12.8967362,77.5633917,convenience,The Millet Store
+node/9038429824,13.0028239,77.6202302,convenience,
+node/9161008239,12.9824636,77.5375074,convenience,Daily Needs Exim Pvt. Ltd.
+node/9162183601,12.9755262,77.5953238,greengrocer,Go Green Organic's Nest
+node/9162183603,12.975998,77.5948369,greengrocer,Jaivik Mall
+node/9197316221,13.003104,77.5469354,greengrocer,Hopcoms
+node/9197334699,13.0305155,77.5744414,convenience,lulu Store
+node/9197342027,13.0277102,77.5760025,convenience,Ajfan Dry Fruits and Nuts
+node/9204433034,12.9297951,77.4869553,greengrocer,Green House
+node/9230655252,12.9704954,77.6169705,convenience,Ashas Store
+node/9288431559,12.9705287,77.6391886,greengrocer,
+node/9310793282,12.9507267,77.6234214,greengrocer,
+node/9310793306,12.9507407,77.6233681,convenience,Seven Sisters Northeast Shop
+node/9318453206,12.9385855,77.6969785,greengrocer,Bangalore Horticulture
+node/9318453207,12.9386635,77.6968558,supermarket,
+node/9381352846,12.9712747,77.6919326,supermarket,Deli day Mart
+node/9385283731,13.1040018,77.5715488,supermarket,Sri Skanda Buy 'N' Save
+node/9527967824,13.0327588,77.6369637,greengrocer,
+node/9568556292,12.8730816,77.5666726,supermarket,Reliance SMART Point
+node/9568641748,12.8677963,77.5769733,supermarket,Reliance SMART Point
+node/9583428990,13.0596934,77.5930734,supermarket,Nature's Basket
+node/9611168901,12.910857,77.565731,convenience,
+node/9632587574,12.9851321,77.556643,greengrocer,Naseeb Fruits Stall
+node/9632587578,12.9870485,77.5562185,greengrocer,
+node/9659361970,13.1025457,77.5717503,supermarket,Fresh Mart Super Bazar
+node/9659423912,13.1013535,77.5718208,convenience,Fine Dot
+node/9689096237,13.1039053,77.5737172,greengrocer,Vegetable Stall
+node/9689131151,13.1038937,77.5740492,greengrocer,Fruit Stall
+node/9784639602,12.9935681,77.571371,supermarket,Tynimo
+node/9795107206,12.9334046,77.6968406,supermarket,Sansar
+node/9796232689,12.971867,77.6149549,supermarket,Family Shopping Mart
+node/9819701619,12.9370181,77.7028512,greengrocer,Bangalore Horticulture
+node/9828595271,12.9231022,77.6953848,greengrocer,Godrej Nature's Basket
+node/9830902335,12.9015659,77.6758023,supermarket,Vishal Mega Mart
+node/9830902374,12.9192999,77.6689075,supermarket,Big Bazaar
+node/9862571099,12.9352256,77.7026481,supermarket,AZ Home Needs
+node/9866316430,12.9510316,77.7174858,greengrocer,Bangalore Horticulture
+node/9870744984,12.9777739,77.5849965,convenience,
+node/9870744999,12.966631,77.5922814,greengrocer,
+node/9870745000,12.9666199,77.5925126,greengrocer,
+node/9872645099,12.9867722,77.5562862,greengrocer,Kempegowda Vegetable Market
+node/9872645111,12.9897405,77.5526163,greengrocer,
+node/9874033647,12.9349932,77.7438705,supermarket,Vishal Mega Mart
+node/9876035820,12.9556707,77.7223553,convenience,S. B Stores
+node/9883500547,12.9604205,77.7201528,greengrocer,Bangalore Horticulture
+node/9884929794,12.9605713,77.7184324,greengrocer,RK Farm Fresh
+node/9884929795,12.9604109,77.7183512,convenience,Jyothi Provisions Store
+node/9884964460,12.958903,77.7193628,greengrocer,Green Choice
+node/9884967527,12.9559694,77.7208487,greengrocer,Raj Fruits And Vegetables
+node/9884967529,12.9559539,77.7211511,convenience,Kamala Provisions Store
+node/9887427429,12.876303,77.5670186,greengrocer,Kolar Farm Fresh
+node/9889712440,12.9548374,77.6979822,supermarket,Carry Mart
+node/9893685125,12.9785463,77.6968116,supermarket,Farm Fresh Supermarket
+node/9906269128,12.9779243,77.6426956,greengrocer,New Fruit Land
+node/9907331456,12.9603592,77.7207237,convenience,Gayathri Rice Corner
+node/9936631187,12.9881057,77.550838,greengrocer,HOPCOMS
+node/9937603696,12.9938978,77.7006253,supermarket,Ratnadeep Supermarket
+node/9950801617,12.9411457,77.627647,convenience,Cigarette Shop
+node/9953122392,12.8833886,77.5493843,supermarket,Ratnadeep Supermarket
+node/9961663417,12.9415499,77.6278423,grocery,Sri Balaji Provision Store
+node/9965864177,12.9728708,77.7505792,supermarket,Simpli Namdhari's
+node/9967147424,13.0335166,77.5038993,supermarket,Vishal Mega Mart
+node/9977574061,12.9594039,77.71718,supermarket,
+node/9981114383,12.9600968,77.7185121,convenience,S. V. Stores
+node/10019847618,12.9780136,77.6987125,convenience,Srinidhi Mart
+node/10033030781,13.0608078,77.5821447,supermarket,Vishal Mega Mart
+node/10049313438,12.9181443,77.6523035,greengrocer,Bangalore Horticulture Fruits & Vegetables Sales Centre
+node/10049386157,12.9120746,77.6480039,supermarket,More
+node/10049437550,12.907836,77.6518547,greengrocer,Have Nuts
+node/10049494520,12.9716124,77.7117564,supermarket,Midas Daily
+node/10075730026,12.9320203,77.6333683,greengrocer,Green Grocer
+node/10079235532,12.9347554,77.6333093,convenience,Safa Provision Store
+node/10095556717,12.9436376,77.6284598,greengrocer,Sasta Mandi
+node/10095556917,12.9436474,77.62853,convenience,KK Store
+node/10098185417,12.9512726,77.6222965,convenience,Deepa Condiments
+node/10101174118,12.9509475,77.6229392,grocery,Sri Murugan Stores
+node/10101174121,12.9509774,77.6230906,greengrocer,Fruit Stall
+node/10105887517,12.94215,77.6279445,greengrocer,Sri Venkateshwara Vegetables and Fruits
+node/10111481930,12.9352769,77.6299633,convenience,KM Shukla Store
+node/10111815206,12.9647359,77.7175667,greengrocer,Dry Fruit House
+node/10116658725,12.9508146,77.6237047,greengrocer,S.R.V Vegetable and Fruits
+node/10116658726,12.9508202,77.6236716,convenience,Grocer
+node/10130328215,12.9221927,77.6651955,supermarket,Country Grocer
+node/10159375313,12.9506146,77.6238474,convenience,Cigarette and Bag Shop
+node/10162630527,13.0517758,77.5939389,supermarket,Star Bazaar
+node/10212418972,13.0293905,77.5784862,greengrocer,
+node/10212418973,13.0271472,77.5791256,supermarket,Namdhari's Fresh
+node/10228571001,12.9871351,77.578442,supermarket,Chalukya
+node/10228903708,12.9197052,77.5841121,supermarket,Farm & Co.
+node/10233431492,12.8884506,77.5633076,supermarket,Lulu Daily
+node/10257576977,12.9639674,77.7132227,greengrocer,Fresho - by BigBasket
+node/10276162820,13.0027891,77.5502811,supermarket,Organic Bharat
+node/10293607191,12.9716304,77.6444209,greengrocer,HOPCOMS
+node/10293686930,12.9310093,77.5804576,greengrocer,HOPCOMS
+node/10293914392,13.1090384,77.5803302,supermarket,Simpli Namdhari's
+node/10293921744,13.0244058,77.5941852,supermarket,Simpli Namdhari's
+node/10293921756,13.0628823,77.5940591,supermarket,Simpli Namdhari's
+node/10293921757,12.9706509,77.6464433,supermarket,Simpli Namdhari's
+node/10293921758,12.9699406,77.6097071,supermarket,Simpli Namdhari's
+node/10311370639,12.8568948,77.5417454,convenience,Dus Minute - Godrej Eternity
+node/10542358703,12.9198493,77.6212496,convenience,Patel Condiments
+node/10558850380,13.0163701,77.6473761,supermarket,K-Food Antenna Shop
+node/10558971053,13.1040043,77.5715574,convenience,Sri Skanda Retail Store
+node/10574709763,13.049933,77.6453644,supermarket,Nadumuttam
+node/10628437914,12.975895,77.5774641,supermarket,DMart
+node/10651895592,12.9529477,77.657206,supermarket,Real mart
+node/10676117967,13.0085941,77.5778887,greengrocer,HOPCOMS
+node/10676221190,12.9704711,77.7069485,convenience,Reddy Stores
+node/10683921046,12.8951857,77.656994,supermarket,Reliance Smart Superstore
+node/10685071178,12.9019561,77.5857322,supermarket,Simpli Namdhari's
+node/10687892756,13.0305597,77.6391018,convenience,Kwality Super Bazar
+node/10694997445,13.0984057,77.5732531,supermarket,the organic world
+node/10694997446,13.0984191,77.5733317,convenience,Ajfan Dates and Nuts
+node/10719419554,12.9844304,77.5992197,greengrocer,HOPCOMS
+node/10731130835,13.0645297,77.6485509,supermarket,Chakkappan Stores
+node/10731130838,13.0643494,77.6479487,supermarket,Vishal Mega Mart
+node/10731130865,13.0665089,77.6406839,greengrocer,Ninjacart
+node/10731130889,13.0690014,77.6246819,supermarket,Reliance Smart
+node/10731130895,13.0722229,77.6045895,supermarket,Reliance Smart
+node/10738521365,12.960406,77.7422215,supermarket,Loyal City Supermarket
+node/10741197864,12.9717424,77.6809351,supermarket,My grocer
+node/10753151511,13.0282917,77.5790736,greengrocer,
+node/10753340308,12.9630258,77.602156,greengrocer,
+node/10760842109,12.9625983,77.7132337,greengrocer,Gramp Green World
+node/10819508449,12.9350462,77.6249939,greengrocer,Coorg Fresh Vegetables and Fruits
+node/10831664291,12.9988722,77.573052,greengrocer,Sri Angala Parameshwari Vegetables
+node/10833856111,12.9643497,77.6134743,supermarket,Sunrise Mart
+node/10833856112,12.9644738,77.613721,supermarket,Daily Needs
+node/10854298587,12.9173262,77.5804496,greengrocer,HOPCOMS
+node/10861562367,12.9167621,77.649252,supermarket,DMart X
+node/10875208176,12.9812257,77.5633806,supermarket,Lulu Hypermarket
+node/10895997184,12.9256704,77.625097,greengrocer,
+node/10931530093,12.8845024,77.5668655,greengrocer,
+node/10934276525,13.003153,77.5782663,supermarket,Namdhari's Fresh
+node/10934276534,12.9989826,77.5744743,greengrocer,HOPCOMS
+node/10979409745,12.9961581,77.6213264,supermarket,Fresh World
+node/11005461571,13.0050303,77.6233469,convenience,Eddy's Mangalore Store
+node/11005461598,13.0044368,77.6231251,convenience,Bismallah Store
+node/11005461599,13.0043706,77.6231079,convenience,V S & Sons
+node/11061447229,12.9951309,77.5921303,greengrocer,HOPCOMS
+node/11074666914,12.9612736,77.7154735,greengrocer,Purity Paryag
+node/11077220070,12.9594806,77.7171768,greengrocer,Family Fruits and Vegetables
+node/11085704839,12.915292,77.6471367,convenience,Sri Lakshmi Venkateshwara Papers
+node/11096914874,12.9963149,77.6122217,supermarket,Punjab Stores
+node/11100881387,12.9091698,77.6392625,supermarket,Green Fresh
+node/11119054524,13.0334824,77.6090904,supermarket,Families Supermarket
+node/11119061495,13.029036,77.6071212,supermarket,DMart
+node/11131430565,12.9786327,77.6426351,supermarket,Nature's Basket
+node/11133510085,12.9749172,77.5903134,greengrocer,HOPCOMS
+node/11147908529,12.9123087,77.6330862,supermarket,Star Bazaar
+node/11148355821,13.0056358,77.6236258,greengrocer,Daily Fresh Fruits & Vegetables
+node/11158854854,13.0057037,77.6236392,convenience,M Babu Store
+node/11167710685,12.9582865,77.6011607,convenience,Ration Shop
+node/11173721905,13.0055606,77.6271965,convenience,Moosa Stores
+node/11174378128,13.0107514,77.5580085,convenience,Daily Baskett
+node/11174397957,13.0116374,77.5569977,greengrocer,Capers
+node/11176470274,13.0390311,77.5975494,supermarket,Smart point
+node/11178079804,12.9539835,77.5673765,convenience,Corporation Store
+node/11178097988,12.9540074,77.5673748,convenience,Arun Enterprises
+node/11178099498,12.9586066,77.564198,convenience,MB Stores
+node/11178107443,12.9513399,77.564975,convenience,Nyaya Bele Angadi BLS-55
+node/11178120773,12.9536706,77.5687703,convenience,PVKR & CO
+node/11178123531,12.95908,77.5683855,convenience,Sri Guru Raghavendra Juice & Condiments
+node/11178123533,12.9591192,77.5683872,greengrocer,Shree Veerabhadreshwara Tenginakaayi Angadi
+node/11178123922,12.9541489,77.5696658,greengrocer,HOPCOMS
+node/11178124713,12.9586694,77.566875,convenience,Skanda Condiments
+node/11178141772,12.9479636,77.5682196,greengrocer,HOPCOMS
+node/11178142881,12.9514209,77.5698323,supermarket,Akshaya
+node/11178186948,12.9540062,77.5673571,greengrocer,HOPCOMS
+node/11178186956,12.9588147,77.565836,greengrocer,
+node/11178186984,12.9585612,77.5623501,convenience,Ashoka Stores
+node/11178186990,12.9586508,77.5608592,greengrocer,Fruits and Grocery
+node/11189600357,13.0105143,77.5589939,convenience,Raghavendra Juice & Condiments
+node/11193554728,12.959352,77.7184653,convenience,Sri Lakshmi
+node/11196248278,12.8915279,77.5776152,supermarket,Fresho
+node/11197549686,12.9560233,77.7308004,greengrocer,HOPCOMS
+node/11198130054,12.8919377,77.580094,supermarket,Everfine Supermarket
+node/11211862352,12.964373,77.6145777,supermarket,Nesto Fresh Mart
+node/11212337083,13.0064525,77.6257253,convenience,Royal Store
+node/11248255460,12.9584119,77.5532961,supermarket,DMart
+node/11250389086,13.0113802,77.6465207,convenience,Sri Bharani Mixtures
+node/11250768948,12.914311,77.6322175,supermarket,Easyday Club
+node/11250804966,12.9153592,77.6321925,convenience,The Smoke Store
+node/11250851737,12.917022,77.6316023,supermarket,Express Hypermarket
+node/11255169451,12.8896074,77.5824523,supermarket,Ojas Nisarga
+node/11261890103,12.8914742,77.5816905,supermarket,Organic Mandya
+node/11261890105,12.8882497,77.577855,supermarket,Garden Fresh Mart
+node/11276569212,13.0142084,77.4930091,supermarket,Family Shopping Center
+node/11283011578,12.8953421,77.5392996,convenience,Family Super Market
+node/11283488085,12.9730647,77.6053532,greengrocer,HOPCOMS
+node/11287892331,12.9142984,77.6126914,supermarket,Swaraj Supermarket
+node/11295836841,12.9984229,77.5694949,convenience,Sri Lankappa Provision Store
+node/11296660884,12.9068092,77.5980072,supermarket,
+node/11301688308,12.8737877,77.6433022,convenience,Food Paradise Supermarket
+node/11303698303,12.9064621,77.5900836,convenience,Top Store
+node/11303711406,12.9061515,77.5908928,convenience,Sri Venkateshwara
+node/11303723684,12.9069535,77.5803073,greengrocer,Truly
+node/11303726652,12.9074264,77.5824555,supermarket,Kashyapi Naturals
+node/11303744489,12.9065841,77.5886336,supermarket,The organic world
+node/11303767729,12.9083628,77.5847684,greengrocer,Hopcoms
+node/11303767893,12.9063706,77.5777546,supermarket,The Big Market
+node/11304378405,12.9072177,77.5784721,greengrocer,HOPCOMS
+node/11305149284,13.0707337,77.5916103,supermarket,Loyal World Supermarket
+node/11309805440,12.9165578,77.6356311,supermarket,Fish Mart
+node/11331084829,13.053932,77.6019154,convenience,Kaveri Provision Store
+node/11331123897,13.0538903,77.6020598,convenience,Mahima Kerala Store
+node/11331139537,13.0540013,77.6019531,convenience,Balaji Rice Traders
+node/11331152303,13.0542418,77.6019172,supermarket,Dmart
+node/11333433742,12.9132992,77.6255557,supermarket,Vishal Mega Mart
+node/11338841699,12.8588015,77.6068793,convenience,G N Store
+node/11341600708,12.891681,77.5786041,supermarket,Bindass Basket
+node/11359575331,12.969981,77.6398642,supermarket,Ratnadeep
+node/11359585576,12.9696997,77.6387029,supermarket,J24 Brothers Store
+node/11372731169,12.9118379,77.642169,supermarket,Ratnadeep supermarket
+node/11385580186,12.9418935,77.6231805,supermarket,Satvik Aahar
+node/11386048190,12.9394346,77.5838621,greengrocer,Fruits shop
+node/11391167231,13.0089801,77.563896,supermarket,Purity Prayag
+node/11391513075,12.9998206,77.5636725,greengrocer,
+node/11394011887,12.9114451,77.6492616,supermarket,Greenmart
+node/11400959258,12.9575721,77.6001983,supermarket,Wiggles shopify store
+node/11409538674,12.908584,77.6500091,supermarket,Daily Essentials
+node/11428052187,12.9539412,77.7178699,greengrocer,Fresh Green
+node/11445466246,13.0752074,77.5576357,supermarket,Vishal Mega Mart
+node/11445466254,13.0816847,77.5596415,greengrocer,Sri Murugan Vegetables and Fruits Mandi
+node/11445661033,13.0951072,77.5776395,greengrocer,Manjunath Vegetables and Fruit Shop
+node/11445710027,13.0955168,77.5781297,supermarket,Chowdeshwari Mart
+node/11445715442,13.0946288,77.576266,convenience,Sri Durga Provision Store
+node/11445726513,13.0948037,77.5768631,convenience,Sri Lakshmi Venkateshwara Provision Store
+node/11445748169,13.0947406,77.5805133,convenience,Sri Venkateshwara Hot Chips
+node/11465490458,12.8609441,77.5293363,convenience,Sri Durga Condiments
+node/11465490464,12.8613006,77.5294982,convenience,Sri Vinayaka Enterprise (Nandini)
+node/11465694156,13.105174,77.6006362,convenience,Sri Kalabyraveshwara Tea Stall
+node/11465749609,13.1069608,77.6002193,supermarket,Shopbox
+node/11469538012,13.1068111,77.6015977,convenience,CC Provision Store
+node/11472852214,13.0003903,77.6169515,greengrocer,
+node/11472852224,12.9997443,77.6196152,convenience,Shri Manjunatha Condiments
+node/11472852227,12.9998454,77.6194613,convenience,
+node/11487176458,12.9566785,77.7319838,greengrocer,Organic World
+node/11491661183,13.1061004,77.5988941,greengrocer,Maa Sarala Vegetables and Fruits
+node/11496080739,13.0615873,77.5588579,greengrocer,
+node/11496560781,12.9553443,77.5282394,supermarket,Reliance Smart
+node/11497725086,12.9549739,77.5295197,convenience,Karnataka Horticulture Fruits and Vegetable store
+node/11502362673,12.9052595,77.6495099,greengrocer,24 Mantra Organic Shop
+node/11503585268,12.9548869,77.5281648,convenience,Mamta Super Bazar
+node/11505695835,12.9338285,77.629995,supermarket,The Organic World
+node/11516663845,13.1025108,77.5960211,greengrocer,
+node/11524109257,12.9576565,77.6011948,supermarket,Vegetables Bhi Online
+node/11532959818,12.9225428,77.6496528,convenience,Sindhushri Pooja Store
+node/11532959822,12.9222366,77.6496711,convenience,Mataji Packaging
+node/11532969949,12.9213131,77.6496559,convenience,Krishna Provision Store
+node/11532969955,12.9211611,77.6496023,convenience,Matheswari Provisions Store
+node/11533099916,12.9217903,77.6505419,convenience,
+node/11533103109,12.9217645,77.6501642,convenience,Akash Provisional store
+node/11533104864,12.9199519,77.6493472,convenience,Sri Krishna Stationary
+node/11533112301,12.9213807,77.6494709,convenience,Mahadev Store
+node/11533112302,12.921331,77.6494856,convenience,Anand Provision Store
+node/11533112306,12.9211613,77.649406,convenience,Mahalakshmi Provision Store
+node/11533128575,12.9171456,77.6490734,greengrocer,Namdhari's Fresh
+node/11533141770,12.9144894,77.6488871,greengrocer,Farm2fresh
+node/11559397474,13.0682715,77.6044424,supermarket,Anand Supermarket
+node/11564661253,12.9646059,77.6386616,supermarket,CeeKay Supermarket
+node/11581391769,12.9547046,77.6486408,supermarket,Citi Food Centre
+node/11583339089,13.0017254,77.5506484,greengrocer,
+node/11625402107,12.8749232,77.6167526,supermarket,Safari Super Mart
+node/11626854015,13.0688222,77.6030968,greengrocer,
+node/11626854017,13.0681713,77.6048075,supermarket,Anand Supermarket
+node/11642288809,13.009492,77.5529372,convenience,DailyBasket
+node/11642307875,13.0096311,77.552261,greengrocer,
+node/11690829186,12.9984344,77.5700587,convenience,Adukale Malleshwaram Experience Store
+node/11697176340,12.9927265,77.5933819,greengrocer,
+node/11734847570,12.9546025,77.7209806,convenience,Om Shakti Store
+node/11734847591,12.9549384,77.720939,convenience,S L N Store
+node/11734847625,12.9553004,77.7209048,greengrocer,S L Fruits & Vegetables
+node/11734847628,12.955454,77.7209202,supermarket,Raza Traders
+node/11736162306,12.9518239,77.7219649,convenience,Maa Gayatri Veriety Store
+node/11736403568,12.9469383,77.7222607,convenience,Gowtham General Store
+node/11799207833,12.9727779,77.714847,supermarket,Real Value Mart
+node/11801896490,12.906636,77.5596672,greengrocer,
+node/11801896491,12.9066765,77.5595874,greengrocer,
+node/11801896492,12.9067981,77.5594506,greengrocer,
+node/11801896502,12.9052621,77.559983,greengrocer,My Fresh
+node/11801896526,12.9063719,77.563376,convenience,Chowdeshwari Rice Traders
+node/11813225339,12.9030947,77.5703658,convenience,Bismillah Provision Store
+node/11813225397,12.9048902,77.5683146,convenience,Yaseen Store
+node/11813225398,12.9047967,77.568269,convenience,Hello Provision Store
+node/11818132242,12.9514973,77.7174226,supermarket,Highland Supermarket
+node/11818132243,12.9517762,77.7173751,greengrocer,Bangalore Horticulture
+node/11818142870,12.9539108,77.7183101,greengrocer,Daily Mart
+node/11832512724,12.9637354,77.7239813,supermarket,My Fair Shoppe
+node/11832800813,12.9672537,77.7188261,greengrocer,S L Fruits & Vegetables
+node/11832800842,12.9679091,77.7184848,greengrocer,Tip Top Foods
+node/11833289307,12.9998764,77.6251821,greengrocer,
+node/11853272067,12.9993902,77.6160619,supermarket,Casio Home Needs
+node/11853313541,13.0006904,77.6167013,supermarket,Namdhari's Fresh
+node/11853338972,12.9970869,77.6145693,supermarket,More
+node/11853708692,12.9995568,77.618253,convenience,SB Stores
+node/11853708698,12.9992495,77.6180922,greengrocer,KK Vegetables & Fruits
+node/11895221933,12.965314,77.7139915,convenience,New Mangalore Stores
+node/11897985623,13.003187,77.5694263,supermarket,"Giriram Foods ,Dairy Products And Edible Oil"
+node/11898028017,13.0002158,77.5690233,supermarket,Ratnadeep
+node/11904046645,12.95979,77.5339559,convenience,The Fresh Greens
+node/11906895968,12.9576071,77.5336372,greengrocer,
+node/11913889223,13.1062954,77.5775528,supermarket,Vishal Mega Mart
+node/11917222417,13.0530851,77.6457541,greengrocer,Bangalore Horticultural
+node/11919763953,12.9548371,77.5346246,convenience,J24 Essentials
+node/11919808622,12.9564963,77.5334443,convenience,Venkatadri Home Needs
+node/11922269793,12.9654241,77.5378299,supermarket,Shivani Organics
+node/11932321846,13.0694867,77.5556658,greengrocer,
+node/11932360078,13.0854755,77.5564887,greengrocer,
+node/11932360086,13.0978647,77.5634022,supermarket,Green City Supermarket
+node/11932360090,13.0980644,77.5678896,greengrocer,
+node/11934957072,12.9581229,77.534236,supermarket,Vishal Mega Mart
+node/11946809266,12.9069046,77.6040856,supermarket,Olive Mart Supermarket
+node/11949234684,13.0595166,77.5909281,convenience,Sri Annapoornaswari Rice Traders
+node/11949742433,12.9048145,77.6488354,supermarket,Food Palace Supermarket
+node/11962616022,12.9728155,77.6076162,supermarket,Selec Hypermart
+node/11980645975,12.8872057,77.5542239,convenience,Sri Basaveshwara Convenience Store
+node/11981271373,12.953587,77.5927559,supermarket,Reliance Smart Point
+node/11982676010,12.9052662,77.6488723,supermarket,Ayush Hyper Market
+node/11982693086,12.9979879,77.5732898,supermarket,
+node/11986964436,12.9937269,77.5769795,supermarket,Save More
+node/11987032367,13.0102788,77.5553865,supermarket,Fresh Signature
+node/11989948269,12.8889433,77.6027595,supermarket,Green's Fresh Supermarket
+node/11998243869,12.9077495,77.6492278,grocery,Manju Departmental Store
+node/11998955856,13.0045552,77.7165947,supermarket,Familiy Choice supermarket
+node/12000103919,12.9489527,77.5850679,greengrocer,HOPCOMS
+node/12000126771,12.9509424,77.5845687,greengrocer,HOPCOMS
+node/12009229078,12.9380741,77.5792676,supermarket,Ashirwad Supermarket
+node/12033535265,13.0587919,77.5988774,convenience,Essentials Super market
+node/12036211740,12.9543622,77.5929328,convenience,Sri Vari Stationary & Conditiments
+node/12050443411,12.9618315,77.7133611,supermarket,Midas Daily Supermarket
+node/12050444578,12.9638965,77.7123703,supermarket,Ratnadeep
+node/12050662771,12.8833534,77.5895439,greengrocer,Choose Fresh
+node/12050796485,12.9129175,77.6101638,convenience,Frisson Family Mart
+node/12059052248,13.0625274,77.5871872,convenience,Sunny Namkins
+node/12077213901,12.9750754,77.6040007,supermarket,T Super Market
+node/12078423951,12.9538065,77.5922406,convenience,Venkatadri Condiments
+node/12078423952,12.9540507,77.5921812,convenience,Sri Sai Sweets & Coffee Point
+node/12087229010,12.9606513,77.4880845,supermarket,All Season Market
+node/12102882512,12.9609212,77.6001914,supermarket,Simpli Namdhari's
+node/12103825752,12.9961879,77.6071906,supermarket,Peekay Supermarket
+node/12103968903,12.9979195,77.5732798,greengrocer,
+node/12103968905,12.9988873,77.5753256,greengrocer,
+node/12117979201,12.907878,77.6491188,grocery,HSR Rice Traders
+node/12118054084,12.9741728,77.5985506,supermarket,Rainbow General Store
+node/12118791713,12.9725459,77.5990192,convenience,Asha's Store
+node/12139261539,12.9869349,77.5948329,supermarket,the organic world
+node/12164756015,12.9726116,77.7010806,supermarket,Open Mart
+node/12180378247,12.8609974,77.5426762,greengrocer,Hasiru Halli Thotta
+node/12211544314,13.1216609,77.6266052,supermarket,More
+node/12212780819,12.911564,77.6308748,greengrocer,
+node/12224096355,12.9378755,77.7472166,convenience,Om Shakti Pravision Store
+node/12229218349,13.1031842,77.5979105,supermarket,Shuddh
+node/12234828969,13.1216215,77.6258249,supermarket,All Mart
+node/12248235680,12.908564,77.6239237,supermarket,ALV Fresh Supermarket
+node/12265477655,13.1084092,77.5921543,convenience,
+node/12265477658,13.1088511,77.591943,convenience,
+node/12310866390,12.9592516,77.7223188,greengrocer,Appaji Stores
+node/12318692112,12.9721343,77.6950757,convenience,Ration Shop
+node/12343238235,12.9485879,77.70172,convenience,Raj Provisions Store
+node/12366484705,12.9494209,77.7016398,convenience,7-Eleven
+node/12366544915,12.9723483,77.6487876,supermarket,Vishal Mega Mart
+node/12366565123,12.9721784,77.6524836,supermarket,Casio Supermarket
+node/12378818548,13.0083098,77.5801356,supermarket,Halli Organics and naturals
+node/12383609118,13.0238135,77.6396648,supermarket,Bombay Gourmet Market
+node/12426224563,13.0049602,77.5654238,supermarket,GoHappy
+node/12438165401,12.9757309,77.5362061,convenience,Suma Provision Store
+node/12441126050,12.9991923,77.5412223,greengrocer,
+node/12444395062,12.9742648,77.5353873,supermarket,Seema Shoppe
+node/12450999456,13.0308263,77.63508,greengrocer,
+node/12450999462,13.0443268,77.6428774,convenience,Shell Select
+node/12456171483,12.9521586,77.4994998,supermarket,A to Z
+node/12456171495,12.95208,77.4977918,supermarket,
+node/12456210414,12.9511672,77.4948779,supermarket,Mangaluru Stores
+node/12456237570,12.9546117,77.4967995,supermarket,Surya Department Store
+node/12456237572,12.954568,77.4964584,convenience,Manjunatha Condiments
+node/12459144700,12.9273196,77.6696411,supermarket,KPN Fresh Supermarket
+node/12459183643,12.9281325,77.6692427,supermarket,Green Land Supermarket
+node/12460825998,12.9693895,77.6079959,supermarket,Olive
+node/12460927625,12.9906571,77.6874595,greengrocer,Yes Vegetable Market
+node/12460927626,12.9907507,77.6872939,greengrocer,Sri Angala Parameshwari Vegetables & Fruits
+node/12462434292,12.9662507,77.6038694,supermarket,Peekay mini mart
+node/12466417386,12.9573521,77.5676114,supermarket,Vishal Mega Mart
+node/12475439042,12.9008369,77.6406211,greengrocer,Karibasaveshwara Fruits and Vegetables Shop
+node/12482490294,12.9057526,77.6387843,convenience,North East Store
+node/12487713375,13.0296603,77.5805059,greengrocer,HOPCOMS
+node/12491770189,12.9243165,77.5834911,greengrocer,HOPCOMS
+node/12492736707,12.9742285,77.6198097,supermarket,Nature's Basket
+node/12497560756,12.937249,77.7025455,supermarket,All Session Super Market
+node/12497590561,13.0386203,77.6643204,supermarket,Allday Hypermarket
+node/12497646028,12.9374162,77.7488257,greengrocer,Sri Panchakumari Fruits and Vegitables
+node/12497708532,13.0318659,77.580016,grocery,Manjunath Stores
+node/12508867414,13.0073876,77.57846,convenience,Gurukrupa
+node/12519602641,12.9880795,77.5355606,supermarket,More
+node/12519618771,13.0366216,77.5316226,greengrocer,
+node/12520580167,12.9881733,77.5370466,supermarket,Carry Fresh home
+node/12522252573,12.8940089,77.6558713,supermarket,Freshco Hyperbazaar
+node/12522542151,12.8975646,77.5858239,supermarket,Sana Super Mart
+node/12525804599,12.9984246,77.5646051,greengrocer,
+node/12528689221,12.980573,77.6459843,greengrocer,New Frosty's
+node/12528738371,12.9289537,77.486678,supermarket,Smart Point
+node/12538079774,13.0161235,77.6474077,supermarket,Seela Korean Mart
+node/12539035053,12.9245345,77.4854041,supermarket,Shopers Shope
+node/12539064793,12.9132031,77.5209553,supermarket,Shopping City Hypermarket
+node/12541240497,12.9396745,77.7267965,supermarket,Top in Town
+node/12541241515,12.9789825,77.6757301,supermarket,Top In Town
+node/12541961991,12.938951,77.696903,supermarket,Vishal Mega Mart
+node/12541998679,12.9722492,77.6982036,supermarket,White Mart
+node/12572821855,12.9423878,77.7474336,greengrocer,
+node/12574189997,13.0735994,77.5191931,supermarket,Royalmart Supermarket Abbigere
+node/12580943042,12.9130823,77.6653081,convenience,Shell
+node/12584979315,13.0982728,77.5696839,greengrocer,Farm Fresh Bazaar
+node/12617763502,12.9367979,77.750068,convenience,Sri Manjunatha Provision Store
+node/12617769437,12.9366674,77.7502097,greengrocer,SLV Fruits And Vegetables
+node/12621960399,12.9426393,77.6977029,convenience,Shell
+node/12632035885,12.9069739,77.4730955,convenience,Shell Select
+node/12642184416,13.1041345,77.5717938,greengrocer,
+node/12648717953,13.0046704,77.5784545,supermarket,Namdhari
+node/12651753829,12.9371421,77.7489027,greengrocer,Farm Fresh
+node/12676261330,12.9953929,77.5516944,greengrocer,HOPCOMS
+node/12676261389,13.0296108,77.559213,supermarket,More
+node/12676265237,13.0263832,77.5578954,greengrocer,
+node/12690712779,12.9318712,77.7426857,convenience,Shell Select
+node/12696683352,13.0224995,77.6384758,supermarket,Shoba Central
+node/12717562301,12.9266801,77.6088941,grocery,The Green Fruits
+node/12729312330,12.9571437,77.7396562,greengrocer,Preeti Provision Store
+node/12734279041,12.9187549,77.5780128,greengrocer,Sri Banashankari Fruits and Vegetables Stall
+node/12749410100,12.9727355,77.6002745,supermarket,Foodstories
+node/12749773445,13.1142754,77.5689594,supermarket,Suguna Super Market
+node/12757331350,13.0697041,77.5552289,greengrocer,
+node/12759264205,13.0692197,77.5562578,greengrocer,Tha Loyal Bazaar
+node/12761908817,13.0668152,77.5539754,greengrocer,Nithya Fresh
+node/12770222169,13.0675402,77.5541164,greengrocer,SR Mart
+node/12794240461,13.0660866,77.5560734,greengrocer,Yuga Fresh
+node/12800684806,13.1057106,77.5744761,supermarket,
+node/12806439626,12.9234737,77.7367312,supermarket,
+node/12809319211,13.001649,77.5633451,greengrocer,HOPCOMS
+node/12833133105,13.0312837,77.5909518,greengrocer,HOPCOMS
+node/12860300101,12.9872272,77.5542226,grocery,Namma MTR
+node/12874807511,12.9836015,77.7516254,supermarket,Vishal Mega Mart
+node/12899812395,13.0021565,77.6612709,supermarket,Kasturi Mart
+node/12899812396,13.0022963,77.6612279,convenience,Kasturi Provision Store
+node/12916979748,13.0055402,77.6595826,supermarket,D Mart
+node/12925420094,12.9621663,77.5717564,supermarket,Chamundi Dry Fruits and Spices
+node/12926821076,12.8877368,77.5527254,greengrocer,Hasiru Thotta
+node/12941883837,12.9100981,77.5921837,supermarket,Sri Deep a Retail
+node/12941883845,12.9104408,77.5905547,convenience,Mamta Super Bazar
+node/12952280430,12.995902,77.6061679,supermarket,Home Needs
+node/12959713630,12.9285434,77.7413544,greengrocer,Grainvora
+node/12964476366,12.9011693,77.5579422,greengrocer,Hasiru Thota
+node/12965829409,12.9363517,77.7504623,convenience,Sri Nanjundeshwara Provision Store
+node/12970616822,12.9182174,77.6321089,greengrocer,2Day
+node/12970637619,12.917961,77.6320638,grocery,Sri Balaji Provisional Store
+node/12970661966,12.9180068,77.6320655,grocery,Sri Sai Ram
+node/12971718845,13.0010141,77.6620874,greengrocer,Fresh One Fruits and Vegetables
+node/12979176594,12.9223314,77.6652505,greengrocer,A. M. Enterprises
+node/12980092659,12.9087936,77.647131,greengrocer,SM Grens
+node/12985594010,13.0109802,77.5398828,grocery,Shahana Home Needs
+node/12988084300,12.9274003,77.6706737,supermarket,Ratnadeep
+node/12990822278,12.9601847,77.7226122,convenience,Shri Sai Provisions Store
+node/12996959155,12.9314594,77.7457273,supermarket,Bazaaro Hypermarket
+node/12997705746,12.9321961,77.7425013,convenience,Sufyan Dates and Nuts
+node/12997705747,12.9314667,77.7418991,convenience,Chandran Gurukkal Ayurveda Clinics
+node/13002321117,13.000966,77.6616602,greengrocer,
+node/13019951660,12.9368551,77.7488957,supermarket,Family Mart
+node/13042397031,13.0294061,77.5710465,convenience,Pinklemon
+node/13049444664,12.9638419,77.7122376,greengrocer,KPN Fresh
+node/13051018034,12.9204645,77.6328936,convenience,Nandini Condiments
+node/13059211027,13.0691434,77.5584237,convenience,Tata Star
+node/13061536102,12.8949095,77.633215,grocery,Pragya provision store
+node/13061848402,12.9188057,77.6104406,grocery,KPN Fresh
+node/13071984337,12.9505546,77.7154416,greengrocer,KPN Fresh
+node/13073520869,12.9171957,77.6144128,supermarket,Instakart
+node/13092288296,12.9615904,77.635809,supermarket,C K Departmental Store
+node/13106025728,12.9737081,77.5515282,supermarket,Dmart
+node/13110965033,12.8736603,77.6114062,convenience,Ezeebag
+node/13110965649,12.9212407,77.5721232,greengrocer,
+node/13124781542,12.9385162,77.742893,supermarket,More
+node/13130546132,12.9072633,77.6060977,supermarket,VMart Supermarket
+node/13131326933,12.8720023,77.5701117,supermarket,"veggie's lover - Tea, vegetables & groceries"
+node/13131428225,12.9479933,77.580087,supermarket,Tea Stall
+node/13159596160,12.9987916,77.6406158,convenience,Sri Siddappaji Stores
+node/13159602072,12.998744,77.6406091,convenience,Deepa Store
+node/13161609979,12.9430318,77.5990927,supermarket,Family Mart
+node/13161609980,12.9441876,77.5959383,convenience,Sri Ganesh Store
+node/13164727392,12.9061909,77.5985444,convenience,
+node/13236852613,12.9538537,77.5924088,convenience,Sree Devi Condiments
+node/13240199712,12.9281615,77.5180785,greengrocer,Petrichor
+node/13259525671,12.8765326,77.5749168,greengrocer,"Bengaluru Horticulture Flowers, Fruits and Vegetables shop"
+node/13259525672,12.8765388,77.5748667,convenience,Sri guru Samba Shiva rice traders
+node/13259525673,12.8764914,77.5746366,convenience,Ramdev Departmental Store
+node/13276814996,12.9036676,77.5078566,supermarket,Vishal Mega Mart
+node/13276814998,12.9040944,77.5080064,supermarket,Top in Town
+node/13316687535,12.9239053,77.6183201,supermarket,Shoba super market
+node/13319110552,12.9713657,77.7061327,greengrocer,Bangalore Horticulture
+node/13321341605,12.9603457,77.7172297,greengrocer,Mani Shree
+node/13338986026,12.9963625,77.6612663,supermarket,D2D Dawn 2 Dusk
+node/13340585063,13.0809981,77.6409622,supermarket,Midland Supermart
+node/13380353709,12.9785211,77.6297221,greengrocer,Fresh Vegetables & Fruits
+node/13381419279,12.9941563,77.5944295,convenience,
+node/13389966396,12.9972508,77.5415351,convenience,Iyengar Home Products
+node/13389998756,12.9969977,77.5417583,convenience,Sri Lakshmi Venkateshwara Stores
+node/13390024050,12.9965896,77.5425625,convenience,Sri Venkateshwara Stores
+node/13397977733,12.9931942,77.6622956,supermarket,Spar
+node/13401835089,12.9963493,77.6953479,supermarket,Lulu Daily
+node/13404331080,12.9891533,77.7147134,convenience,
+node/13407014143,12.9907066,77.7218878,supermarket,Fresh Mart Supermarket
+node/13407014158,12.9919931,77.719678,greengrocer,Fruit Cart
+node/13408774257,12.9588125,77.6594821,greengrocer,Fresh Mart
+node/13408774271,12.9582991,77.6595416,greengrocer,Shree Sai Ram Fruits and Vegetables
+node/13417858271,12.9551466,77.6562842,supermarket,Top in Town
+node/13436163590,12.983167,77.7335299,supermarket,SLV supermarket mini mall (Fruits +Vegetables+General Stores)
+node/13438473392,12.908902,77.6326573,greengrocer,MyMarket
+node/13481166997,13.0242683,77.5866222,greengrocer,HOPCOMS
+node/13485405983,13.0840295,77.634815,supermarket,
+node/13485405984,13.0840526,77.6348144,greengrocer,
+node/13524144641,12.8607846,77.5426461,supermarket,Market Fresh
+node/13588888210,12.9734732,77.5104541,supermarket,Shop@rite
+node/13589034674,12.9712446,77.5155803,convenience,Mathushree Stores
+node/13647333101,13.0130515,77.6206549,convenience,FoodMax
+node/13668146701,13.012717,77.627311,convenience,Savo Mart
+node/13683993580,12.9282299,77.7389183,supermarket,Star Bazaar
+node/13703002304,12.9203707,77.5932781,supermarket,MK Ahmed Bazar
+node/13734016151,12.9923076,77.6802375,greengrocer,Sri Vinayaka Vegetables & Fruits
+node/13765559801,12.9255977,77.6086431,supermarket,Xpress Home Needs
+node/13860496687,12.8870681,77.5929243,greengrocer,Halli Thota
+node/13860991595,12.9460501,77.5972605,supermarket,Shopping Mart
+node/13882578283,12.8762997,77.6167172,supermarket,Star Bazar
+node/13890890175,12.9859457,77.5384383,convenience,Bhagyamma Provision Store
+node/13905417634,13.0037689,77.6603726,greengrocer,Karnataka Horticulture Corporation
+node/13913706215,12.9613446,77.6368089,convenience,Anugraha Department Store
+node/13913708570,12.9619513,77.636602,greengrocer,
+node/13913713733,12.9605395,77.6357663,convenience,Sri Balaji Electricals
+node/13974713566,12.8870053,77.5544956,convenience,Sri Basaveshwara Convenience Store
+node/13982342920,12.9494836,77.5884122,greengrocer,HOPCOMS #282
+node/14049007619,12.871405,77.5941368,supermarket,MK Ahmed
+node/14051662214,12.9847898,77.6896339,convenience,Mini Max
+node/14078720821,12.8714146,77.5426769,greengrocer,Halli Thota
+node/14082140285,12.8746877,77.5372256,supermarket,Mariya Maty Super Market
+node/14085332420,12.9038987,77.5122395,supermarket,Shopping City Hyper Market
+node/14086177428,12.9006554,77.4876132,supermarket,Happy Home Super Mart
+node/14086235938,12.9033332,77.4875944,supermarket,Mamtha Super Market
+node/14094154343,13.1217997,77.6267452,greengrocer,Babu Fruits & Juice
+node/14096580504,12.9749897,77.6526413,convenience,Tiny supermart
+node/14108648194,13.0509934,77.5148541,supermarket,All - Mart
+node/14108919324,13.0546294,77.5110436,convenience,Sangeetha Mobiles
+node/14108919325,13.0544194,77.5111956,supermarket,Reliance Smart Point
+node/14128478002,12.976095,77.7412921,supermarket,Home Town Supermarket
+node/14132607113,12.9598511,77.5138749,greengrocer,Urban Access
+node/14132671179,12.9595753,77.5128272,convenience,
+node/14177895696,12.8941397,77.5641057,convenience,SLV Condiments
+node/14205602357,12.950645,77.5956751,greengrocer,HOPCOMS
+node/14214087050,12.9431189,77.5974135,convenience,Shri Vinayaka Enterprises
+node/14222011001,12.9982578,77.5697508,supermarket,Kolla Crispy Point
+node/14231996164,12.9167688,77.606933,greengrocer,SRF Fruits
+node/14231996182,12.9138857,77.6146414,greengrocer,Green Garden
+node/14231996200,12.913434,77.613124,convenience,Raghavendra Rice Corner
+node/14232070441,12.91404,77.6104529,greengrocer,
+node/14232167228,13.1026242,77.5926873,convenience,Multi Purpose Stall
+node/14246311971,12.9258932,77.7336916,convenience,ANL Hotel and General Store
+node/14247800776,12.9202013,77.6105156,supermarket,DMart Ready
+node/14252780657,12.969677,77.7331487,supermarket,Sapna Super Market
+way/24365351,12.899742280000002,77.65914278,convenience,Grandway Stop & Shop
+way/27554059,12.929865280000001,77.58423076,supermarket,Jayanagar 4th Block Shopping Complex
+way/53748799,12.930253060000002,77.58410616,supermarket,Janatha Bazaar
+way/130510276,12.97084322,77.75032882000001,supermarket,Reliance Fresh
+way/133256306,12.93010491111111,77.60120543333333,supermarket,Spar
+way/133486623,12.99469192,77.61064614,supermarket,Home Shoppee
+way/133600673,13.004021175,77.54356365000001,supermarket,S-Mart
+way/133600674,13.007395840000001,77.54831442,convenience,Atulya Stores
+way/133877962,13.03689972,77.57755915999999,supermarket,Shopwell Supermarket
+way/147233199,12.956715399999998,77.73151315999999,convenience,Shell Select
+way/147380607,12.980077699999999,77.75137144,supermarket,Royal Mart Supermarket
+way/158467187,13.004287330769232,77.7125095076923,convenience,Family Choice
+way/160470308,13.01298922,77.6475548,supermarket,Food World
+way/160470311,13.01703754,77.65904739999999,supermarket,Smart Bazaar
+way/164210883,12.927193119999998,77.63298086,supermarket,Spencer
+way/165507270,12.99125568888889,77.7567807111111,warehouse,Mysore Toboco Company Godown
+way/169800997,12.97264392,77.5389064,supermarket,Food World
+way/169825314,12.976292939999999,77.57766598,supermarket,National Market
+way/169825315,12.97662518,77.57779596,supermarket,Sukh Sagar Shopping Center
+way/180964752,12.97537156,77.72390974,warehouse,
+way/180964753,12.9753559,77.72426918,warehouse,
+way/180964755,12.97432622,77.72355836,warehouse,
+way/180964756,12.9753772,77.72354996,warehouse,
+way/184160588,12.98385128,77.74403248,supermarket,Loyal City Super Market
+way/192049201,12.997252079999999,77.57364232,supermarket,Big Bazaar
+way/221353984,13.006741775,77.582237175,supermarket,Janatha Bazaar
+way/249353657,12.955428388888889,77.72861162222222,supermarket,DMart
+way/285608352,12.890940216666666,77.59769338333334,supermarket,Reliance Mart
+way/296153942,12.920653060000001,77.66685212,warehouse,Flipkart Grocery Hub
+way/310909153,13.016057042857142,77.70958214285714,warehouse,Jeeva Jyothi Glass & Plywoods
+way/330036957,12.9786635,77.63332576,convenience,HOPCOMS
+way/330036958,12.97865174,77.63325954000001,convenience,Nandini Shoppe
+way/330038221,12.98066892,77.63776348,convenience,Nandini Shoppe
+way/331367432,12.980980460000001,77.64002072,convenience,HOPCOMS
+way/331367433,12.9808755,77.63998764,convenience,Nandhini Shoppe
+way/343649633,12.91256082,77.63659709999999,supermarket,MK Ahmed
+way/346025006,13.0012158,77.62405681999999,greengrocer,ಹಾಪ್‌ಕಾಮ್ಸ್
+way/346136743,13.027923359999999,77.63939558,convenience,Family Point
+way/346211252,13.064475479999999,77.59754896000001,greengrocer,
+way/346452600,12.974737736363636,77.54730876363637,supermarket,DMart
+way/346740164,12.952087639999998,77.70115412,warehouse,Instakart Logistics
+way/346825145,12.9703651,77.65441419999999,supermarket,Fresh 'n more
+way/346833312,12.956144827272727,77.7196879,greengrocer,VK Fruits
+way/347081280,13.02345284,77.54297908,warehouse,
+way/347117181,12.86408966,77.59920344,supermarket,Easy Shopping Mart
+way/347122093,12.96306432,77.6031335,supermarket,royalmart supermarket
+way/347159335,12.94043708,77.61990205999999,supermarket,Reliance Fresh
+way/347168225,12.924432020000001,77.6538601,warehouse,Zoya
+way/347208740,13.003925899999999,77.62290709999999,convenience,Simla Stores
+way/347482626,12.867602299999998,77.6188319,warehouse,
+way/347482971,12.86765684,77.61877286,warehouse,
+way/347604056,12.89264024,77.58654122,convenience,New Mangalore Stores
+way/348119736,12.92004652,77.65132692,convenience,In & Out
+way/348453871,12.96992674,77.73558302,supermarket,The Whitefield Market
+way/354248620,12.96476752,77.71536908,supermarket,MK Retail
+way/362345292,13.11559914,77.63700408,warehouse,Sewage Treatment Plant
+way/364740190,12.989027519999999,77.76726787999999,warehouse,
+way/364740191,12.98910376,77.76847216,warehouse,
+way/364740192,12.987835319999999,77.76855048,warehouse,
+way/364740193,12.98782884,77.76891144,warehouse,
+way/364740195,12.986626000000001,77.76900155999999,warehouse,
+way/364740196,12.98788156,77.76932392,warehouse,
+way/364740197,12.986648259999999,77.76943446,warehouse,
+way/364740198,12.98907376,77.7680521,warehouse,
+way/364740199,12.98776732,77.76734891999999,warehouse,
+way/364740200,12.9866049,77.76867458000001,warehouse,
+way/364740201,12.98656292,77.76792374,warehouse,
+way/364740202,12.9877828,77.76778368000001,warehouse,
+way/364740203,12.989105259999999,77.76882438,warehouse,
+way/364740204,12.98905274,77.76769282000001,warehouse,
+way/364740205,12.986565039999999,77.76823882,warehouse,
+way/364740206,12.9878037,77.76815382,warehouse,
+way/364740207,12.98913558,77.76923874,warehouse,
+way/366918882,13.09817502,77.58472445999999,supermarket,Reliance Fresh
+way/381954102,12.969656480000001,77.64570384,greengrocer,HOPCOMS
+way/397910843,13.05670554,77.62959782,supermarket,Families
+way/401595340,12.945727260000002,77.71096502,supermarket,Smile Super Market
+way/420994629,13.10038967857143,77.58604978571428,supermarket,DMart
+way/425371165,12.9915515,77.6683972,supermarket,Shoppers City
+way/525507038,12.903649316666666,77.602189,supermarket,7 Days
+way/525509200,12.891876239999998,77.5423787,supermarket,ಚೌಡೇಶ್ವರಿ ಮತ್ತು ಶನಿಮಹಾತ್ಮ
+way/548812836,12.95446035,77.66057973333334,warehouse,
+way/548963967,12.94328016,77.54238662,greengrocer,HOPCOMS
+way/549266174,12.94802276,77.56869358,supermarket,KS Puttasiddappa and Sons
+way/549373062,12.95299692,77.57711996,greengrocer,HOPCOMS
+way/609989203,12.90665774,77.69047028,convenience,SLV Provisional Store
+way/611480760,12.91353964,77.67828152,supermarket,Classic
+way/616087679,12.885993857142855,77.55586672857143,supermarket,Big Market
+way/631319101,12.915256959999999,77.63846964000001,convenience,
+way/631581277,12.94122188,77.69568991999999,convenience,
+way/673658384,12.96920026,77.74162902,supermarket,Top in Town Hypermarket
+way/676038916,13.006410120000002,77.66586504,warehouse,
+way/676038917,13.00782556,77.66518484,warehouse,
+way/676038918,13.008741259999999,77.66416455999999,warehouse,
+way/676038919,13.006223499999999,77.66441738,warehouse,
+way/677277511,12.89757352,77.58575454000001,supermarket,E.N.Rao Plaza
+way/679570141,12.996453742857144,77.73889892142857,warehouse,
+way/679570144,12.996973610000001,77.73962076000001,warehouse,
+way/679570147,12.99731376,77.7395986,warehouse,
+way/681174089,12.88319778,77.60734466,supermarket,Shobha Supermarket
+way/692376271,12.903980479999998,77.704807,supermarket,DMart
+way/704936390,12.968853580000001,77.75008244,supermarket,Loyal City Hypermarket
+way/705675998,13.09844145,77.5742245625,supermarket,DMart
+way/708592741,12.874516320000001,77.64696255999999,supermarket,FAB Hypermarket
+way/708987245,12.87876144,77.63679736,supermarket,Falkon Hypermarket
+way/737530279,12.968167740000002,77.52840774,greengrocer,HOPCOMS
+way/785271579,13.06001866,77.5073023,supermarket,DMart
+way/799452941,12.9712523,77.68224398,convenience,Shell Select
+way/852435450,13.003963339999999,77.61851376,warehouse,Adams and Company
+way/894122408,12.87766484,77.6453561,warehouse,Pikkol warehouse
+way/993834533,13.0511166,77.52898853333333,convenience,AFwwa Shop
+way/993834534,13.051098159999999,77.52908608,convenience,
+way/997869899,13.0199513,77.69239806666667,supermarket,Peoples Mart
+way/1027088995,13.040647860000002,77.66385749999999,warehouse,
+way/1060953956,12.929436555555556,77.69536236666666,warehouse,Big Basket
+way/1069014337,12.95233826,77.56691352,supermarket,More
+way/1070342522,12.908179559999999,77.70540316,supermarket,Food Palace
+way/1070483717,12.920324133333333,77.69674876666666,supermarket,Mango Hypermarket
+way/1070970723,12.90462602,77.6761169,convenience,Aishwarya Value Mart
+way/1071053381,12.907738633333333,77.68877215555557,warehouse,
+way/1099875751,12.9321807,77.63460549999999,supermarket,DMart
+way/1102167306,12.853940940000001,77.58820208,warehouse,
+way/1125172752,12.982352020000002,77.75182238,convenience,Shell Select
+way/1190294274,12.98909108,77.71007508,supermarket,DMart
+way/1190294332,12.981292819999998,77.71833688,warehouse,
+way/1190294333,12.982016820000002,77.71826696,warehouse,
+way/1190294334,12.98187384,77.7186848,warehouse,
+way/1190569984,12.973722599999999,77.56910954,warehouse,
+way/1203511152,13.00551704,77.62356754,convenience,Om Shanti General Store
+way/1205497336,13.09573964,77.58859234,warehouse,
+way/1210108248,12.959168940000001,77.72029012,greengrocer,Sree Amman
+way/1215908727,12.94708646,77.70881576,grocery,Sri Sai Jaganath Fruits & Vegetables
+way/1265866292,13.060473980000001,77.64213552000001,convenience,Aaruhi Mart
+way/1266690772,13.04031206,77.66459076,warehouse,
+way/1274548694,12.923281,77.61222547999999,supermarket,Swaraj Hyper Market
+way/1278735171,12.876373520000001,77.61039134,supermarket,DMart
+way/1307698454,13.069657542857144,77.5553012857143,supermarket,All Seasons Supermart
+way/1319284244,12.9744061,77.70249724,greengrocer,
+way/1336988679,13.033478220000001,77.5038389,supermarket,Vishal Mega Mart
+way/1343735373,12.918937375,77.6965395875,warehouse,Zepto Bellandur New
+way/1347316902,12.923462333333333,77.69499535,warehouse,Swiggy instamart
+way/1347316903,12.9235635,77.69496363333333,warehouse,Blinkit
+way/1361493519,12.969051411111112,77.76634944444444,warehouse,
+way/1365963656,12.928546800000001,77.67047714,warehouse,Zepto Bellandur New
+way/1396516919,12.94662326,77.71064808,supermarket,Topsy
+way/1410597948,13.01030772,77.64467690000001,greengrocer,
+way/1419979800,12.880119075,77.6463315125,supermarket,More
+way/1428234037,13.114977479999999,77.5733481,supermarket,KPN Fresh
+way/1459237753,12.97542064,77.72312914,warehouse,
+way/1497575887,12.99211508,77.68015926000001,supermarket,Yellow Mart
+way/1547940311,12.875632007142856,77.54443690714285,supermarket,DMart
+way/1558911785,12.863320657142859,77.66220390000001,warehouse,Ikea Click and Collect
+way/1559430660,12.9105982,77.5989347,greengrocer,HOPCOMS
