@@ -77,12 +77,12 @@ def maximal_covering(cover, weights, p: int, solver="HiGHS", time_limit_s=None) 
         prob += z[i] <= pulp.lpSum(y[j] for j in np.flatnonzero(cover[i])), f"cov_{i}"
     prob += pulp.lpSum(y) == p, "p_sites"
     prob.solve(get_solver(solver, time_limit_s))
-    check_optimal(prob)
+    status = check_optimal(prob, allow_feasible=True)
 
     open_sites = [j for j in range(m) if y[j].value() > 0.5]
     covered = cover[:, open_sites].any(axis=1)
     return CoveringResult(open_sites, covered, float(w[covered].sum() / w.sum()),
-                          np.flatnonzero(~cover.any(axis=1)).tolist(), pulp.LpStatus[prob.status])
+                          np.flatnonzero(~cover.any(axis=1)).tolist(), status)
 
 
 def nearest_open(dist, open_sites):

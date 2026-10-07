@@ -2,8 +2,8 @@
 
     uv run python experiments/run_sensitivity.py [--family vrp]
 
-TODO(human): replace the synthetic base instance with the real case-study data
-and set the parameter grids to ranges that are meaningful for the case.
+Toy-instance sensitivity runner for the textbook models. The paper's sensitivity
+analysis on the Bengaluru case is the tornado in experiments/run_design.py.
 """
 
 import argparse

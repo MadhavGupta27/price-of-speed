@@ -5,7 +5,7 @@
 
 ### Why now (motivation slide)
 
-- India's three largest quick-commerce operators ran **4,081 dark stores** by March 2026. Each store serves a radius of roughly 1.5–3 km to meet a 10–20 minute promise ([ecorpit](https://ecorpit.com/ecorpit-quick-commerce-dark-store-app-development-service-india-2026/)).
+- India's three largest quick-commerce operators ran about **4,500 dark stores** by March 2026 (Blinkit 2,243, Zepto 1,139, Instamart 1,143; an earlier "4,081" figure could not be verified and was dropped). Each store serves a radius of roughly 1.5–3 km to meet a 10–20 minute promise ([ecorpit](https://ecorpit.com/ecorpit-quick-commerce-dark-store-app-development-service-india-2026/)).
 - After a nationwide gig-worker strike on 31 Dec 2025, the Union Labour Ministry intervened. In **January 2026, Blinkit, Zepto, Swiggy and Zomato dropped the "10-minute delivery" claim** over rider-safety concerns ([Outlook Business](https://www.outlookbusiness.com/corporate/quick-commerce-giants-drop-10-minute-delivery-promise-after-govt-intervention), [Onmanorama](https://www.onmanorama.com/news/business/2026/01/13/blinkit-drops-10-minute-delivery-claim.amp.html)).
 - On **7 Aug 2026**, a Parliamentary Standing Committee recommended guidelines against "unrealistic speed targets" set by dispatch algorithms. It did not define what "unrealistic" means ([Outlook Business](https://www.outlookbusiness.com/amp/story/corporate/blinkit-zepto-instamart-may-face-new-rules-over-speed-algorithms)).
 - **Gap:** nobody has quantified the trade-off. How many dark stores and riders, and how much cost, does each extra minute of promise buy, at a safe rider speed? An OR model can answer exactly that, and the policy debate needs the number.

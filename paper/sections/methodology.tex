@@ -2,26 +2,47 @@
 
 \subsection{Bibliometric data collection}
 
-Following the course protocol, we searched EBSCOhost academic journals in English published between 2015 and 2026 with the Boolean string
+The course protocol prescribes an EBSCOhost search with the mandatory terms ``operations'' AND ``research''. Because EBSCO requires an institutional login, we ran the identical protocol on OpenAlex, an open index of scholarly works with abstracts, keywords, citation counts and reference lists, on \BibSearchDate. The Boolean string was
 \begin{quote}\footnotesize\ttfamily\raggedright
 "operations" AND "research" AND ("last-mile" OR "last mile" OR "on-demand delivery" OR "instant delivery" OR "quick commerce" OR "q-commerce" OR "meal delivery" OR "dark store" OR "micro-fulfil*" OR "crowdshipping") AND ("facility location" OR "covering" OR "assignment" OR "vehicle routing" OR "integer programming" OR "linear programming")
 \end{quote}
-\todo{date executed; records identified; screening counts; PRISMA figure from scripts/prisma.py; exclusion reasons.} Records were exported in RIS format, de-duplicated and verified in Mendeley, and analysed with the Bibliometrix R package \citep{aria2017bibliometrix}; citation counts were taken from Google Scholar \todo{retrieval date}.
+restricted to journal articles in English published 2015--2026. OpenAlex throttles long Boolean queries, so each topic term was queried separately on titles and abstracts and the union (\BibIdentified{} records) was filtered locally: the method clause on title and abstract (\BibAfterMethod{} records) and the mandatory terms on title, abstract, journal name and keywords---approximating EBSCO's default search fields---leaving \BibScreened{} records with no duplicates (Figure~\ref{fig:prisma}).
+
+Titles and abstracts were screened against explicit criteria: a record was included if its primary contribution concerned the last-mile delivery of goods, food or parcels to end customers \emph{and} it developed, applied or reviewed an OR method. Excluded records were coded as out of scope (\BibExclScope; e.g.\ ``last mile'' in disaster relief, health access or passenger transit), without an OR method (\BibExclNoOR; e.g.\ adoption surveys) or editorial (\BibExclIntro). Screening was LLM-assisted (Claude) and run in two passes: a first pass screened all records and flagged 24 as uncertain, and an independent second pass re-screened the flagged records, whose decision was adopted (it excluded nine of them, mostly generic routing studies without a last-mile focus). Every decision, its code and the second-pass rationale are recorded in the screening log. \BibIncluded{} articles were retained. Records and cited references were converted to the Bibliometrix format \citep{aria2017bibliometrix} for performance analysis and science mapping; citation counts are OpenAlex counts. Included records were exported to RIS for the Mendeley library.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{prisma_flow.pdf}
+\caption{Identification and screening of records.}\label{fig:prisma}
+\end{figure}
 
 \subsection{Modelling framework}
 
 The case study links four classical OR models at three planning levels (Figure~\ref{fig:chain}). Strategically, a coverage-constrained facility-location model (M1) opens dark stores and allocates demand so that every served household is reachable within the promise $T$ at a safe rider speed $v$, at minimum store and rider cost; rider requirements follow from cycle times (M2). Tactically, a transportation model (M3) plans daily replenishment from mother hubs to the chosen stores. Operationally, an assignment model (M4) dispatches riders to orders in a peak batch, and a PERT model (M5) converts the variability of picking, dispatch and riding into the probability that an order meets $T$. The promise $T$ and speed $v$ are swept as policy parameters; everything else is calibrated from public sources (Section~\ref{sec:data}).
 
-\begin{figure}[ht]
-\centering\small
-\fbox{\parbox{0.92\linewidth}{\centering
-\textbf{Policy inputs:} promise $T$, safe speed $v$ \quad$\Rightarrow$\quad
-\textbf{M1} store location + allocation (MILP) \quad$\Rightarrow$\quad \textbf{M2} rider sizing\\[3pt]
-$\Downarrow$ open stores \hspace{4cm} $\Downarrow$ store loads, ride distances\\[3pt]
-\textbf{M3} replenishment (transportation LP) \qquad \textbf{M4} peak dispatch (assignment IP) \qquad \textbf{M5} on-time probability (PERT)
-}}
-\caption{Model chain. \todo{Replace with a proper diagram.}}
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners, align=center, font=\footnotesize, minimum height=1.0cm, text width=3.0cm, fill=#1},
+  box/.default=white, arr/.style={-{Stealth}, thick}, lab/.style={font=\scriptsize\itshape, align=center}]
+  \node[box=gray!12] (pol) {\textbf{Policy inputs}\\ promise $T$, safe speed $v$};
+  \node[box=blue!8, right=0.9cm of pol] (m1) {\textbf{M1} store location\\ \& allocation (MILP)};
+  \node[box=blue!8, right=0.9cm of m1] (m2) {\textbf{M2} rider sizing\\ (cycle times)};
+  \node[box=green!8, below=1.0cm of m1, xshift=-2.2cm] (m3) {\textbf{M3} replenishment\\ (transportation LP)};
+  \node[box=orange!10, below=1.0cm of m1, xshift=2.2cm] (m4) {\textbf{M4} peak dispatch\\ (assignment IP)};
+  \node[box=orange!10, right=0.9cm of m4] (m5) {\textbf{M5} on-time probability\\ (PERT)};
+  \draw[arr] (pol) -- (m1);
+  \draw[arr] (m1) -- node[lab, above] {loads} (m2);
+  \draw[arr] (m1) -- node[lab, left, pos=0.4] {open stores} (m3);
+  \draw[arr] (m1) -- node[lab, right, pos=0.4] {store, rides} (m4);
+  \draw[arr] (m2) -- node[lab, right] {fleet} (m4);
+  \draw[arr] (m1.south east) to[bend left=12] node[lab, right, pos=0.7] {ride\\ distribution} (m5);
+  \node[lab, above=0.15cm of m1] {strategic};
+  \node[lab, below=0.15cm of m3] {tactical};
+  \node[lab, below=0.15cm of m4, xshift=1.6cm] {operational};
+\end{tikzpicture}
+\caption{Model chain linking strategic, tactical and operational decisions.}
 \label{fig:chain}
-\end{figure}
+\end{figure*}
 
-All models are implemented in Python with PuLP and solved with HiGHS; code, data provenance and a test suite verifying each model against hand-solvable or brute-force instances are available in the project repository \todo{repo link}.
+All models are implemented in Python with PuLP and solved with HiGHS; code, data provenance and a test suite verifying each model against hand-solvable or brute-force instances accompany the paper as supplementary material.

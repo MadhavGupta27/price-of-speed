@@ -1,0 +1,146 @@
+[
+ {
+  "openalex_id": "W4407556849",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Primarily drone/solar energy system engineering design; GVRP routing is incidental to the hardware and energy analysis."
+ },
+ {
+  "openalex_id": "W7161774539",
+  "decision": "exclude",
+  "exclusion_reason": "no_or_method",
+  "rationale": "Fuzzy MCDM ranking for selecting routing software; no routing/location/assignment model of delivery operations."
+ },
+ {
+  "openalex_id": "W4384342869",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Facility location / network design MIP explicitly built around extending last-mile next-day delivery routes to customers."
+ },
+ {
+  "openalex_id": "W3194634928",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "General review of electric VRP/arc routing/TOP across sustainable transport and mobility, not specifically last-mile delivery."
+ },
+ {
+  "openalex_id": "W4298004852",
+  "decision": "exclude",
+  "exclusion_reason": "no_or_method",
+  "rationale": "Bibliometric review of sustainable e-commerce logistics without focus on OR models or algorithms."
+ },
+ {
+  "openalex_id": "W3182067109",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Truck-and-drone parallel scheduling VRP (EJOR), a core last-mile drone delivery optimisation problem (judged from title/journal; no abstract)."
+ },
+ {
+  "openalex_id": "W3214441119",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Generic load-dependent EVRPTW matheuristic with no last-mile/urban delivery framing evident (no abstract; judged from title)."
+ },
+ {
+  "openalex_id": "W2791446441",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Electric two-echelon VRP, a city-logistics last-mile distribution routing model (judged from title/journal; no abstract)."
+ },
+ {
+  "openalex_id": "W4415390233",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "VRP with crowdshipping for delivery to customers, an OR routing model in last-mile crowdshipping (judged from title/journal)."
+ },
+ {
+  "openalex_id": "W3215824593",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Two-echelon VRP with satellites (city-logistics last-mile structure) solved by a matheuristic (judged from title/journal)."
+ },
+ {
+  "openalex_id": "W2906979112",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Broad survey of emerging VRP variants (incl. disaster, waste, bike sharing, plant routing); last-mile is one of many topics rather than the primary focus."
+ },
+ {
+  "openalex_id": "W3128929586",
+  "decision": "exclude",
+  "exclusion_reason": "no_or_method",
+  "rationale": "Field experiment with DEA efficiency benchmarking of tracking/routing IT adoption; no OR model developed."
+ },
+ {
+  "openalex_id": "W4396217659",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Generic multi-trip time-dependent VRPTW Benders algorithm with no explicit last-mile delivery focus (no abstract; judged from title)."
+ },
+ {
+  "openalex_id": "W4407981292",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "ML-augmented route evaluation for last-mile delivery VRP decision support, explicitly framed around last-mile driver routes."
+ },
+ {
+  "openalex_id": "W7116776702",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "VRP with simultaneous pickup and delivery for rural (regional last-mile) distribution under uncertain demand (judged from title/journal)."
+ },
+ {
+  "openalex_id": "W4364381781",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Bi-objective p-median model with VNS/Lagrangian algorithm applied to large-scale last-mile delivery districting instances."
+ },
+ {
+  "openalex_id": "W4413392356",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Integrates LLMs with optimisation algorithms for rich VRPs representative of last-mile distribution, with computational results."
+ },
+ {
+  "openalex_id": "W4413008552",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Inbound truck scheduling at cross-docking terminals is upstream terminal operations, not last-mile delivery to customers."
+ },
+ {
+  "openalex_id": "W4386210607",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Generic VRP for connected service areas with no clear last-mile delivery focus (no abstract; judged from title)."
+ },
+ {
+  "openalex_id": "W7159936981",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Carrier-vehicle (mothership-drone) TSP is a generic routing problem motivated equally by rescue, mapping and delivery; last-mile is not the primary focus."
+ },
+ {
+  "openalex_id": "W4415269331",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Truck-multi-drone MILP and metaheuristic for multi-period recursive delivery to customers, a last-mile drone routing problem (vaccine motivation)."
+ },
+ {
+  "openalex_id": "W4407792646",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "On-demand meal delivery order dispatch: empirical insights feeding a simulation-based evaluation of dispatch/assignment algorithms."
+ },
+ {
+  "openalex_id": "W4221162600",
+  "decision": "include",
+  "exclusion_reason": "",
+  "rationale": "Dynamic VRP with stochastic requests (meal/parcel same-day delivery) solved with knapsack-based approximations and decision rules."
+ },
+ {
+  "openalex_id": "W7204841508",
+  "decision": "exclude",
+  "exclusion_reason": "out_of_scope",
+  "rationale": "Crowdshipping for B2B return-point-to-hub reverse logistics stage, not delivery to end customers; cost simulation rather than last-mile optimisation."
+ }
+]

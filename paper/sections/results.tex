@@ -2,19 +2,19 @@
 
 \subsection{Network design across promises and speeds}
 
-Table~\ref{tab:e1} and Figure~\ref{fig:price} report the cost-minimising networks (M1--M2) for every combination of promise $T$ and safe speed $v$. All instances solved to optimality with HiGHS. Three results stand out.
+Table~\ref{tab:e1} and Figure~\ref{fig:price} report the cost-minimising networks (M1--M2) for every combination of promise $T$ and safe speed $v$. Of the \NMilps{} mixed-integer programs solved for this paper, \NMilpsOptimal{} were proven optimal within HiGHS's default gap tolerance (the longest took \MaxSolveS~s); the remaining \NMilpsLimit{}---maximal covering with 50 and 100 stores at $T=15$ (Section~\ref{sec:frag})---stopped at the 600-second limit, so their reported coverage is a lower bound. Three results stand out.
 
-\begin{table}[ht]
+\begin{table*}[t]
 \centering\small
 \caption{Cost-minimising dark-store networks for Bengaluru (M1--M2). Cost per order is per \emph{served} order and includes store and rider costs.}\label{tab:e1}
 \input{generated/tab_e1.tex}
-\end{table}
+\end{table*}
 
-\begin{figure}[ht]
+\begin{figure*}[t]
 \centering
 \includegraphics[width=\linewidth]{price_of_speed.pdf}
 \caption{The price of speed: cost per served order, stores opened and share of residents reachable, by promise $T$ and safe rider speed $v$.}\label{fig:price}
-\end{figure}
+\end{figure*}
 
 \paragraph{The promise decides \emph{who} is served, not what it costs.} At a safe speed of \BaseV~km/h, a 15-minute promise reaches \ServedFifteenPct\% of residents with \StoresTFifteen{} stores at INR~\CostPerOrderFifteen{} per order. Tightening to 10 minutes raises the store count to \StoresTTen{} but leaves \UnreachTenPct\% of residents---mostly at the city's edge, where retail stock suitable for dark stores is sparse---with no candidate site within reach (Figure~\ref{fig:maps}); the cost per served order barely moves (INR~\CostPerOrderTen{}). Relaxing the promise beyond 15 minutes changes almost nothing: the cost-optimal network has about \StoresTTwenty{} stores whether the promise is 20 or 30 minutes, because the cost trade-off between stores and rider time, not the promise, then determines the radius.
 
@@ -22,13 +22,25 @@ Table~\ref{tab:e1} and Figure~\ref{fig:price} report the cost-minimising network
 
 \paragraph{The cost-optimal network is smaller than today's.} A single network serving all of Bengaluru's demand at minimum cost needs \StoreRange{} stores across the scenarios, against roughly \CurrentStores{} operated by three competing platforms today. The gap is a measure of the duplication that competition creates.
 
-\begin{figure}[ht]
+\begin{figure*}[t]
 \centering
 \includegraphics[width=\linewidth]{network_maps.pdf}
 \caption{Optimal networks for $T=10$ and $T=20$ minutes at 15~km/h. Grey cells are served; orange cells have no candidate site within reach.}\label{fig:maps}
-\end{figure}
+\end{figure*}
 
 \paragraph{The price of speed at equal coverage.} The coverage gap at $T=10$ arises because mapped retail sites are scarce at the city's edge. Allowing a store anywhere on a $\sim$0.9~km lattice of populated cells (\GridCandidates{} candidate sites), a 10-minute promise reaches \GridTenServedPct\% of residents but needs \GridTenStores{} stores at INR~\GridTenCost{} per order, against \GridFifteenStores{} stores at INR~\GridFifteenCost{} for 15 minutes. Serving \emph{everyone} within 10 rather than 15 minutes therefore needs \GridStorePremiumPct\% more stores and costs \GridCostPremiumPct\% more per order---about INR~\GridPricePerMinute{} per order for each minute saved. The price of the last five minutes is paid mainly in real estate at the periphery, which the platforms' current networks largely avoid.
+
+\subsection{Fragmentation and a ``realistic promise'' policy}\label{sec:frag}
+
+Figure~\ref{fig:frag} solves the maximal covering problem for a given number of stores placed optimally. Within 15 minutes, 100 well-placed stores already reach at least \FragFifteenHundred\% of residents. Within 10 minutes, 165 stores---Blinkit's Bengaluru network---reach at most \FragTenOne\%, and no number of stores at mapped retail sites lifts coverage above \FragTenMax\%. A 10-minute promise is therefore a promise to the dense core only, whichever platform makes it, and three platforms replicating 150-store networks buy little extra coverage.
+
+\begin{figure}[ht]
+\centering
+\IfFileExists{figures/fragmentation.pdf}{\includegraphics[width=\linewidth]{fragmentation.pdf}}{\todo{fragmentation figure}}
+\caption{Share of residents reachable with $P$ optimally located stores (maximal covering, $v=15$~km/h).}\label{fig:frag}
+\end{figure}
+
+We also test the operational definition proposed in Section~\ref{sec:discussion}: promise 10 minutes wherever an address lies within the safe 10-minute radius of some candidate site, and 15 minutes elsewhere. This differentiated promise gives \MixedTenShare\% of residents a 10-minute promise and still serves \MixedServed\% overall---the same coverage as a uniform 15-minute promise---with \MixedStores{} stores (\MixedExtraStores{} more) at INR~\MixedCost{} per order, \MixedPremiumPct\% above the uniform 15-minute network. A uniform 10-minute promise, by contrast, reaches only \ServedTenPct\% of residents. Tying the promise to reachability thus delivers 10-minute service to most of the city at a small premium, without leaving anyone unserved and without requiring riders to exceed the safe speed.
 
 \subsection{Fulfilment reliability (PERT)}
 
@@ -36,19 +48,19 @@ Table~\ref{tab:pert} gives the PERT estimate of fulfilment time in each network 
 
 \begin{table}[ht]
 \centering\small
-\caption{PERT fulfilment time by promise (network designed for that promise, $v=15$~km/h).}\label{tab:pert}
+\caption{PERT fulfilment time by promise (network designed for that promise, $v=15$~km/h); $v_{95}$ is the rider speed needed for 95\% on-time delivery.}\label{tab:pert}
 \input{generated/tab_pert.tex}
 \end{table}
 
 \subsection{Peak dispatch (assignment)}
 
-The pressure appears when a network designed for one promise is asked to meet a tighter one. Table~\ref{tab:assign} dispatches a 10-minute peak batch at a stressed store of the 15-minute network (90th percentile of mean ride distance, \AssignStressRide~km). With the full sized fleet, a 15-minute promise is met for every order, but a 10-minute promise only for \AssignStressTenOnTime\%; the late orders could be saved only if riders averaged about \AssignStressSpeed~km/h, above the safe speed. Under lean staffing the gap widens sharply. Optimal assignment reduces total lateness relative to first-in-first-out dispatch, although because it minimises lateness rather than the count of late orders it occasionally delivers fewer orders strictly on time. \todo{Comment on the median store, where 60\% staffing suffices for all promises.}
+The pressure appears when a network designed for one promise is asked to meet a tighter one. Table~\ref{tab:assign} dispatches a 10-minute peak batch at a stressed store of the 15-minute network (90th percentile of mean ride distance, \AssignStressRide~km). With the full sized fleet, a 15-minute promise is met for every order, but a 10-minute promise only for \AssignStressTenOnTime\%; the late orders could be saved only if riders averaged about \AssignStressSpeed~km/h, above the safe speed. Under lean staffing the gap widens sharply. Optimal assignment reduces total lateness relative to first-in-first-out dispatch, although because it minimises lateness rather than the count of late orders it occasionally delivers fewer orders strictly on time. The pressure is local: at the median-load store, where rides average 0.9~km, 60\% of the sized fleet meets even a 10-minute promise for every order under optimal dispatch (first-in-first-out reaches 90\%), and only at 40\% staffing do orders run late. Tight promises thus fail first at the edges of store catchments, which is where riders would be pushed to speed.
 
-\begin{table}[ht]
+\begin{table*}[t]
 \centering\small
 \caption{Peak 10-minute batch at a stressed store of the 15-minute network: optimal assignment vs FIFO.}\label{tab:assign}
 \input{generated/tab_assign.tex}
-\end{table}
+\end{table*}
 
 \subsection{Replenishment (transportation)}
 
@@ -60,6 +72,6 @@ Figure~\ref{fig:tornado} varies each uncertain input over its range at the base 
 
 \begin{figure}[ht]
 \centering
-\IfFileExists{figures/tornado.pdf}{\includegraphics[width=0.85\linewidth]{tornado.pdf}}{\todo{tornado figure pending}}
+\IfFileExists{figures/tornado.pdf}{\includegraphics[width=\linewidth]{tornado.pdf}}{\todo{tornado figure pending}}
 \caption{One-at-a-time sensitivity of cost per served order ($T=15$, $v=15$).}\label{fig:tornado}
 \end{figure}

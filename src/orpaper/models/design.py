@@ -50,7 +50,8 @@ def solve_design(dist_km, radius_km, assign_cost, fixed_cost, capacity=None,
     d = np.asarray(dist_km)
     C = np.asarray(assign_cost)
     n, m = d.shape
-    arcs = np.argwhere(d <= radius_km)
+    r = np.asarray(radius_km, float)
+    arcs = np.argwhere(d <= (r[:, None] if r.ndim else r))  # scalar or per-cell radius
     M = unserved_penalty if unserved_penalty is not None else 10 * (C.max() + fixed_cost)
 
     prob = pulp.LpProblem("design", pulp.LpMinimize)
@@ -81,18 +82,17 @@ def solve_design(dist_km, radius_km, assign_cost, fixed_cost, capacity=None,
     if hasattr(s, "optionsDict"):
         s.optionsDict["mip_rel_gap"] = mip_gap
     prob.solve(s)
-    status = pulp.LpStatus[prob.status]
-    if status != "Optimal":
-        check_optimal(prob)
+    status = check_optimal(prob, allow_feasible=True)  # time-limited incumbents are reported, not hidden
 
     open_sites = [j for j in range(m) if y[j].value() > 0.5]
+    # A cell is served when its unserved slack is < 0.5. Equal-cost stores can split a cell
+    # fractionally (degenerate LP optimum), so take the largest share as its store and
+    # compute rider cost from the exact objective term, not from a 0.5 threshold on x.
     assign = np.full(n, -1)
     for i in range(n):
-        if by_cell[i]:
-            j_best = max(by_cell[i], key=lambda j: x[i, j].value() or 0)
-            if (x[i, j_best].value() or 0) > 0.5:
-                assign[i] = j_best
+        if by_cell[i] and (u[i].value() or 0) < 0.5:
+            assign[i] = max(by_cell[i], key=lambda j: x[i, j].value() or 0)
+    rider = float(sum(C[i, j] * (v.value() or 0) for (i, j), v in x.items()))
     served = assign >= 0
-    rider = float(C[np.flatnonzero(served), assign[served]].sum())
     return DesignResult(open_sites, assign, fixed_cost * len(open_sites), rider,
                         np.flatnonzero(~served).tolist(), status, None, len(arcs))

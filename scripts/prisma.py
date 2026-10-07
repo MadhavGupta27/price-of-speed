@@ -5,6 +5,7 @@
 
 import argparse
 import json
+import os
 
 import pandas as pd
 
@@ -16,7 +17,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--log", default=ROOT / "biblio/screening_log.csv")
     ap.add_argument("--out-json", default=ROOT / "results/prisma_counts.json")
-    ap.add_argument("--out-fig", default=ROOT / "biblio/figures/prisma_flow.png")
+    ap.add_argument("--out-fig", default=ROOT / "paper/figures/prisma_flow.pdf")
+    ap.add_argument("--search-log", default=ROOT / "results/search_log.json")
     a = ap.parse_args()
 
     log = pd.read_csv(a.log)
@@ -25,7 +27,8 @@ def main():
     c = prisma_counts(log)
     with open(a.out_json, "w") as f:
         json.dump(c, f, indent=2)
-    plot_prisma(c, a.out_fig)
+    sl = json.loads(open(a.search_log).read()) if os.path.exists(a.search_log) else None
+    plot_prisma(c, a.out_fig, sl)
     print(json.dumps(c, indent=2))
     if c["pending"]:
         print(f"\nWARNING: {c['pending']} records have no include/exclude decision.")

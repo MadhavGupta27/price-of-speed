@@ -10,7 +10,24 @@ def get_solver(name: str = "HiGHS", time_limit_s: float | None = None, msg: bool
     raise ValueError(f"Unknown solver {name!r}")
 
 
-def check_optimal(prob: pulp.LpProblem) -> None:
-    status = pulp.LpStatus[prob.status]
-    if status != "Optimal":
-        raise RuntimeError(f"{prob.name}: solver status {status}")
+def solution_status(prob: pulp.LpProblem) -> str:
+    """'Optimal' only if proven optimal.
+
+    PuLP maps a HiGHS time/iteration limit to LpStatus 'Optimal' with
+    sol_status = LpSolutionIntegerFeasible, so LpStatus alone overstates
+    optimality; sol_status distinguishes the two.
+    """
+    if pulp.LpStatus[prob.status] != "Optimal":
+        return pulp.LpStatus[prob.status]
+    if prob.sol_status == pulp.LpSolutionOptimal:
+        return "Optimal"
+    if prob.sol_status == pulp.LpSolutionIntegerFeasible:
+        return "Feasible (limit reached)"
+    return pulp.LpSolution.get(prob.sol_status, "Unknown")
+
+
+def check_optimal(prob: pulp.LpProblem, allow_feasible: bool = False) -> str:
+    status = solution_status(prob)
+    if status == "Optimal" or (allow_feasible and status.startswith("Feasible")):
+        return status
+    raise RuntimeError(f"{prob.name}: solver status {status}")

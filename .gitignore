@@ -15,7 +15,10 @@ results/*
 paper/build/
 # Kaggle licences are "other"/MIT: re-fetch with `make data` instead of redistributing
 data/raw/kaggle_*/
+# OpenAlex raw dumps (~100 MB): regenerate with scripts/openalex_search.py
+biblio/raw/openalex_*.jsonl
 # transient downloads
 data/raw/**/*.part
 data/raw/**/*.osm.pbf
 data/raw/worldpop/ind_pop_*.tif
+.env

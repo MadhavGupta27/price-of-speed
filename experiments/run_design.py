@@ -16,6 +16,7 @@ Outputs: results/*.csv|json and paper figures in paper/figures/.
 import argparse
 import json
 import math
+import time
 
 import matplotlib
 
@@ -77,7 +78,8 @@ def design(inst, T, v, daily=None, F=None, c_r=None, util=None, te=None):
     r = ride_radius_km(T, v, fixed)
     q = inst.pop / inst.pop.sum() * daily
     cost = rider_cost_matrix(inst.dist, q, v, te["handover_min"], util, c_r)
-    res = solve_design(inst.dist, r, cost, F, solver=SOLVER["name"], time_limit_s=SOLVER["time_limit_s"] * 5)
+    t0 = time.perf_counter()
+    res = solve_design(inst.dist, r, cost, F, solver=SOLVER["name"], time_limit_s=SOLVER["time_limit_s"])
     served = res.assign >= 0
     d_served = inst.dist[np.flatnonzero(served), res.assign[served]]
     peak = q * mid("peak_hour_share")
@@ -95,7 +97,7 @@ def design(inst, T, v, daily=None, F=None, c_r=None, util=None, te=None):
         "rider_cost_cr": round(res.rider_cost / 1e7, 3),
         "total_cost_cr": round((res.store_cost + res.rider_cost) / 1e7, 3),
         "cost_per_order_inr": round((res.store_cost + res.rider_cost) / (served_orders * 30), 2),
-        "status": res.status, "arcs": res.n_arcs,
+        "status": res.status, "arcs": res.n_arcs, "solve_s": round(time.perf_counter() - t0, 1),
     }
 
 

@@ -1,24 +1,49 @@
 \section{Literature review}\label{sec:lit}
 
-% Draft structure. Bibliometric numbers and figures are produced by biblio/R/02_analysis.R
-% once the EBSCO search and screening are complete (PLAN.md Phases 2-3).
-
 \subsection{Bibliometric overview}
 
-\todo{Run the EBSCO search (Section~\ref{sec:method}); report records identified, screened and included, the annual growth rate, leading journals, authors and countries, and insert Figures: annual production, keyword co-occurrence network, thematic map (biblio/figures/).}
+The search (Section~\ref{sec:method}) yielded \BibIncluded{} journal articles on OR for last-mile and on-demand delivery published between 2015 and 2026. The field is young and accelerating: output grew at \BibGrowthPct\% a year between 2015 and 2025, \BibSinceTwentyOnePct\% of the corpus appeared from 2021 onwards, and 2025 alone contributed \BibYearsTwentyFive{} articles (Figure~\ref{fig:annual}). Core OR journals dominate: the \emph{\BibTopJournal} published \BibTopJournalN{} articles and \emph{\BibSecondJournal} \BibSecondJournalN, followed by \emph{Transportation Research Procedia} and the \emph{Annals of Operations Research}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{annual_production.pdf}
+\caption{Annual number of included articles (2026 is a partial year).}\label{fig:annual}
+\end{figure}
+
+The most frequent keywords (Figure~\ref{fig:cooc}) are \emph{last-mile delivery} and \emph{vehicle routing}, with mixed-integer programming (\BibMILPKw{} keyword occurrences) and adaptive large neighbourhood search (\BibALNSKw) as the dominant solution technologies. Counting topics across titles, abstracts and keywords, drones and delivery robots appear in \BibDrones{} of the \BibIncluded{} articles, assignment, matching or dispatch in \BibAssign, location models in \BibLocation{} and on-demand, meal, grocery or instant delivery in \BibOnDemand. The thematic map (Figure~\ref{fig:thematic}) places last-mile vehicle routing, delivery-cost reduction with order assignment, and facility location (with electric vehicles, crowdshipping and parcel lockers) among the \emph{basic} themes: central to the field but internally diffuse. The \emph{motor} themes, both central and well developed, are on-demand delivery routing with customer assignment, robot and drone delivery under deadlines solved by decomposition, branch-and-price for multimodal and drone routing, and emission-aware routing solved by genetic algorithms. Driver workload and social sustainability appear only in a \emph{niche} theme with e-commerce---well developed internally but peripheral to the field---alongside food-delivery apps with reinforcement learning and depot location.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{top_keywords.pdf}
+\caption{Most frequent keywords in the \BibIncluded{} included articles (keyword co-occurrence network in the repository: \texttt{biblio/figures/keyword\_cooccurrence.png}).}\label{fig:cooc}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{thematic_map.pdf}
+\caption{Thematic map (centrality vs.\ density of keyword clusters).}\label{fig:thematic}
+\end{figure}
+
+The intellectual base, measured by co-citation, is anchored in routing. The most co-cited works are the drone-assisted travelling salesman problem of \citet{murray2015} and its successors \citep{agatz2018,sacramento2019}, Solomon's time-window benchmarks \citep{solomon1987}, the adaptive large neighbourhood search of \citet{ropke2006}, the survey of last-mile concepts by \citet{boysen2020}, and two-echelon covering with cargo bikes and lockers \citep{enthoven2020}.
 
 \subsection{Thematic synthesis}
 
-We organise the core studies into four streams. \todo{Confirm the clusters against the Biblioshiny thematic map and add 10--20 core papers from the screened library.}
+Table~\ref{tab:core} codes 16 core studies selected for citations per year and for proximity to our problem.
 
-\paragraph{Last-mile delivery and its operating modes.} Research on urban last-mile logistics spans vehicle routing variants, parcel lockers, micro-depots, crowdshipping and electric fleets; recent bibliometric reviews document rapid growth and a strong sustainability orientation \todo{cite EV last-mile and crowdshipping bibliometric reviews from the library}.
+\begin{table*}[t]
+\centering\scriptsize
+\caption{Core studies (coded from abstracts).}\label{tab:core}
+\input{generated/tab_core.tex}
+\end{table*}
 
-\paragraph{On-demand and meal delivery operations.} The meal delivery routing problem \citep{reyes2018mdrp} framed courier assignment and dispatch under tight delivery windows as a dynamic pickup-and-delivery problem, and a substantial literature on order--courier matching followed \todo{cite reviews, e.g.\ on-demand food delivery SLR; MSOM data paper}. These studies typically treat the promised delivery time as given, not as a design choice.
+\paragraph{Vehicle routing with new delivery modes.} The largest stream extends the vehicle routing problem to two-echelon systems, delivery options and new vehicles: multi-depot two-echelon routing with delivery options \citep{zhou2017}, trucks with drones \citep{schermer2019,liu2019}, and trucks launching delivery robots solved by adaptive large neighbourhood search \citep{chen2021} or Benders decomposition \citep{alfandari2021}. Reviews classify these truck--drone formulations \citep{li2021} and summarise the broader toolbox of exact, metaheuristic and learning-based approaches \citep{shuaibu2025}. The stream is methodologically rich but mostly tested on synthetic benchmarks.
 
-\paragraph{Facility location for urban fulfilment.} Covering models originate with the location set covering problem \citep{toregas1971} and the maximal covering location problem \citep{church1974}. Recent work adapts them to micro-fulfilment and dark stores: \citet{kewalramani2023} propose a heuristic for dark-store siting under delivery-radius and capacity constraints for an Indian q-commerce operator, and \todo{cite TUM/Augsburg micro-fulfilment network planning; dark-store resilience MILP}.
+\paragraph{On-demand and dynamic delivery.} A second stream treats orders that arrive in real time: batching and assignment for crowdsourced food delivery \citep{simoni2023}, large-scale dynamic routing with stochastic requests \citep{zhang2022}, end-to-end order assignment and dispatch formulated as a Markov decision process \citep{zamal2025}, and dispatch policies evaluated on platform data, where maximising future orders outperforms minimising delay \citep{mao2025}. Delivery time is usually a performance measure here. \citet{voigt2025} are a notable exception: offering a ``some-day'' option yields large cost savings for small increases in delivery time---the closest analogue in the corpus to pricing a delivery promise.
 
-\paragraph{Courier welfare in OR.} \todo{Expected to be thin: report what the search finds. Fairwork India ratings document pay and safety conditions outside the OR literature.}
+\paragraph{Location of fulfilment infrastructure.} Location models appear in \BibLocation{} studies, from parcel-locker networks reduced to uncapacitated facility location \citep{deutsch2017} to micro-fulfilment location--allocation for instant retail \citep{luo2026}, building on covering models \citep{toregas1971,church1974}. Outside the screened corpus, \citet{kewalramani2023} site Indian dark stores heuristically under delivery-radius constraints.
+
+\paragraph{Fairness and the workforce.} Only \BibWelfare{} studies consider couriers' or drivers' welfare. \citet{bhattacharya2026} show for quick-commerce order allocation that a fairness weight raises delivery time by 4--5\% but cuts earnings inequality by a third, and \citet{carlsson2026} design equitable delivery zones that cut the maximum work span by about a fifth in a field implementation. Neither treats rider \emph{speed} or safety as a constraint.
 
 \subsection{Research gaps}
 
-Three gaps motivate this study: (i) quick commerce in India has received little OR attention relative to its scale; (ii) the delivery promise is almost always an exogenous parameter rather than a policy variable to be priced; and (iii) rider safety enters models, if at all, as a by-product rather than a constraint. \todo{Ground each gap in the bibliometric evidence.}
+The bibliometric evidence supports three gaps. First, quick commerce is almost absent: only \BibQComm{} of \BibIncluded{} articles mention quick commerce, dark stores or micro-fulfilment, and none (\BibIndia) studies India, the largest q-commerce market. Second, the delivery promise is treated as given: only \BibPromise{} articles treat delivery time or speed as something to be chosen or priced. Third, rider welfare is marginal (\BibWelfare{} articles), and none models a safe-speed limit. Our study addresses all three by pricing the promise for an Indian city under an explicit rider-speed constraint.

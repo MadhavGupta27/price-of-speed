@@ -6,7 +6,7 @@ FAMILY ?= $(shell grep 'model_family:' config/project.yaml | awk '{print $$2}')
 CROSSREF := $(if $(shell command -v pandoc-crossref),--filter pandoc-crossref,)
 REFDOC := $(if $(wildcard paper/template.docx),--reference-doc template.docx,)
 
-.PHONY: data case experiments setup test search-string biblio-import biblio-analysis prisma citations toy sensitivity paper todo
+.PHONY: data case experiments biblio-search setup test search-string biblio-import biblio-analysis prisma citations toy sensitivity paper todo
 
 setup:            ## install Python + R dependencies
 	uv sync --extra dev
@@ -17,6 +17,15 @@ test:             ## run model/pipeline tests
 
 search-string:    ## print the Boolean search string from config
 	@$(PY) -c "from orpaper.config import load_config, search_string; print(search_string(load_config()))"
+
+biblio-search:    ## OpenAlex search + screening log merge + bibliometrix conversion (needs OPENALEX_API_KEY in .env)
+	$(PY) scripts/openalex_search.py
+	@echo "Screen records into biblio/screening/decisions_*.json (see biblio/search_protocol.md), then:"
+	$(PY) scripts/merge_screening.py
+	cd scripts && $(PY) openalex_to_bibliometrix.py
+	Rscript biblio/R/02_analysis.R
+	$(PY) scripts/prisma.py
+	$(PY) scripts/build_lit_assets.py
 
 biblio-import:    ## Mendeley .bib -> bibliometrix -> biblio/exports/biblioshiny_export.xlsx
 	Rscript biblio/R/01_import.R
@@ -44,8 +53,9 @@ toy:              ## make toy [FAMILY=vrp]
 sensitivity:      ## make sensitivity [FAMILY=vrp]
 	$(PY) experiments/run_sensitivity.py --family $(FAMILY)
 
-experiments:      ## all paper experiments (E1 design, grid, PERT, assignment, transport, tornado)
+experiments:      ## all paper experiments (E1 design, grid, PERT, assignment, transport, tornado, policy)
 	$(PY) experiments/run_design.py
+	cd experiments && $(PY) run_policy.py
 
 paper:            ## export numbers/tables from results/, then compile paper/main.tex -> paper/build/main.pdf
 	$(PY) scripts/export_numbers.py

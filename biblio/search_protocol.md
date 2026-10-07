@@ -5,15 +5,15 @@ methodology section of the paper. Values must match `config/project.yaml`.
 
 | Item | Value |
 |---|---|
-| Database(s) | TODO(human): EBSCOhost (+ Scopus / WoS / ScienceDirect?) |
-| Search string (exact) | TODO(human): output of `make search-string` |
-| Fields searched | TODO(human): e.g. title, abstract, keywords |
-| Date range | TODO(human) |
+| Database(s) | OpenAlex (run 2026-10-06). EBSCOhost is prescribed by the course but no institutional login was available; an EBSCO export can be swapped in through the same pipeline |
+| Search string (exact) | output of `make search-string`; executed per topic term on OpenAlex title+abstract, method and mandatory clauses applied locally (see `scripts/openalex_search.py`) |
+| Fields searched | Topic + method: title, abstract. Mandatory terms: title, abstract, journal name, keywords |
+| Date range | 2015-2026 |
 | Language | English |
 | Document type | Academic journals only |
 | Sort order | Newest (or oldest) first, 50 results per page |
-| Date search executed | TODO(human) |
-| Records identified | TODO(human), screenshot: `screenshots/` |
+| Date search executed | 2026-10-06 |
+| Records identified | 7,576 (union) -> 715 (method) -> 216 (mandatory) -> 177 included; `results/search_log.json`, `paper/figures/prisma_flow.pdf` |
 
 ## Exclusion criteria
 
@@ -27,7 +27,8 @@ PRISMA counts group cleanly. Add codes here if needed, don't invent them ad hoc.
 | `introduction` | Editorial, special-issue introduction, preface |
 | `thesis` | Student thesis or dissertation |
 | `documentary` | Documentary, news, magazine item |
-| `review_only` | TODO(human): keep or exclude review articles? |
+| `no_or_method` | Delivery topic, but no OR/optimisation model, algorithm or review of such (e.g. consumer survey, policy essay) |
+| `review_only` | Not used: literature reviews of OR delivery methods are included and tagged `review` |
 | `no_access` | Full text unobtainable (only if full text is required) |
 
 ## Screening rules
@@ -36,6 +37,7 @@ PRISMA counts group cleanly. Add codes here if needed, don't invent them ad hoc.
 - `duplicate` = yes for repeats across pages/databases (keep the first copy).
 - `decision` = include / exclude. Exclusions need a code from the table above.
 - Disagreements: second screener decides; note in `notes`.
+- 2026-10-06 run: LLM-assisted screening (four parallel batches, criteria above); decisions and coding in `biblio/screening/decisions_*.json`. 24 records flagged uncertain were re-screened by an independent second pass (`biblio/screening/second_pass.json`), whose decision was adopted; 9 decisions changed (include -> exclude). Final: 168 included, 48 excluded.
 
 ## RIS export log
 

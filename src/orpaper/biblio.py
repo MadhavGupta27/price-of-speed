@@ -56,36 +56,50 @@ def prisma_counts(log: pd.DataFrame) -> dict:
     }
 
 
-def plot_prisma(c: dict, out: str | Path):
-    """Simple vertical PRISMA-style flow diagram."""
+def prisma_stages(c: dict, search_log: dict | None = None) -> list[tuple[str, str | None]]:
+    """(main box, side box) pairs from the search log (if any) and the screening counts."""
     reasons = "\n".join(f"{k}: {v}" for k, v in c["excluded_by_reason"].items()) or "-"
-    dbs = ", ".join(f"{k} n={v}" for k, v in c["identified_by_db"].items())
-    main = [
-        f"Records identified\n({dbs})\nn = {c['identified']}",
-        f"Records after duplicates removed\nn = {c['screened']}",
-        f"Records screened\nn = {c['screened']}",
-        f"Studies included in bibliometric analysis\nn = {c['included']}",
+    stages = []
+    if search_log:
+        n_id = search_log["identified_union"]
+        stages += [
+            (f"Records identified ({search_log['database']},\n{len(search_log['per_term_hits'])} topic-term queries)\nn = {n_id:,}",
+             f"No method term in title/abstract\nn = {n_id - search_log['after_method_clause']:,}"),
+            (f"Records with topic and method terms\nn = {search_log['after_method_clause']:,}",
+             f'Missing "operations" AND "research"\nn = {search_log["after_method_clause"] - search_log["after_mandatory_terms"]:,}'),
+        ]
+    else:
+        dbs = ", ".join(f"{k} n={v}" for k, v in c["identified_by_db"].items())
+        stages.append((f"Records identified\n({dbs})\nn = {c['identified']}", None))
+    stages += [
+        (f"Records after duplicates removed\nn = {c['screened']}", f"Duplicates removed\nn = {c['duplicates_removed']}"),
+        (f"Records screened (title/abstract)\nn = {c['screened']}", f"Records excluded\nn = {c['excluded']}\n{reasons}"),
+        (f"Studies included in bibliometric analysis\nn = {c['included']}", None),
     ]
-    side = {1: f"Duplicates removed\nn = {c['duplicates_removed']}",
-            2: f"Records excluded\nn = {c['excluded']}\n{reasons}"}
+    return stages
 
-    fig, ax = plt.subplots(figsize=(8, 8))
+
+def plot_prisma(c: dict, out: str | Path, search_log: dict | None = None):
+    """Vertical PRISMA-style flow diagram."""
+    stages = prisma_stages(c, search_log)
+    k = len(stages)
+    fig, ax = plt.subplots(figsize=(8, 1.7 * k + 0.6))
     ax.axis("off")
-    ys = [0.88, 0.64, 0.40, 0.14]
+    ys = [1 - (i + 0.5) / k for i in range(k)]
     box = dict(boxstyle="round,pad=0.6", fc="white", ec="black")
-    for i, (y, text) in enumerate(zip(ys, main)):
-        ax.text(0.32, y, text, ha="center", va="center", fontsize=10, bbox=box)
-        if i < len(ys) - 1:
-            ax.annotate("", xy=(0.32, ys[i + 1] + 0.07), xytext=(0.32, y - 0.07),
+    gap = 0.32 / k
+    for i, (y, (text, side)) in enumerate(zip(ys, stages)):
+        ax.text(0.32, y, text, ha="center", va="center", fontsize=9, bbox=box)
+        if i < k - 1:
+            ax.annotate("", xy=(0.32, ys[i + 1] + gap), xytext=(0.32, y - gap),
                         arrowprops=dict(arrowstyle="->"))
-        if i in side:
-            ax.text(0.80, y, side[i], ha="center", va="center", fontsize=9, bbox=box)
-            ax.annotate("", xy=(0.64, y), xytext=(0.56, y), arrowprops=dict(arrowstyle="->"))
+        if side:
+            ax.text(0.82, y, side, ha="center", va="center", fontsize=8, bbox=box)
+            ax.annotate("", xy=(0.66, y), xytext=(0.58, y), arrowprops=dict(arrowstyle="->"))
     if c["pending"]:
-        ax.text(0.5, 0.01, f"WARNING: {c['pending']} records not yet screened",
-                ha="center", color="crimson")
+        ax.text(0.5, 0.0, f"WARNING: {c['pending']} records not yet screened", ha="center", color="crimson")
     Path(out).parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out, dpi=200, bbox_inches="tight")
+    fig.savefig(out, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -130,6 +144,6 @@ def shortlist_core(records: pd.DataFrame, n: int = 20, current_year: int | None 
     df = df.sort_values("cites_per_year", ascending=False)
     cols = [c for c in ["TI", "AU", "PY", "SO", "DI", cites_col, "cites_per_year"] if c in df]
     out = df[cols].head(n * 2).reset_index(drop=True)
-    out["selected"] = ""  # TODO(human): mark yes/no after reading abstracts
+    out["selected"] = ""  # filled by the reviewer after reading abstracts
     out["reason"] = ""
     return out

@@ -21,7 +21,15 @@ class(M) <- c("bibliometrixDB", "data.frame")
 fig <- function(name) file.path("biblio/figures", name)
 dir.create("biblio/figures", showWarnings = FALSE)
 dir.create("results", showWarnings = FALSE)
-save_plot <- function(p, name, w = 7, h = 4.5) ggsave(fig(name), p, width = w, height = h, dpi = 300)
+save_plot <- function(p, name, w = 7, h = 4.5) {
+  ggsave(fig(name), p, width = w, height = h, dpi = 300)
+  ggsave(file.path("paper/figures", sub("\\.png$", ".pdf", name)), p, width = w, height = h)
+}
+dir.create("paper/figures", showWarnings = FALSE, recursive = TRUE)
+net_png_pdf <- function(name, expr_fun) {
+  png(fig(name), width = 2400, height = 2000, res = 300); expr_fun(); dev.off()
+  pdf(file.path("paper/figures", sub("\\.png$", ".pdf", name)), width = 8, height = 6.5); expr_fun(); dev.off()
+}
 step <- function(label, expr) tryCatch(expr, error = function(e)
   message("SKIPPED ", label, ": ", conditionMessage(e)))
 
@@ -42,7 +50,9 @@ step("annual production", {
   yr$year <- as.integer(as.character(yr$year))
   write.csv(yr, "results/annual_production.csv", row.names = FALSE)
   save_plot(ggplot(yr, aes(year, n)) + geom_line(colour = "#3b6ea5") + geom_point() +
-              labs(x = "Year", y = "Articles") + theme_paper, "annual_production.png")
+              scale_x_continuous(breaks = seq(min(yr$year), max(yr$year), 1)) +
+              labs(x = "Year", y = "Articles") + theme_paper +
+              theme(axis.text.x = element_text(angle = 45, hjust = 1)), "annual_production.png", 6, 3.2)
 })
 step("top sources",  top_bar(res$Sources, 10, "Articles", "top_sources.png"))
 step("top authors",  top_bar(res$Authors, 10, "Articles", "top_authors.png"))
@@ -56,10 +66,34 @@ step("most cited", {
 
 step("keyword co-occurrence", {
   NetMatrix <- biblioNetwork(M, analysis = "co-occurrences", network = "author_keywords", sep = ";")
-  png(fig("keyword_cooccurrence.png"), width = 2400, height = 2000, res = 300)
-  networkPlot(NetMatrix, n = 40, type = "fruchterman", Title = "", labelsize = 0.8,
-              size.cex = TRUE, cluster = "louvain", remove.isolates = TRUE, verbose = TRUE)
-  dev.off()
+  net_png_pdf("keyword_cooccurrence.png", function() {
+    net <- networkPlot(NetMatrix, n = 30, type = "fruchterman", Title = "", labelsize = 1.4,
+                       label.cex = TRUE, size.cex = TRUE, size = 6, edgesize = 3, cluster = "louvain",
+                       remove.isolates = TRUE, remove.multiple = TRUE, verbose = TRUE)
+    write.csv(net$cluster_res, "results/keyword_clusters.csv", row.names = FALSE)
+  })
+})
+
+step("co-citation", {
+  NetMatrix <- biblioNetwork(M, analysis = "co-citation", network = "references", sep = ";")
+  net_png_pdf("cocitation.png", function() {
+    net <- networkPlot(NetMatrix, n = 30, type = "fruchterman", Title = "", labelsize = 0.6,
+                       size.cex = TRUE, cluster = "louvain", remove.isolates = TRUE, verbose = TRUE)
+    write.csv(net$cluster_res, "results/cocitation_clusters.csv", row.names = FALSE)
+  })
+})
+
+step("local citations", {
+  cr <- citations(M, field = "article", sep = ";")
+  write.csv(head(as.data.frame(cr$Cited), 30), "results/most_cited_references.csv", row.names = FALSE)
+})
+
+step("growth", {
+  yrs <- table(M$PY); y <- as.integer(names(yrs))
+  full <- y[y <= 2025]  # 2026 is a partial year
+  n0 <- as.numeric(yrs[as.character(min(full))]); n1 <- as.numeric(yrs[as.character(max(full))])
+  cagr <- (n1 / n0)^(1 / (max(full) - min(full))) - 1
+  writeLines(sprintf("%.4f", cagr), "results/annual_growth_rate.txt")
 })
 
 step("collaboration", {
@@ -71,8 +105,9 @@ step("collaboration", {
 })
 
 step("thematic map", {
-  tm <- thematicMap(M, field = "DE", n = 250, minfreq = 2, n.labels = 3)
+  tm <- thematicMap(M, field = "DE", n = 250, minfreq = 3, n.labels = 3)
   save_plot(tm$map, "thematic_map.png", 8, 6)
+  write.csv(tm$clusters, "results/thematic_clusters.csv", row.names = FALSE)
 })
 
 message("Done. Figures in biblio/figures/, tables in results/. Skipped steps need richer metadata.")

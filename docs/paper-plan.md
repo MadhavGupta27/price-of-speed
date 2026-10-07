@@ -61,7 +61,7 @@ Coverage sets: Nᵢ = { j : dᵢⱼ ≤ r(T, v) }.
 - **Maximal covering (coverage with the current fleet of *P* stores):**
   max Σᵢ pᵢ zᵢ  s.t. zᵢ ≤ Σ_{j∈Nᵢ} yⱼ; Σⱼ yⱼ = P; yⱼ, zᵢ ∈ {0,1}
 
-Run both over the full (T, v) grid. *P* is set from public reports of Bengaluru's dark-store count. **TODO(human): find and cite that count.**
+Run both over the full (T, v) grid. *P* is set from public reports of Bengaluru's dark-store count (440; quickcommercemap.com, July 2026).
 
 **First-pass finding (E1, 2026-10-06; `results/e1_price_of_speed.csv`):**
 - *Set covering* alone gives a misleading picture.
@@ -74,7 +74,7 @@ Run both over the full (T, v) grid. *P* is set from public reports of Bengaluru'
 - Constraints: Σⱼ xᵢⱼ = 1; xᵢⱼ ≤ yⱼ; xᵢⱼ = 0 if dᵢⱼ > r(T, v); optionally Σᵢ λᵢ xᵢⱼ ≤ capⱼ.
 - This is an uncapacitated (or capacitated) facility location problem with a coverage restriction.
 - Variables exist only for reachable pairs, which keeps it sparse. If HiGHS struggles at the full size, aggregate demand to ~1 km cells.
-- It needs **F** (store cost) and **c_r** (rider cost per hour); these are TODO(human) in config. Report how the optimum shifts across F/c_r ratios, because the ratio drives the answer.
+- It needs **F** (store cost) and **c_r** (rider cost per hour), both sourced in `data/README.md` §5. The tornado shows how the optimum shifts across their ranges.
 
 **Coverage gap at tight promises.** At T = 10 min, even 20 km/h leaves ~10% of the population with no candidate site in reach.
 - This is partly real (sparse retail stock at the periphery) and partly OSM incompleteness.
@@ -130,7 +130,7 @@ The **price per minute of speed** is the cost difference between consecutive pro
 | 5 | — | E6 sensitivity; final figures | Results + discussion |
 | 6 | Mendeley export cleanup | Reproducibility check (fresh clone) | Edit to ≤12 pages; abstract; slides |
 
-Roles (5–6 members; **TODO(human): assign names**): search/screening lead, Biblioshiny lead, modelling lead (M1/M2), modelling (M3–M5), data/figures, editor/presentation.
+Group: Madhav Gupta (28), Aadee Pardasani (01), Aashi Khuthia (06), Jiya Jagawat (23), Prishi Doshi (36), Aarushi Rakesh (05). Roles: search/screening, bibliometrics, modelling (M1/M2), modelling (M3–M5), data/figures, editing/presentation.
 
 ## 7. Open items needing human input
 
@@ -152,3 +152,16 @@ Resolved 2026-10-06 from company filings and press (see `data/README.md` §5): s
   - With a store allowed anywhere, a 10-minute promise needs +61% stores at +8% cost per order relative to 15 minutes.
   - Rider *speed* drives cost: a 15 km/h cap costs +19% per order relative to 20 km/h.
 - **Still `\todo`:** all bibliometric content (§2, the RQ1 answer, PRISMA), author names, repo link, the model-chain diagram, primary-source verification flagged in `references.bib`, and the instructor template.
+
+## 9. Status (2026-10-06, evening)
+
+- **Literature search:**
+  - Run on OpenAlex: 7,576 → 715 → 216 records, 177 included after LLM-assisted screening, of which 24 are flagged for human check.
+  - Bibliometrics, core matrix, PRISMA and §2 are written from this data.
+  - The search substitutes for EBSCO; a rerun on EBSCO can swap in through `make biblio-search`.
+- **Policy experiments added:** fragmentation (maximal covering by store count) and the realistic-promise policy (10 min where reachable, else 15).
+- **Results:** 27 of 29 MILPs proven optimal. The other two (15-minute maximal covering at 50 and 100 stores) hit the 600 s limit, and their coverage is reported as a lower bound.
+- **Corrections today:**
+  - PuLP labels a HiGHS time limit as "Optimal"; statuses now use `sol_status`.
+  - Tied stores split demand cells fractionally, which undercounted coverage; extraction is fixed and all experiments were rerun.
+- **Paper:** 11 pages in two-column layout, within the 12-page limit.

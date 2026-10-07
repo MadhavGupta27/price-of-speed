@@ -1,6 +1,6 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper,twocolumn]{article}
 % First draft. Replace preamble/layout with the instructor's template when received.
-\usepackage[margin=2.2cm]{geometry}
+\usepackage[margin=1.8cm,columnsep=0.7cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb}
@@ -11,6 +11,8 @@
 \usepackage{xurl}
 \usepackage[colorlinks=true,citecolor=blue!50!black,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
 \usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
 \captionsetup{font=small,labelfont=bf}
 \graphicspath{{figures/}}
 
@@ -21,15 +23,14 @@
 
 % Every number in the text comes from the pipeline (scripts/export_numbers.py).
 \input{generated/numbers.tex}
+\input{generated/biblio_numbers.tex}
 
 \title{The Price of Speed: Optimising Dark-Store Networks and Rider Assignment under Relaxed Delivery Promises in Indian Quick Commerce}
-\author{\todo{group member names, affiliations}}
-\date{\todo{date} --- First draft}
+\author{\small\setlength{\tabcolsep}{7pt}\begin{tabular}{cccccc}Madhav Gupta & Aadee Pardasani & Aashi Khuthia & Jiya Jagawat & Prishi Doshi & Aarushi Rakesh \\ {\footnotesize Roll No.\ 28} & {\footnotesize Roll No.\ 01} & {\footnotesize Roll No.\ 06} & {\footnotesize Roll No.\ 23} & {\footnotesize Roll No.\ 36} & {\footnotesize Roll No.\ 05}\end{tabular}}
+\date{October 2026}
 
 \begin{document}
-\maketitle
-
-\input{sections/abstract}
+\twocolumn[\maketitle\vspace{-1em}\input{sections/abstract}\vspace{1em}]
 \input{sections/introduction}
 \input{sections/literature}
 \input{sections/methodology}
@@ -40,6 +41,6 @@
 \input{sections/conclusion}
 
 \bibliographystyle{plainnat}
-\bibliography{references}
+\bibliography{references,lit}
 
 \end{document}

@@ -1,6 +1,5 @@
-# Single source of truth for human decisions.
-# Every value marked TODO(human) must be filled in by the group before the
-# corresponding pipeline step is meaningful. `make todo` lists them all.
+# Single source of truth for project decisions: topic, search protocol, case
+# parameters and solver settings. Sources for every parameter: data/README.md.
 
 project:
   title: "The Price of Speed: Optimising Dark-Store Networks and Rider Assignment under Relaxed Delivery Promises in Indian Quick Commerce"
@@ -24,8 +23,8 @@ search:
   year_end: 2026
   language: English
   document_type: Academic Journals
-  databases: [EBSCO]  # add Scopus / Web of Science / ScienceDirect if used
-  run_date: null      # TODO(human): date the final search was executed
+  databases: [OpenAlex]  # EBSCO prescribed by the course; no institutional access
+  run_date: 2026-10-06  # OpenAlex run (see results/search_log.json)
 
 bibliometrix:
   # Input file exported from Mendeley (Step 12).
@@ -72,6 +71,6 @@ case:
 
 solver:
   name: HiGHS        # HiGHS | PULP_CBC_CMD
-  time_limit_s: 120
+  time_limit_s: 600   # per MILP; time-limited solves are reported as "Feasible (limit reached)"
 
 seed: 42

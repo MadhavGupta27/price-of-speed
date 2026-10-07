@@ -55,6 +55,13 @@ There are two independent pipelines, matching the two datasets the paper needs:
    - `\todo{}` marks pending human or pipeline input.
    - The main model is `models/design.py` (coverage-constrained facility location, M1-cost); `models/covering.py` is the first-pass set covering.
 
+5. **Literature pipeline (as run):**
+   - `scripts/openalex_search.py` → `biblio/openalex_records.csv`.
+   - LLM-assisted screening decisions are in `biblio/screening/`, merged into `biblio/screening_log.csv` and `biblio/screened_records.csv`.
+   - `scripts/openalex_to_bibliometrix.py` → `biblio/exports/biblioshiny_export.xlsx`, RIS and bib.
+   - `biblio/R/02_analysis.R` → figures and clusters.
+   - `scripts/build_lit_assets.py` → the core-paper matrix, `paper/lit.bib`, `generated/tab_core.tex` and `generated/biblio_numbers.tex`.
+
 `config/project.yaml` is the single source of truth. It holds the search terms and years, the `model_family` that `make toy`/`make sensitivity` default to, the solver, and the seed. `make search-string` composes the Boolean string and always keeps the mandatory `"operations" AND "research"`.
 
 ## Gotchas (verified)
@@ -73,6 +80,11 @@ There are two independent pipelines, matching the two datasets the paper needs:
 - **Cost per order in E1 is per *served* order.** At T = 10, the unreachable 15% of residents is excluded, so compare coverage alongside cost. The promise mainly changes coverage; rider speed changes cost.
 - **The M1-cost solve grows with the reachable arcs.** It takes 82 s at T = 30. With every demand cell as a candidate (3,426 sites), it ran past 11 minutes at T = 10, so the grid robustness run uses a ~0.9 km candidate lattice.
 - **Don't snap candidate sites to the demand grid.** Lattice distances made different radii produce identical covering results.
+- **PuLP reports a HiGHS time limit as LpStatus "Optimal".** Only `prob.sol_status` (`LpSolutionOptimal` vs `LpSolutionIntegerFeasible`) distinguishes the two. Use `orpaper.solver.solution_status`/`check_optimal`, which do this; every result CSV has a `status` column.
+- **The M1-cost LP relaxation can split a demand cell between equal-cost stores** (a degenerate optimum). A cell is served iff its slack `u_i < 0.5`; take the largest `x_ij` as its store and compute rider cost from the objective term (`models/design.py`). Thresholding `x > 0.5` undercounts coverage (regression test: `test_tied_stores_count_cell_as_served`).
+- **OpenAlex without an API key** shares a small daily per-IP budget. The key is read from `.env` (`OPENALEX_API_KEY`, gitignored). Queries with more than 5 Boolean operators are throttled, so each topic term is queried separately and the clauses are applied locally.
+- **Tectonic's BibTeX can't find `.bib` files in subdirectories.** The generated bibliography is therefore `paper/lit.bib`, not `paper/generated/`.
+- **LaTeX macro names can't contain digits** (e.g. `\BibSinceTwentyOnePct`, not `...2021...`).
 - `tests/fixtures/sample_mendeley.bib` contains **fake** records for pipeline testing. Never cite them, and never copy them into `paper/references.bib`.
 
 ## Deliverable constraints (from the PDF)

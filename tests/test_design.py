@@ -46,3 +46,20 @@ def test_rider_cost_matrix_units():
     # 1 order/day, 1.5 km at 15 km/h -> 0.2 h round trip, no handover, util 1, INR 100/h, 30 days
     c = rider_cost_matrix(np.array([[1.5]]), np.array([1.0]), 15, 0, 1.0, 100)
     assert c[0, 0] == pytest.approx(0.2 * 100 * 30)
+
+
+def test_per_cell_radius():
+    d = np.array([[1.0, 3.0], [3.0, 1.0]])
+    # cell 0 may only use site 0; cell 1 may use either -> one store (site 0) suffices if cheap
+    res = solve_design(d, np.array([1.5, 3.5]), d, fixed_cost=10)
+    assert res.open_sites == [0]
+    assert res.unserved_cells == []
+
+
+def test_tied_stores_count_cell_as_served():
+    # cell 1 is equidistant from two open stores: the LP may split it 50/50
+    d = np.array([[0.0, 9.0], [1.0, 1.0], [9.0, 0.0]])
+    res = solve_design(d, 2.0, d, fixed_cost=0.1)
+    assert res.unserved_cells == []
+    assert (res.assign >= 0).all()
+    assert res.rider_cost == pytest.approx(1.0)
