@@ -22,6 +22,7 @@ The case study links four classical OR models at three planning levels (Figure~\
 
 \begin{figure*}[t]
 \centering
+\begin{adjustbox}{max width=\linewidth}
 \begin{tikzpicture}[
   box/.style={draw, rounded corners, align=center, font=\footnotesize, minimum height=1.0cm, text width=3.0cm, fill=#1},
   box/.default=white, arr/.style={-{Stealth}, thick}, lab/.style={font=\scriptsize\itshape, align=center}]
@@ -41,6 +42,7 @@ The case study links four classical OR models at three planning levels (Figure~\
   \node[lab, below=0.15cm of m3] {tactical};
   \node[lab, below=0.15cm of m4, xshift=1.6cm] {operational};
 \end{tikzpicture}
+\end{adjustbox}
 \caption{Model chain linking strategic, tactical and operational decisions.}
 \label{fig:chain}
 \end{figure*}

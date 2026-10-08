@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "The Price of Speed: Optimising Dark-Store Networks and Rider Assignment under Relaxed Delivery Promises in Indian Quick Commerce"
+type: software
+version: "1.0.0"
+date-released: "2026-10-07"
+license: MIT
+authors:
+  - family-names: Gupta
+    given-names: Madhav
+  - family-names: Pardasani
+    given-names: Aadee
+  - family-names: Khuthia
+    given-names: Aashi
+  - family-names: Jagawat
+    given-names: Jiya
+  - family-names: Doshi
+    given-names: Prishi
+  - family-names: Rakesh
+    given-names: Aarushi
+keywords:
+  - quick commerce
+  - dark stores
+  - facility location
+  - transportation problem
+  - assignment problem
+  - PERT
+  - bibliometric analysis
+  - India
+abstract: >-
+  Code, data and manuscript for a bibliometric review of operations research on
+  last-mile and on-demand delivery (168 articles, 2015-2026) and an optimisation
+  case study of Bengaluru's quick-commerce dark-store network under delivery-promise
+  and rider-speed constraints.

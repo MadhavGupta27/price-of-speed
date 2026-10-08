@@ -1,0 +1,60 @@
+%% OPSEARCH submission -- Springer Nature LaTeX template (sn-jnl, Version 3.1 Dec 2024).
+%% Built into a flat upload folder by scripts/build_submission.py; do not compile this file directly.
+\documentclass[pdflatex,sn-basic]{sn-jnl}
+
+\usepackage[T1]{fontenc}%
+\usepackage{graphicx}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{xcolor}%
+\usepackage{booktabs}%
+\usepackage{caption}%
+\usepackage{adjustbox}%
+\usepackage{tikz}%
+\usetikzlibrary{positioning,arrows.meta}%
+\usepackage{xurl}%
+
+\newcommand{\todo}[1]{\textcolor{red}{[\textbf{TODO:} #1]}}
+\newcommand{\INR}{INR~}
+
+%% Submission metadata to complete before upload (see submission/opsearch/README.md)
+\newcommand{\RepoURL}{\url{https://github.com/Ritvik2205/price-of-speed}}
+
+\input{generated/numbers.tex}
+\input{generated/biblio_numbers.tex}
+
+\raggedbottom
+
+\begin{document}
+
+\title[The Price of Speed]{The Price of Speed: Optimising Dark-Store Networks and Rider Assignment under Relaxed Delivery Promises in Indian Quick Commerce}
+
+\author*[1]{\fnm{Madhav} \sur{Gupta}}\email{[corresponding author e-mail]}
+\author[1]{\fnm{Aadee} \sur{Pardasani}}
+\author[1]{\fnm{Aashi} \sur{Khuthia}}
+\author[1]{\fnm{Jiya} \sur{Jagawat}}
+\author[1]{\fnm{Prishi} \sur{Doshi}}
+\author[1]{\fnm{Aarushi} \sur{Rakesh}}
+
+\affil*[1]{\orgname{[Institution]}, \orgaddress{\city{[City]}, \country{India}}}
+
+\input{src/abstract_journal.tex}
+
+\keywords{quick commerce, dark stores, facility location, transportation problem, assignment problem, PERT, bibliometric analysis, gig-worker safety, India}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/literature}
+\input{sections/methodology}
+\input{src/ai_statement.tex}
+\input{sections/data}
+\input{sections/model}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\input{src/declarations.tex}
+
+\bibliography{references}
+
+\end{document}

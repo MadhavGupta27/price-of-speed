@@ -60,6 +60,20 @@ tests/                    tests for every model (brute force or hand-solvable in
 docs/                     topic proposal and paper plan
 ```
 
+## Journal submission
+
+`submission/opsearch/` contains the submission package for *OPSEARCH* (Springer): the manuscript in the Springer Nature template, the upload bundle, the cover letter and a checklist. Rebuild it with `make submission`.
+
+## Licences
+
+- Code: MIT ([`LICENSE`](LICENSE)).
+- Manuscript and figures: CC BY 4.0 (preprint version).
+- OpenStreetMap-derived data: ODbL 1.0.
+- WorldPop-derived data: CC BY 4.0.
+- OpenAlex metadata: CC0.
+
+Details and required attributions are in [`LICENSES.md`](LICENSES.md) and [`data/LICENSE.md`](data/LICENSE.md).
+
 ## Data and method notes
 
 - **The Kaggle delivery datasets are synthetic** and are not used for geography or speeds. The evidence is in `results/data_audit_kaggle.json` and `data/README.md` §3.

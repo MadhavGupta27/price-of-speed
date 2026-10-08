@@ -156,7 +156,8 @@ def main():
     # Table: assignment (stressed store)
     a = asg[asg.store_type == "p90_ride_distance"]
     lines = ["\\begin{tabular}{rrrrrr}", "\\toprule",
-             "Staffing & Riders & $T$ (min) & On time, optimal & On time, FIFO & Mean lateness opt./FIFO (min) \\\\",
+             "Staffing & Riders & $T$ & On time & On time & Mean lateness (min) \\\\",
+             " & & (min) & optimal & FIFO & optimal / FIFO \\\\",
              "\\midrule"]
     for r in a.itertuples():
         lines.append(f"{int(100 * r.staffing)}\\% & {r.riders} & {r.promise_min} & {100 * r.on_time_opt:.0f}\\% & "

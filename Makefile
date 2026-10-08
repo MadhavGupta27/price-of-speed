@@ -6,7 +6,7 @@ FAMILY ?= $(shell grep 'model_family:' config/project.yaml | awk '{print $$2}')
 CROSSREF := $(if $(shell command -v pandoc-crossref),--filter pandoc-crossref,)
 REFDOC := $(if $(wildcard paper/template.docx),--reference-doc template.docx,)
 
-.PHONY: data case experiments biblio-search setup test search-string biblio-import biblio-analysis prisma citations toy sensitivity paper todo
+.PHONY: data case experiments biblio-search submission setup test search-string biblio-import biblio-analysis prisma citations toy sensitivity paper todo
 
 setup:            ## install Python + R dependencies
 	uv sync --extra dev
@@ -61,6 +61,11 @@ paper:            ## export numbers/tables from results/, then compile paper/mai
 	$(PY) scripts/export_numbers.py
 	mkdir -p paper/build
 	cd paper && tectonic -X compile main.tex --outdir build
+
+submission:       ## build the OPSEARCH upload bundle (Springer Nature template) and cover letter
+	$(PY) scripts/export_numbers.py
+	$(PY) scripts/build_submission.py
+	cd submission/opsearch && tectonic -X compile cover_letter.tex
 
 todo:             ## list every outstanding human input
 	@grep -rn "TODO(human)" --include=*.md --include=*.yaml --include=*.py --include=*.R --include=*.tex . \

@@ -148,10 +148,10 @@ def main():
     (GEN / "lit_keys.json").write_text(json.dumps(keys, indent=1))
 
     # core table
-    lines = [r"\begin{tabular}{p{2.6cm}p{4.3cm}p{4.3cm}p{1.6cm}}", r"\toprule",
+    lines = [r"\begin{tabular}{p{0.18\linewidth}p{0.28\linewidth}p{0.28\linewidth}p{0.12\linewidth}}", r"\toprule",
              r"Study & Problem & Method & Data \\", r"\midrule"]
     for r in core_out.sort_values("year").itertuples():
-        lines.append(f"\\citet{{{r.citation_key}}} & {tex_escape(r.problem_type)} & {tex_escape(r.or_method)} & {tex_escape(r.data_type)} \\\\")
+        lines.append(f"\\citet{{{r.citation_key}}} & {tex_escape(r.problem_type)} & {tex_escape(r.or_method)} & {tex_escape(r.data_type).replace('/', '/ ')} \\\\")
     lines += [r"\bottomrule", r"\end{tabular}"]
     (GEN / "tab_core.tex").write_text("\n".join(lines) + "\n")
 

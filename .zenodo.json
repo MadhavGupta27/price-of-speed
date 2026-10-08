@@ -1,0 +1,17 @@
+{
+  "title": "The Price of Speed: Optimising Dark-Store Networks and Rider Assignment under Relaxed Delivery Promises in Indian Quick Commerce (code, data and manuscript)",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {"name": "Gupta, Madhav"},
+    {"name": "Pardasani, Aadee"},
+    {"name": "Khuthia, Aashi"},
+    {"name": "Jagawat, Jiya"},
+    {"name": "Doshi, Prishi"},
+    {"name": "Rakesh, Aarushi"}
+  ],
+  "keywords": ["quick commerce", "dark stores", "facility location", "transportation problem",
+               "assignment problem", "PERT", "bibliometric analysis", "India"],
+  "description": "Code, data and manuscript for a bibliometric review of operations research on last-mile and on-demand delivery (168 articles, 2015-2026) and an optimisation case study of Bengaluru's quick-commerce dark-store network. Code: MIT. Manuscript and figures: CC BY 4.0. OpenStreetMap-derived data: ODbL 1.0. WorldPop-derived data: CC BY 4.0. See LICENSES.md.",
+  "notes": "OpenStreetMap-derived files are ODbL 1.0 (© OpenStreetMap contributors); see data/LICENSE.md."
+}
