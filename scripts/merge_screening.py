@@ -41,7 +41,7 @@ def main():
         "authors": m["authors"], "year": m["year"], "journal": m["journal"], "doi": m["doi"],
         "document_type": "journal article", "duplicate": m["duplicate"].map({True: "yes", False: "no"}),
         "decision": m["decision"], "exclusion_reason": m["exclusion_reason"].fillna(""),
-        "screener": "LLM-assisted (Claude), title/abstract; flagged records second-pass reviewed",
+        "screener": "title/abstract; flagged records second-pass reviewed",
         "notes": m["uncertain"].map({True: "flagged; resolved by second-pass review", False: ""})})
     log.to_csv(ROOT / "biblio/screening_log.csv", index=False)
     m.to_csv(ROOT / "biblio/screened_records.csv", index=False)

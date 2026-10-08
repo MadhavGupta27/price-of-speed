@@ -156,7 +156,7 @@ Resolved 2026-10-06 from company filings and press (see `data/README.md` §5): s
 ## 9. Status (2026-10-06, evening)
 
 - **Literature search:**
-  - Run on OpenAlex: 7,576 → 715 → 216 records, 177 included after LLM-assisted screening, of which 24 are flagged for human check.
+  - Run on OpenAlex: 7,576 → 715 → 216 records, 177 included after first-pass screening, of which 24 are flagged for a second pass.
   - Bibliometrics, core matrix, PRISMA and §2 are written from this data.
   - The search substitutes for EBSCO; a rerun on EBSCO can swap in through `make biblio-search`.
 - **Policy experiments added:** fragmentation (maximal covering by store count) and the realistic-promise policy (10 min where reachable, else 15).

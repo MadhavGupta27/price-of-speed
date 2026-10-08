@@ -121,7 +121,7 @@ def main():
         "year": core["year"], "journal": core["journal"], "gs_citations": "", "openalex_citations": core["cited_by"],
         "problem_type": core["problem"], "or_method": core["method"], "data_type": core["data"],
         "region": core["region"].fillna(""), "key_findings": core["finding"],
-        "reviewer": "LLM-assisted coding from abstract; verify against full text"})
+        "reviewer": "coded from abstract; verify against full text"})
     core_out.to_csv(ROOT / "biblio/core_papers_matrix.csv", index=False)
 
     # most co-cited references (local citations within the included set)

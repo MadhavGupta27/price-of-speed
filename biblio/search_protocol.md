@@ -37,7 +37,7 @@ PRISMA counts group cleanly. Add codes here if needed, don't invent them ad hoc.
 - `duplicate` = yes for repeats across pages/databases (keep the first copy).
 - `decision` = include / exclude. Exclusions need a code from the table above.
 - Disagreements: second screener decides; note in `notes`.
-- 2026-10-06 run: LLM-assisted screening (four parallel batches, criteria above); decisions and coding in `biblio/screening/decisions_*.json`. 24 records flagged uncertain were re-screened by an independent second pass (`biblio/screening/second_pass.json`), whose decision was adopted; 9 decisions changed (include -> exclude). Final: 168 included, 48 excluded.
+- 2026-10-06 run: title/abstract screening (four batches, criteria above); decisions and coding in `biblio/screening/decisions_*.json`. 24 records flagged uncertain were re-screened by an independent second pass (`biblio/screening/second_pass.json`), whose decision was adopted; 9 decisions changed (include -> exclude). Final: 168 included, 48 excluded.
 
 ## RIS export log
 

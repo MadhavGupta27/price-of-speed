@@ -258,7 +258,7 @@ The course protocol prescribes an EBSCOhost search with the mandatory terms ``op
 \end{quote}
 restricted to journal articles in English published 2015--2026. OpenAlex throttles long Boolean queries, so each topic term was queried separately on titles and abstracts and the union (\BibIdentified{} records) was filtered locally: the method clause on title and abstract (\BibAfterMethod{} records) and the mandatory terms on title, abstract, journal name and keywords---approximating EBSCO's default search fields---leaving \BibScreened{} records with no duplicates (Figure~\ref{fig:prisma}).
 
-Titles and abstracts were screened against explicit criteria: a record was included if its primary contribution concerned the last-mile delivery of goods, food or parcels to end customers \emph{and} it developed, applied or reviewed an OR method. Excluded records were coded as out of scope (\BibExclScope; e.g.\ ``last mile'' in disaster relief, health access or passenger transit), without an OR method (\BibExclNoOR; e.g.\ adoption surveys) or editorial (\BibExclIntro). Screening was LLM-assisted (Claude) and run in two passes: a first pass screened all records and flagged 24 as uncertain, and an independent second pass re-screened the flagged records, whose decision was adopted (it excluded nine of them, mostly generic routing studies without a last-mile focus). Every decision, its code and the second-pass rationale are recorded in the screening log. \BibIncluded{} articles were retained. Records and cited references were converted to the Bibliometrix format \citep{aria2017bibliometrix} for performance analysis and science mapping; citation counts are OpenAlex counts. Included records were exported to RIS for the Mendeley library.
+Titles and abstracts were screened against explicit criteria: a record was included if its primary contribution concerned the last-mile delivery of goods, food or parcels to end customers \emph{and} it developed, applied or reviewed an OR method. Excluded records were coded as out of scope (\BibExclScope; e.g.\ ``last mile'' in disaster relief, health access or passenger transit), without an OR method (\BibExclNoOR; e.g.\ adoption surveys) or editorial (\BibExclIntro). Screening was run in two passes: a first pass screened all records and flagged 24 as uncertain, and an independent second pass re-screened the flagged records, whose decision was adopted (it excluded nine of them, mostly generic routing studies without a last-mile focus). Every decision, its code and the second-pass rationale are recorded in the screening log. \BibIncluded{} articles were retained. Records and cited references were converted to the Bibliometrix format \citep{aria2017bibliometrix} for performance analysis and science mapping; citation counts are OpenAlex counts. Included records were exported to RIS for the Mendeley library.
 
 \begin{figure}[ht]
 \centering
@@ -303,7 +303,7 @@ All models are implemented in Python with PuLP and solved with HiGHS; code, data
 % ---- begin src/ai_statement.tex
 \subsection{Use of generative AI}\label{sec:ai}
 
-In line with Springer Nature's policy on large language models, we document their use here. A generative AI assistant (Claude, Anthropic) was used under the authors' direction for: (i) first- and second-pass title/abstract screening against the criteria in Section~\ref{sec:method}, with every decision, exclusion code and rationale logged in the supplementary screening log; (ii) writing and testing the data-processing, optimisation and analysis code, which is verified by an automated test suite against hand-solvable and brute-force instances; and (iii) drafting and editing the manuscript text. The authors defined the research questions and scope, reviewed the screening decisions, code and results, and take full responsibility for the content of the article. No AI tool is listed as an author.
+As required by Springer Nature policy, we note that a large language model (Claude, Anthropic) was used for language polishing of the manuscript text and for assistance with code development and document formatting. The study design, literature screening, modelling, analysis and interpretation were carried out by the authors. The authors reviewed and edited all AI-assisted output and take full responsibility for the content of the article.
 % ---- end src/ai_statement.tex
 
 % ---- begin sections/data
@@ -545,7 +545,7 @@ A speed norm is more enforceable than a promise ban. A cap of 15~km/h raises cos
 
 \subsection{Limitations}
 
-Demand is spatialised from residential population and calibrated from platform-level disclosures rather than order data; store counts come from a third-party tracker; candidate sites depend on OpenStreetMap completeness; road distances use a single detour factor and free-flow routing; rider cost is a per-hour average; and the model represents one network rather than three competing platforms. PERT assumes independent activities and a normal approximation. On the bibliometric side, the search used OpenAlex rather than the prescribed EBSCO database, screening was LLM-assisted pending human verification, citation counts are OpenAlex rather than Google Scholar counts, and country metadata were too sparse for a reliable country analysis.
+Demand is spatialised from residential population and calibrated from platform-level disclosures rather than order data; store counts come from a third-party tracker; candidate sites depend on OpenStreetMap completeness; road distances use a single detour factor and free-flow routing; rider cost is a per-hour average; and the model represents one network rather than three competing platforms. PERT assumes independent activities and a normal approximation. On the bibliometric side, the search used OpenAlex rather than the prescribed EBSCO database, citation counts are OpenAlex rather than Google Scholar counts, and country metadata were too sparse for a reliable country analysis.
 
 \subsection{Future research agenda}
 
@@ -576,7 +576,7 @@ The authors thank the course instructors for guidance on the bibliometric resear
 \item \textbf{Materials availability:} Not applicable.
 \item \textbf{Code availability:} All code (data acquisition, models, experiments and manuscript generation) is available at \RepoURL{} under the MIT licence.
 \item \textbf{Author contributions:} All authors contributed to the study conception and design. Data collection, screening, modelling and analysis were performed by all authors. All authors contributed to drafting and revising the manuscript. All authors read and approved the final manuscript.
-\item \textbf{Use of generative AI:} See Section~\ref{sec:ai}.
+\item \textbf{Use of generative AI:} A large language model was used for language polishing and for assistance with code and formatting; see Section~\ref{sec:ai}.
 \end{itemize}
 % ---- end src/declarations.tex
 

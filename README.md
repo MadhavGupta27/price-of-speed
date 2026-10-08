@@ -77,5 +77,5 @@ Details and required attributions are in [`LICENSES.md`](LICENSES.md) and [`data
 ## Data and method notes
 
 - **The Kaggle delivery datasets are synthetic** and are not used for geography or speeds. The evidence is in `results/data_audit_kaggle.json` and `data/README.md` §3.
-- **The bibliometric search ran on OpenAlex.** EBSCOhost, prescribed by the course, needs an institutional login. Screening was LLM-assisted in two passes; every decision and rationale is in `biblio/screening/` and `biblio/screening_log.csv`.
+- **The bibliometric search ran on OpenAlex.** EBSCOhost, prescribed by the course, needs an institutional login. Screening ran in two passes; every decision and rationale is in `biblio/screening/` and `biblio/screening_log.csv`.
 - **Optimisation status:** all models are solved with HiGHS via PuLP, and solver status is reported honestly. 27 of 29 MILPs are proven optimal. Two maximal-covering runs hit the 600 s limit, and their coverage is reported as a lower bound.

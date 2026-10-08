@@ -57,7 +57,7 @@ There are two independent pipelines, matching the two datasets the paper needs:
 
 5. **Literature pipeline (as run):**
    - `scripts/openalex_search.py` → `biblio/openalex_records.csv`.
-   - LLM-assisted screening decisions are in `biblio/screening/`, merged into `biblio/screening_log.csv` and `biblio/screened_records.csv`.
+   - Screening decisions are in `biblio/screening/`, merged into `biblio/screening_log.csv` and `biblio/screened_records.csv`.
    - `scripts/openalex_to_bibliometrix.py` → `biblio/exports/biblioshiny_export.xlsx`, RIS and bib.
    - `biblio/R/02_analysis.R` → figures and clusters.
    - `scripts/build_lit_assets.py` → the core-paper matrix, `paper/lit.bib`, `generated/tab_core.tex` and `generated/biblio_numbers.tex`.

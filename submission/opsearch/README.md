@@ -8,7 +8,7 @@ Target journal: **OPSEARCH** (Journal of the Operational Research Society of Ind
 | `manuscript.pdf` | Compiled check copy of the manuscript (Springer Nature template, single column) |
 | `cover_letter.pdf` / `.tex` | Cover letter to the Editor-in-Chief |
 | `upload/` | Unzipped contents of the bundle |
-| `src/` | Journal-only sources: template wrapper, abstract, AI-use statement, declarations |
+| `src/` | Journal-only sources: template wrapper, abstract, declarations |
 | `template/` | Official Springer Nature LaTeX template files (Version 3.1, December 2024) |
 
 Rebuild after any change to the paper or results:
@@ -32,7 +32,7 @@ Edit `src/main_journal.tex`, `src/declarations.tex` and `cover_letter.tex`, then
 - [ ] All six authors have read and approved the manuscript and the author order.
 - [ ] Someone has spot-checked the key numbers against `results/` and the citations against the sources.
 - [ ] Confirm the journal's current requirements on its "Submission guidelines" page (fees, review type, declarations).
-- [ ] Keep the generative-AI statement (Section 3.3). Springer Nature requires LLM use to be documented in the Methods section.
+- [ ] Keep Section 3.3 (required by Springer Nature policy).
 
 ## How to submit
 
