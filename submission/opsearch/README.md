@@ -21,8 +21,8 @@ make submission
 
 Edit `src/main_journal.tex`, `src/declarations.tex` and `cover_letter.tex`, then run `make submission`.
 
-- [ ] **Institution name and city** (`\affil` in `src/main_journal.tex`; signature block in `cover_letter.tex`).
-- [ ] **Corresponding author e-mail** (`\email{...}` in `src/main_journal.tex`; `cover_letter.tex`). The corresponding author is set to Madhav Gupta; change `\author*` if needed.
+- [x] **Institution name and city** (`\affil` in `src/main_journal.tex`; signature block in `cover_letter.tex`).
+- [x] **Corresponding author e-mail** (`\email{...}` in `src/main_journal.tex`; `cover_letter.tex`). The corresponding author is set to Madhav Gupta; change `\author*` if needed.
 - [ ] **Repository URL** (`\RepoURL` in `src/main_journal.tex`), once the public GitHub repository exists.
 - [ ] **Author contributions** (`src/declarations.tex`): confirm or replace the generic statement.
 - [ ] **Acknowledgements**: edit or remove.

@@ -58,6 +58,23 @@ def tex_escape(s):
     return s
 
 
+ACCENTS = {"́": "'", "̀": "`", "̂": "^", "̈": '"', "̃": "~", "̄": "=",
+           "̌": "v", "̆": "u", "̋": "H", "̧": "c", "̨": "k", "̇": "."}
+
+
+def bib_text(s):
+    """Hyphen variants -> '-', non-Latin-1 accented letters -> LaTeX accents (legacy fonts lack the glyphs)."""
+    s = re.sub("[‐‑‒]", "-", str(s))
+    out = []
+    for ch in s:
+        parts = unicodedata.normalize("NFD", ch)
+        if ord(ch) > 0xFF and len(parts) == 2 and parts[1] in ACCENTS:
+            out.append(f"{{\\{ACCENTS[parts[1]]}{{{parts[0]}}}}}")
+        else:
+            out.append(ch)
+    return "".join(out)
+
+
 def make_key(surname, year, used):
     base = f"{ascii_slug(surname) or 'anon'}{year}"
     key, k = base, 0
@@ -69,8 +86,9 @@ def make_key(surname, year, used):
 
 
 def bib_entry(key, authors, title, journal, year, volume="", number="", pages="", doi=""):
-    fields = {"author": " and ".join(authors), "title": "{" + tex_escape(title) + "}",
-              "journal": tex_escape(journal), "year": year, "volume": volume, "number": number,
+    fields = {"author": bib_text(" and ".join(authors)), "title": "{" + bib_text(tex_escape(title)) + "}",
+              "journal": bib_text(tex_escape(journal)), "year": year, "volume": re.sub(r"^(\d+)\.0$", r"\1", str(volume)),
+              "number": re.sub(r"^(\d+)\.0$", r"\1", str(number)),
               "pages": pages, "doi": doi}
     body = ",\n".join(f"  {k} = {{{v}}}" for k, v in fields.items() if str(v) not in ("", "nan", "None"))
     return f"@article{{{key},\n{body}\n}}\n"
